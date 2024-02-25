@@ -64,11 +64,11 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    void OnDestroy()
-    {
-        Time.timeScale = 1f;
+    // void OnDestroy()
+    // {
+    //     Time.timeScale = 1f;
 
-        restartButtonLeft.onClick.RemoveListener(RestartGame);
-        restartButton.onClick.RemoveListener(RestartGame);
-    }
+    //     restartButtonLeft.onClick.RemoveListener(RestartGame);
+    //     restartButton.onClick.RemoveListener(RestartGame);
+    // }
 }

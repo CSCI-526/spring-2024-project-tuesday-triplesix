@@ -71,7 +71,9 @@ public class BeatSpawner : MonoBehaviour
             if (cnt == beats[path].Length) {
                 finish = true;
             }
-            timer = intervals[path][cnt]; // reset
+            Debug.Log("path: " + path);
+            Debug.Log("Cnt: " + cnt);
+            if (!finish) timer = intervals[path][cnt]; // reset
         }
     }
 
