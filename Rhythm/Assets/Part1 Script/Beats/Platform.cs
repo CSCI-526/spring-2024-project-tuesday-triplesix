@@ -20,13 +20,13 @@ public class Platform : MonoBehaviour
         var gameObj = boxCollider2D.gameObject; 
         while (true)
         {
-            if (gameObj.CompareTag("Ground"))
+            if (gameObj.CompareTag("Platform"))
             {
                 yield return new WaitForSeconds(appearInterval); // wait
                 // disable the collider, change the transparency of the material
                 Change(boxCollider2D, material);
             }
-            else if (gameObj.CompareTag("Ground1"))
+            else if (gameObj.CompareTag("Platform1"))
             {
                 // a different beat
                 Change(boxCollider2D, material);
