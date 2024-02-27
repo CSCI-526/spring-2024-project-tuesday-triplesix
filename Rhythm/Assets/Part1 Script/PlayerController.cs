@@ -28,17 +28,17 @@ public class PlayerController : MonoBehaviour
             // add attribute to player
             hasKey = true;
         }
-        else if (other.CompareTag("Door"))
-        {
-            if (hasKey == true)
-            {
-                Debug.Log("Win");
-            }
-            else
-            {
-                Debug.Log("You haven't got a key yet!");
-            }
-        }
+        //else if (other.CompareTag("Door"))
+        //{
+       //     if (hasKey == true)
+       //     {
+        //        Debug.Log("Win");
+        //    }
+        //    else
+         //   {
+        //        Debug.Log("You haven't got a key yet!");
+        //    }
+       // }
     }
     
     
