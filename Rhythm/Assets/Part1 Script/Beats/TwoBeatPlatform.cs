@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Platform : MonoBehaviour
+public class TwoBeatPlatform : MonoBehaviour
 {
     // Start is called before the first frame update
     private BoxCollider2D _boxCollider2D;

@@ -6,7 +6,7 @@ public class FourBeatPlatform : MonoBehaviour
 {
     // Start is called before the first frame update
     private BoxCollider2D _boxCollider2D;
-    public float timeInterval = 1f;
+    float appearInterval = 3f; // the beat
     public float transparency = 0.5f;
     void Start()
     {
@@ -28,38 +28,48 @@ public class FourBeatPlatform : MonoBehaviour
             {
                 Change(boxCollider2D, material);
                 // disable the collider, change the transparency of the material
-                
+                yield return new WaitForSeconds(1f);
+                Change(boxCollider2D, material);
+                yield return new WaitForSeconds(appearInterval); // wait
             }
             else if (gameObj.CompareTag("Platform4"))
             {
-                // a different beat
                 if (flag2 == 0)
                 {
-                    yield return new WaitForSeconds(1f); // wait
+                    yield return new WaitForSeconds(1f);
                     flag2 = 1;
                 }
                 Change(boxCollider2D, material);
-
+                // disable the collider, change the transparency of the material
+                yield return new WaitForSeconds(1f);
+                Change(boxCollider2D, material);
+                yield return new WaitForSeconds(appearInterval); // wait
             }
             else if (gameObj.CompareTag("Platform5"))
             {
                 if (flag3 == 0)
                 {
-                    yield return new WaitForSeconds(2f); // wait
+                    yield return new WaitForSeconds(2f);
                     flag3 = 1;
                 }
-                // a different beat
                 Change(boxCollider2D, material);
+                // disable the collider, change the transparency of the material
+                yield return new WaitForSeconds(1f);
+                Change(boxCollider2D, material);
+                yield return new WaitForSeconds(appearInterval); // wait
             }
             else if (gameObj.CompareTag("Platform6"))
             {
                 if (flag4 == 0)
                 {
-                    yield return new WaitForSeconds(3f); // wait
+                    yield return new WaitForSeconds(3f);
                     flag4 = 1;
                 }
-                // a different beat
                 Change(boxCollider2D, material);
+                // disable the collider, change the transparency of the material
+                yield return new WaitForSeconds(1f);
+                Change(boxCollider2D, material);
+                yield return new WaitForSeconds(appearInterval); // wait
             }
         }
     }
