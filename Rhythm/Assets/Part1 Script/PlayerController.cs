@@ -22,12 +22,12 @@ public class PlayerController : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Key"))
-        {
-            Destroy(other.gameObject); // destroy key
-            // add attribute to player
-            hasKey = true;
-        }
+        //if (other.CompareTag("Key"))
+        //{
+        //    Destroy(other.gameObject); // destroy key
+        //    // add attribute to player
+        //    hasKey = true;
+        //}
         //else if (other.CompareTag("Door"))
         //{
        //     if (hasKey == true)
