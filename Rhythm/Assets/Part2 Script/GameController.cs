@@ -129,7 +129,8 @@ public class GameController : MonoBehaviour
     }
 
     public void RestartGame()
-    {
+    {   
+        GameSetting.IsRestarting = true;
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

@@ -6,6 +6,7 @@ public class BallController : MonoBehaviour
 {
     private Rigidbody2D rb;
     public GameObject ball;
+    public GameObject foot;
     private bool isGrounded = true;
 
     public float autoMoveSpeed = 20.0f;
@@ -31,7 +32,7 @@ public class BallController : MonoBehaviour
 
     private void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = Physics2D.OverlapCircle(foot.transform.position, groundCheckRadius, groundLayer);
         AutoMoveRight();
         if (Input.GetButtonDown("Jump") && isGrounded)
         {

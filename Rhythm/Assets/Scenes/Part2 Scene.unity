@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 6823342}
   - component: {fileID: 6823341}
   - component: {fileID: 6823340}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -755,6 +755,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &150680097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 150680098}
+  m_Layer: 0
+  m_Name: ground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &150680098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150680097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.49, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1380942475}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &166245667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,6 +1177,7 @@ RectTransform:
   - {fileID: 2071684197}
   - {fileID: 400390639}
   - {fileID: 572780707}
+  - {fileID: 396169282}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1319,6 +1351,142 @@ Transform:
   - {fileID: 1335451663}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &396169281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 396169282}
+  - component: {fileID: 396169284}
+  - component: {fileID: 396169283}
+  m_Layer: 5
+  m_Name: Hint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &396169282
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396169281}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 267042728}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 336, y: 182.88}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &396169283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396169281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Jump: Space
+
+    Shrink: Ctrl'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278255359
+  m_fontColor: {r: 1, g: 0.9957261, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -68.39365, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &396169284
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396169281}
+  m_CullTransparentMesh: 1
 --- !u!1 &400390638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,7 +1882,7 @@ GameObject:
   - component: {fileID: 431933908}
   - component: {fileID: 431933907}
   - component: {fileID: 431933906}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2182,7 +2350,7 @@ GameObject:
   - component: {fileID: 472385378}
   - component: {fileID: 472385377}
   - component: {fileID: 472385376}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2498,7 +2666,7 @@ GameObject:
   - component: {fileID: 479995054}
   - component: {fileID: 479995053}
   - component: {fileID: 479995052}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3130,7 +3298,7 @@ GameObject:
   - component: {fileID: 508265842}
   - component: {fileID: 508265841}
   - component: {fileID: 508265840}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3554,7 +3722,7 @@ GameObject:
   - component: {fileID: 535881450}
   - component: {fileID: 535881449}
   - component: {fileID: 535881448}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpPlatform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4019,7 +4187,7 @@ GameObject:
   - component: {fileID: 626435900}
   - component: {fileID: 626435899}
   - component: {fileID: 626435898}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (17)
   m_TagString: Respawn
   m_Icon: {fileID: 0}
@@ -4908,7 +5076,7 @@ GameObject:
   - component: {fileID: 939202506}
   - component: {fileID: 939202505}
   - component: {fileID: 939202504}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5150,7 +5318,7 @@ GameObject:
   - component: {fileID: 1001998673}
   - component: {fileID: 1001998672}
   - component: {fileID: 1001998671}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5466,7 +5634,7 @@ GameObject:
   - component: {fileID: 1076351120}
   - component: {fileID: 1076351119}
   - component: {fileID: 1076351118}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6129,6 +6297,7 @@ MonoBehaviour:
   player: {fileID: 1380942471}
   restartButton: {fileID: 416906080}
   cameraTarget: {fileID: 1090492836}
+  Hint: {fileID: 396169281}
   cameraMoveSpeed: 40
   cameraFollowScript: {fileID: 519420033}
   beatBar: {fileID: 1753304283}
@@ -6319,7 +6488,7 @@ GameObject:
   - component: {fileID: 1291620111}
   - component: {fileID: 1291620110}
   - component: {fileID: 1291620109}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6477,7 +6646,7 @@ GameObject:
   - component: {fileID: 1310795841}
   - component: {fileID: 1310795840}
   - component: {fileID: 1310795839}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpPlatform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6985,6 +7154,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1353202187}
+  - {fileID: 150680098}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1380942476
@@ -7000,13 +7170,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 1380942471}
+  foot: {fileID: 150680097}
   autoMoveSpeed: 10
   jumpForce: 25
   groundCheck: {fileID: 472385379}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 8
   squareScale: {x: 1, y: 1, z: 1}
   childCollider: {fileID: 1353202188}
   expandedSize: {x: 1, y: 0.3}
@@ -7152,7 +7323,7 @@ GameObject:
   - component: {fileID: 1561545581}
   - component: {fileID: 1561545580}
   - component: {fileID: 1561545579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7310,7 +7481,7 @@ GameObject:
   - component: {fileID: 1565567717}
   - component: {fileID: 1565567716}
   - component: {fileID: 1565567715}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8386,7 +8557,7 @@ GameObject:
   - component: {fileID: 1785128534}
   - component: {fileID: 1785128533}
   - component: {fileID: 1785128532}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8627,7 +8798,7 @@ GameObject:
   - component: {fileID: 1941778870}
   - component: {fileID: 1941778869}
   - component: {fileID: 1941778868}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform2 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

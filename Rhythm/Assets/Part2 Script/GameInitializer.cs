@@ -6,6 +6,7 @@ public class GameInitializer : MonoBehaviour
     public GameObject player;
     public GameObject restartButton;
     public Transform cameraTarget;
+    public GameObject Hint;
     public float cameraMoveSpeed = 20.0f;
     private Vector3 initialCameraPosition;
     public CameraFollow cameraFollowScript;
@@ -14,22 +15,26 @@ public class GameInitializer : MonoBehaviour
     public float targetOrthographicSize = 25f;
     private float initialOrthographicSize;
     void Start()
-    {
-        initialOrthographicSize = Camera.main.orthographicSize;
-        beatBar.SetActive(false);
-        restartButton.SetActive(false);
-        scoreText.enabled = false;
-        initialCameraPosition = Camera.main.transform.position;
-        Time.timeScale = 0f;
-        if (cameraFollowScript != null) 
+    {   
+        if (!GameSetting.IsRestarting)
         {
-            cameraFollowScript.enabled = false;
-        }
-        StartCoroutine(MoveCameraToTarget(cameraTarget.position, () => {
-            StartCoroutine(MoveCameraBack(initialCameraPosition, () => {
-                ResumeGame();
+            initialOrthographicSize = Camera.main.orthographicSize;
+            beatBar.SetActive(false);
+            restartButton.SetActive(false);
+            scoreText.enabled = false;
+            Hint.SetActive(false);
+            initialCameraPosition = Camera.main.transform.position;
+            Time.timeScale = 0f;
+            if (cameraFollowScript != null) 
+            {
+                cameraFollowScript.enabled = false;
+            }
+            StartCoroutine(MoveCameraToTarget(cameraTarget.position, () => {
+                StartCoroutine(MoveCameraBack(initialCameraPosition, () => {
+                    ResumeGame();
+                }));
             }));
-        }));
+        }
     }
 
     System.Collections.IEnumerator MoveCameraToTarget(Vector3 targetPosition, System.Action onCompleted = null)
@@ -74,7 +79,7 @@ public class GameInitializer : MonoBehaviour
         Time.timeScale = 1f;
         beatBar.SetActive(true);
         restartButton.SetActive(true);
-
+        Hint.SetActive(true);
         scoreText.enabled = true;
         Camera.main.orthographicSize = initialOrthographicSize;
         if (cameraFollowScript != null)
