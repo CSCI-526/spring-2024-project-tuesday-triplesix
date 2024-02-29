@@ -34,7 +34,6 @@ public class Platform : MonoBehaviour
 
             //UIObject.gameObject.SetActive(true);
             UIObject.beat = true;
-            Debug.Log("yes");
         }
 
     }
@@ -50,7 +49,6 @@ public class Platform : MonoBehaviour
             UIObject.count = 0;
             UIObject.pkey = true;
             UIObject.moving = false;
-            Debug.Log("not");
         }
 
     }
