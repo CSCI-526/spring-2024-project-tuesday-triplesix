@@ -6,18 +6,22 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 10f;
-
+    private UI UIObject;
     private Rigidbody2D rb;
     private bool hasKey = false;
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        UIObject = FindObjectOfType<UI>();
     }
 
     void Update()
     {
-        Move();
+        if(!UIObject.beat)
+        {
+            Move();
+        }
     }
     
     void OnTriggerEnter2D(Collider2D other)
