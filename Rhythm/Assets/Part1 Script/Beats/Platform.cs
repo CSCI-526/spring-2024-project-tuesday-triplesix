@@ -4,14 +4,18 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     private UI UIObject;
-    public float movementSpeed = 2.0f;
+    public float movementSpeed = 50.0f;
     private Vector3 originalPosition;
     private float timer = 0f;
+    private Renderer objRenderer;
+    private Color originalColor;
     private void Start()
     {
         UIObject = FindObjectOfType<UI>();
         Debug.Log(UIObject);
         originalPosition = transform.position;
+        objRenderer = GetComponent<Renderer>();
+        originalColor = objRenderer.material.color;
 
     }
 
@@ -25,7 +29,7 @@ public class Platform : MonoBehaviour
             {
                 UIObject.beat = false;
                 UIObject.count = 0;
-                UIObject.pkey = true;
+                UIObject.pkey = 1;
                 UIObject.moving = false;
                 timer += Time.deltaTime;
                 if (timer >= 2f)
@@ -48,6 +52,15 @@ public class Platform : MonoBehaviour
         {
             transform.Translate(Vector3.down * movementSpeed * Time.deltaTime);
         }
+
+        if (UIObject.color)
+        {
+            ChangeObjectColor(Color.red);
+        }
+        else
+        {
+            ChangeObjectColor(originalColor);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
@@ -62,7 +75,18 @@ public class Platform : MonoBehaviour
         }
 
     }
+    void ChangeObjectColor(Color newColor)
+    {
+        // objRenderer.material.color = newColor;
+        objRenderer.material = new Material(objRenderer.material);
+        objRenderer.material.color = newColor;
+    }
 
+    void ChangeColorBack()
+    {
+        // Use the originalColor variable to revert the color
+        ChangeObjectColor(originalColor);
+    }
 
     //private void OnTriggerExit2D(Collider2D collider2D)
     //{
