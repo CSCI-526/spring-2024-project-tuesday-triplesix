@@ -24,8 +24,8 @@ public class BallController : MonoBehaviour
     public Vector2 expandedSize = new Vector2(0.03301108f, 0.3f); 
     public Vector2 originalSize = new Vector2(0.03301108f, 0.8f);
 
-
-    private float moveSpeed = 20f;//移动速度
+    public BossManager bossManager;
+    private float moveSpeed = 20f;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -46,8 +46,11 @@ public class BallController : MonoBehaviour
         {
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
         }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            bossManager.TakeDamage(10);
+        }
 
-        Debug.Log("speed:" + moveSpeed);
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             Jump();
@@ -73,7 +76,7 @@ public class BallController : MonoBehaviour
         rb.velocity = new Vector2(0, jumpForce * 0.6f);
         isGrounded = false;
 
-        rb.gravityScale = 2f;  // 根据需要调整重力的大小
+        rb.gravityScale = 2f;
         Invoke("ResetGravity", 0.5f);
     }
 }
