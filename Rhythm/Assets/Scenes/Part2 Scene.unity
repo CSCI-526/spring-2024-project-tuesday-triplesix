@@ -6496,6 +6496,7 @@ MonoBehaviour:
   circle: {fileID: 1205304829}
   scoreText: {fileID: 572780708}
   updateScore: 0
+  bossHealth: {fileID: 384861420}
 --- !u!1 &1205304829
 GameObject:
   m_ObjectHideFlags: 0
@@ -8960,6 +8961,7 @@ MonoBehaviour:
   circle: {fileID: 1205304829}
   scoreText: {fileID: 572780708}
   updateScore: 0
+  bossHealth: {fileID: 384861420}
 --- !u!1 &1785128531
 GameObject:
   m_ObjectHideFlags: 0
@@ -9460,6 +9462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 1960161443}
+  health: {fileID: 384861420}
+  healthBar: {fileID: 713476270}
   autoMoveSpeed: 20
 --- !u!50 &1960161447
 Rigidbody2D:
