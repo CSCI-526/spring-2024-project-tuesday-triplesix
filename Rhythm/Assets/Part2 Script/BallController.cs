@@ -70,7 +70,7 @@ public class BallController : MonoBehaviour
 
     private void Jump()
     {
-        rb.velocity = new Vector2(autoMoveSpeed, jumpForce * 0.6f);
+        rb.velocity = new Vector2(0, jumpForce * 0.6f);
         isGrounded = false;
 
         rb.gravityScale = 2f;  // 根据需要调整重力的大小
