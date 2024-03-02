@@ -73,11 +73,20 @@ public class BallController : MonoBehaviour
 
     private void Jump()
     {
-        rb.velocity = new Vector2(0, jumpForce * 0.6f);
+        rb.velocity = new Vector2(0, jumpForce * 0.7f);
         isGrounded = false;
 
-        rb.gravityScale = 2f;
-        Invoke("ResetGravity", 0.5f);
+        rb.gravityScale = 3f;
+        Invoke("ResetGravity", 0.4f);
+    }
+
+    private void ResetGravity()
+    {
+        rb.gravityScale = 6f; // 或者是你的默认重力系数
+    }
+
+    public void stop() {
+        moveSpeed = 0;
     }
 }
 
