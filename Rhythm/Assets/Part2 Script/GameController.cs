@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
     public float flashDuration = 0.2f;
     public int flashCount = 2;
 
-    public string obstacleTag = "Obstacle";
+    private string obstacleTag = "Invisible";
     public float distanceThreshold = 30f;
 
 
