@@ -21,6 +21,7 @@ public class BossController : MonoBehaviour
     void Update()
     {
         bossrb.velocity = new Vector2(autoMoveSpeed, 1);
+        // Debug.Log("Health:" + health.fillAmount);
         if (health.fillAmount == 0) {
             boss.SetActive(false);
             healthBar.SetActive(false);

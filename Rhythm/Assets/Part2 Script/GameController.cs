@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public Button restartButtonLeft;
+    public GameObject beatBar;
     public GameObject gameOverPanel;
     public GameObject victoryPanel;
     public Button restartButton;
@@ -133,6 +134,11 @@ public class GameController : MonoBehaviour
         GameSetting.IsRestarting = true;
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void StartBeat()
+    {
+        beatBar.SetActive(true);
     }
 
     // void OnDestroy()

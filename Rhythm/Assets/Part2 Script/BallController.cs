@@ -46,10 +46,10 @@ public class BallController : MonoBehaviour
         {
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
         }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            bossManager.TakeDamage(10);
-        }
+        // if (Input.GetKeyDown(KeyCode.J))
+        // {
+        //     bossManager.TakeDamage(10);
+        // }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {

@@ -52,22 +52,22 @@ public class BeatControl : MonoBehaviour
     {
         health = bossHealth.fillAmount;
         float distance = 10;
-        if (gameObject.CompareTag("Single") && Input.GetButtonDown("Jump")){
+        if (gameObject.CompareTag("Single") && Input.GetKeyDown(KeyCode.J)){
             distance = GetAbs(transform.position.x - circle.transform.position.x);
+            Debug.Log("dist:" + distance);
             int status = GetStatus(distance);
             // Debug.Log("Jump: " + status);
             if (status < 3) gameObject.SetActive(false);
-        } else if (gameObject.CompareTag("Long") && Input.GetButtonDown("Fire1")){
+        } else if (gameObject.CompareTag("Long") && Input.GetKeyDown(KeyCode.J)){
             distance = GetAbs(transform.position.x - (transform.localScale.x / 2) - circle.transform.position.x);
             int status = GetStatus(distance);
             // Debug.Log("Begin shrink: " + status);
-        } else if (gameObject.CompareTag("Long") && Input.GetButtonUp("Fire1")) {
+        } else if (gameObject.CompareTag("Long") && Input.GetKeyUp(KeyCode.J)) {
             distance = GetAbs(transform.position.x + (transform.localScale.x / 2) - circle.transform.position.x);
             int status = GetStatus(distance);
             // Debug.Log("After shrink: " + status);
             if (status < 3) gameObject.SetActive(false);
         }
-
         bossHealth.fillAmount = Math.Max(health, 0);
     }
 }

@@ -16,11 +16,11 @@ public class GameInitializer : MonoBehaviour
     private float initialOrthographicSize;
     public GameObject HealthBar;
     void Start()
-    {   
+    {
+        beatBar.SetActive(false);
         if (!GameSetting.IsRestarting)
         {
             initialOrthographicSize = Camera.main.orthographicSize;
-            beatBar.SetActive(false);
             restartButton.SetActive(false);
             scoreText.enabled = false;
             Hint.SetActive(false);
@@ -79,7 +79,7 @@ public class GameInitializer : MonoBehaviour
     {
         Debug.Log("Game Resumed");
         Time.timeScale = 1f;
-        beatBar.SetActive(true);
+        // beatBar.SetActive(true);
         HealthBar.SetActive(true);
         restartButton.SetActive(true);
         Hint.SetActive(true);
