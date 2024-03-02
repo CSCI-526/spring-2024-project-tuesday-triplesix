@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    
     public Button restartButtonLeft;
     public GameObject beatBar;
     public GameObject gameOverPanel;

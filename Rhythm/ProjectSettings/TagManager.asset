@@ -13,6 +13,10 @@ TagManager:
   - Platform6
   - Platform7
   - Platform8
+  - Obstacle
+  - Turret
+  - Long
+  - Single
   layers:
   - Default
   - TransparentFX
@@ -20,8 +24,8 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
-  - 
+  - Boss
+  - Player
   - 
   - 
   - 
