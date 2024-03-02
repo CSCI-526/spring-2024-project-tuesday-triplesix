@@ -9,7 +9,8 @@ public class BarFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        offset = transform.position - mainCam.transform.position;
+        offset = new Vector3(4.44f, 6.98f, 9.88f);
+        // Debug.Log("offset:" + offset);
     }
 
     // Update is called once per frame

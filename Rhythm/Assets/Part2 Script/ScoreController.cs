@@ -33,6 +33,6 @@ public class ScoreController : MonoBehaviour
         if (effective != null) {
             effective.GetComponent<BeatControl>().updateScore = true;
         }
-        scoreText.text = "Score: " + score.ToString();
+        // scoreText.text = "Score: " + score.ToString();
     }
 }

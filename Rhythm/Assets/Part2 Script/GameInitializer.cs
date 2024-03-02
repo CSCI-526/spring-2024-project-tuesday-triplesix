@@ -14,15 +14,17 @@ public class GameInitializer : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public float targetOrthographicSize = 25f;
     private float initialOrthographicSize;
+    public GameObject HealthBar;
     void Start()
-    {   
+    {
+        beatBar.SetActive(false);
         if (!GameSetting.IsRestarting)
         {
             initialOrthographicSize = Camera.main.orthographicSize;
-            beatBar.SetActive(false);
             restartButton.SetActive(false);
             scoreText.enabled = false;
             Hint.SetActive(false);
+            HealthBar.SetActive(false);
             initialCameraPosition = Camera.main.transform.position;
             Time.timeScale = 0f;
             if (cameraFollowScript != null) 
@@ -77,7 +79,8 @@ public class GameInitializer : MonoBehaviour
     {
         Debug.Log("Game Resumed");
         Time.timeScale = 1f;
-        beatBar.SetActive(true);
+        // beatBar.SetActive(true);
+        HealthBar.SetActive(true);
         restartButton.SetActive(true);
         Hint.SetActive(true);
         scoreText.enabled = true;

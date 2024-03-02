@@ -5,9 +5,10 @@ using UnityEngine;
 public class UI : MonoBehaviour
 {
     public bool beat = false;
-    public bool pkey = true;
+    public int pkey = 1;
     public int count = 0;
     public bool moving = false;
+    public bool color = false;
 
 
     private void Start()
@@ -35,23 +36,31 @@ public class UI : MonoBehaviour
 
         //yield return new WaitForSeconds(1f);
         float timer = 0f;
-        if (pkey && Input.GetKeyDown(KeyCode.J))
+        if (pkey==1 && Input.GetKeyDown(KeyCode.J))
         {
             moving = true;
             count += 1;
             timer = 0f;
-            pkey = false;
+            pkey = -1;
             yield return new WaitForSeconds(1f);
+            color = true;
+            pkey = 0;
             moving = false;
+            yield return new WaitForSeconds(0.1f);
+            color = false;
         }
-        else if (!pkey && Input.GetKeyDown(KeyCode.K))
+        else if (pkey==0 && Input.GetKeyDown(KeyCode.K))
         {
             moving = true;
             count += 1;
             timer = 0f;
-            pkey = true;
+            pkey = -1;
             yield return new WaitForSeconds(1f);
+            color = true;
+            pkey = 1;
             moving = false;
+            yield return new WaitForSeconds(0.1f);
+            color = false;
         }
 
         yield return null; // Wait for the next frame

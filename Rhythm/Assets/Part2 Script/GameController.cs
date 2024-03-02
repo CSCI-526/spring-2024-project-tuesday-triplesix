@@ -6,7 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    
     public Button restartButtonLeft;
+    public BossController bossControl;
+    public GameObject boss;
+    public GameObject beatBar;
+    public GameObject bSpawn;
     public GameObject gameOverPanel;
     public GameObject victoryPanel;
     public Button restartButton;
@@ -18,11 +23,12 @@ public class GameController : MonoBehaviour
     public float flashDuration = 0.2f;
     public int flashCount = 2;
 
-    public string obstacleTag = "Obstacle";
+    private string obstacleTag = "Invisible";
     public float distanceThreshold = 30f;
 
 
     private Dictionary<GameObject, bool> obstacleStates = new Dictionary<GameObject, bool>();
+    private int turretChoice;
 
     void Start()
     {
@@ -32,6 +38,7 @@ public class GameController : MonoBehaviour
         restartButtonLeft.onClick.AddListener(RestartGame);
         restartButton.onClick.AddListener(RestartGame);
         victoryButton.onClick.AddListener(RestartGame);
+        bossControl = boss.GetComponent<BossController>();
 
 
         GameObject[] obstacles = GameObject.FindGameObjectsWithTag(obstacleTag);
@@ -39,6 +46,9 @@ public class GameController : MonoBehaviour
         {
             obstacleStates.Add(obstacle, false);
         }
+
+        turretChoice = 0;
+
     }
 
     void Update()
@@ -134,6 +144,13 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void StartBeat()
+    {
+        beatBar.SetActive(true);
+        bossControl.autoMoveSpeed = 0f;
+    }
+
 
     // void OnDestroy()
     // {

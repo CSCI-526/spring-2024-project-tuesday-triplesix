@@ -18,5 +18,9 @@ public class TriggerHandler : MonoBehaviour
             // Debug.Log(other.gameObject.name + ": Victory");
             gameController.victory();
         }
+        if (other.CompareTag("Turret") && gameController != null)
+        {
+            gameController.StartBeat();
+        }
     }
 }

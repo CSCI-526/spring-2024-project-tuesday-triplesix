@@ -11,6 +11,14 @@ TagManager:
   - Platform4
   - Platform5
   - Platform6
+  - Platform7
+  - Platform8
+  - Undefined
+  - Turret
+  - Single
+  - Long
+  - Obstacle
+  - Invisible
   layers:
   - Default
   - TransparentFX
