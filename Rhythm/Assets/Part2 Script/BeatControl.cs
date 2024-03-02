@@ -32,15 +32,15 @@ public class BeatControl : MonoBehaviour
     {
         Debug.Log("B");
         if (distance <= perfect) {
-            if (updateScore) health -= 0.3f;
+            if (updateScore) health -= 0.15f;
             return 0;
         }
         else if (distance <= good) {
-            if (updateScore) health -= 0.15f;
+            if (updateScore) health -= 0.1f;
             return 1;
         }
         else if (distance <= pass) {
-            if (updateScore) health -= 0.1f;
+            if (updateScore) health -= 0.05f;
             return 2;
         }
         else {
