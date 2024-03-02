@@ -4,7 +4,7 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     private UI UIObject;
-    public float movementSpeed = 50.0f;
+    private float movementSpeed = 2f;
     private Vector3 originalPosition;
     private float timer = 0f;
     private Renderer objRenderer;
@@ -21,6 +21,7 @@ public class Platform : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("Speed: " + movementSpeed);
         // Check if the player is on the elevator
         if (UIObject.moving)
         {

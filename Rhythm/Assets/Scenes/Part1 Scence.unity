@@ -1999,6 +1999,7 @@ MonoBehaviour:
   pkey: 1
   count: 0
   moving: 0
+  color: 0
 --- !u!1 &179198576
 GameObject:
   m_ObjectHideFlags: 0
@@ -8788,7 +8789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41c7456fd1107eb42a6428cb1941864e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1
 --- !u!1 &783169049
 GameObject:
   m_ObjectHideFlags: 0
@@ -10471,7 +10471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41c7456fd1107eb42a6428cb1941864e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1
 --- !u!61 &917712388
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18702,7 +18701,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41c7456fd1107eb42a6428cb1941864e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
 --- !u!61 &1857534732
 BoxCollider2D:
   m_ObjectHideFlags: 0
