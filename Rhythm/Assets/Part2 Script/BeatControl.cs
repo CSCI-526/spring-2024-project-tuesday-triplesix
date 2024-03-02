@@ -30,6 +30,7 @@ public class BeatControl : MonoBehaviour
 
     int GetStatus(float distance)
     {
+        Debug.Log("B");
         if (distance <= perfect) {
             if (updateScore) health -= 0.3f;
             return 0;
@@ -54,8 +55,9 @@ public class BeatControl : MonoBehaviour
         float distance = 10;
         if (gameObject.CompareTag("Single") && Input.GetKeyDown(KeyCode.J)){
             distance = GetAbs(transform.position.x - circle.transform.position.x);
-            Debug.Log("dist:" + distance);
+            // Debug.Log("dist:" + distance);
             int status = GetStatus(distance);
+            Debug.Log(health);
             // Debug.Log("Jump: " + status);
             if (status < 3) gameObject.SetActive(false);
         } else if (gameObject.CompareTag("Long") && Input.GetKeyDown(KeyCode.J)){
@@ -68,6 +70,7 @@ public class BeatControl : MonoBehaviour
             // Debug.Log("After shrink: " + status);
             if (status < 3) gameObject.SetActive(false);
         }
+        // Debug.Log("health: " + health);
         bossHealth.fillAmount = Math.Max(health, 0);
     }
 }
