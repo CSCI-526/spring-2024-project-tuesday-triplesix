@@ -12,7 +12,6 @@ public class Platform : MonoBehaviour
     private void Start()
     {
         UIObject = FindObjectOfType<UI>();
-        Debug.Log(UIObject);
         originalPosition = transform.position;
         objRenderer = GetComponent<Renderer>();
         originalColor = objRenderer.material.color;
@@ -21,7 +20,6 @@ public class Platform : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Speed: " + movementSpeed);
         // Check if the player is on the elevator
         if (UIObject.moving)
         {

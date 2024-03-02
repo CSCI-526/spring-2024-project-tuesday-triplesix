@@ -6,7 +6,7 @@ public class FourBeatPlatform : MonoBehaviour
 {
     // Start is called before the first frame update
     private BoxCollider2D _boxCollider2D;
-    private float appearInterval = 3.7f; // the beat
+    private float appearInterval = 4f; // the beat
     public float transparency = 0.5f;
     void Start()
     {
@@ -23,15 +23,13 @@ public class FourBeatPlatform : MonoBehaviour
         var flag2 = 0;
         var flag3 = 0;
         var flag4 = 0;
-        var flag5 = 0;
-        var flag6 = 0;
         while (true)
         {
             if (gameObj.CompareTag("Platform3"))
             {
                 Change(boxCollider2D, material);
                 // disable the collider, change the transparency of the material
-                yield return new WaitForSeconds(0.8f);
+                yield return new WaitForSeconds(1f);
                 Change(boxCollider2D, material);
                 yield return new WaitForSeconds(appearInterval); // wait
             }
@@ -39,12 +37,12 @@ public class FourBeatPlatform : MonoBehaviour
             {
                 if (flag2 == 0)
                 {
-                    yield return new WaitForSeconds(0.8f);
+                    yield return new WaitForSeconds(1f);
                     flag2 = 1;
                 }
                 Change(boxCollider2D, material);
                 // disable the collider, change the transparency of the material
-                yield return new WaitForSeconds(0.8f);
+                yield return new WaitForSeconds(1f);
                 Change(boxCollider2D, material);
                 yield return new WaitForSeconds(appearInterval); // wait
             }
@@ -52,12 +50,12 @@ public class FourBeatPlatform : MonoBehaviour
             {
                 if (flag3 == 0)
                 {
-                    yield return new WaitForSeconds(1.6f);
+                    yield return new WaitForSeconds(2f);
                     flag3 = 1;
                 }
                 Change(boxCollider2D, material);
                 // disable the collider, change the transparency of the material
-                yield return new WaitForSeconds(0.8f);
+                yield return new WaitForSeconds(1f);
                 Change(boxCollider2D, material);
                 yield return new WaitForSeconds(appearInterval); // wait
             }
@@ -65,40 +63,14 @@ public class FourBeatPlatform : MonoBehaviour
             {
                 if (flag4 == 0)
                 {
-                    yield return new WaitForSeconds(2.4f);
+                    yield return new WaitForSeconds(3f);
                     flag4 = 1;
                 }
                 Change(boxCollider2D, material);
                 // disable the collider, change the transparency of the material
-                yield return new WaitForSeconds(0.8f);
+                yield return new WaitForSeconds(1f);
                 Change(boxCollider2D, material);
                 yield return new WaitForSeconds(appearInterval); // wait
-            }
-            else if (gameObj.CompareTag("Platform7"))
-            {
-                if (flag5 == 0)
-                {
-                    yield return new WaitForSeconds(3.2f);
-                    flag5 = 1;
-                }
-                Change(boxCollider2D, material);
-                // disable the collider, change the transparency of the material
-                yield return new WaitForSeconds(0.4f);
-                Change(boxCollider2D, material);
-                yield return new WaitForSeconds(appearInterval+0.4f); // wait
-            }
-            else if (gameObj.CompareTag("Platform8"))
-            {
-                if (flag6 == 0)
-                {
-                    yield return new WaitForSeconds(3.6f);
-                    flag6 = 1;
-                }
-                Change(boxCollider2D, material);
-                // disable the collider, change the transparency of the material
-                yield return new WaitForSeconds(0.4f);
-                Change(boxCollider2D, material);
-                yield return new WaitForSeconds(appearInterval+0.4f); // wait
             }
         }
     }
