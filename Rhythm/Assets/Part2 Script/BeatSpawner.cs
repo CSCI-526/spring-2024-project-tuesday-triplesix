@@ -31,11 +31,11 @@ public class BeatSpawner : MonoBehaviour
     public GameObject single;
     public GameObject lasting;
     public GameObject choice;
-    // void Start()
-    // {
-    //     path = -2;
-    //     Debug.Log("StartSpawner:" + path);
-    // }
+    void Start()
+    {
+        path = 0;
+        Debug.Log("StartSpawner:" + path);
+    }
 
     void SetLeftmost()
     {
