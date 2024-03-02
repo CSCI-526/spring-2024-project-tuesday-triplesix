@@ -20,7 +20,7 @@ public class RotatePlatform : MonoBehaviour
         {
             // TODO: how to make it rotate smoothly?
             transform.Rotate(Vector3.forward, 90f);
-            yield return new WaitForSeconds(1f); // wait
+            yield return new WaitForSeconds(0.9f); // wait
         }
     }
 }
