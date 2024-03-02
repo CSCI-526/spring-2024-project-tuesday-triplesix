@@ -21,7 +21,7 @@ public class BossController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bossrb.velocity = new Vector2(autoMoveSpeed, 0);
+        bossrb.velocity = new Vector2(autoMoveSpeed, 0.2f);
         // Debug.Log("Health:" + health.fillAmount);
         if (health.fillAmount == 0) {
             boss.SetActive(false);

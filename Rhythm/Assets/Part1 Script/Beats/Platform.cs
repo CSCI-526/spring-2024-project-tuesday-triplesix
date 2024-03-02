@@ -4,7 +4,7 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     private UI UIObject;
-    public float movementSpeed = 50.0f;
+    private float movementSpeed = 2f;
     private Vector3 originalPosition;
     private float timer = 0f;
     private Renderer objRenderer;
@@ -12,7 +12,6 @@ public class Platform : MonoBehaviour
     private void Start()
     {
         UIObject = FindObjectOfType<UI>();
-        Debug.Log(UIObject);
         originalPosition = transform.position;
         objRenderer = GetComponent<Renderer>();
         originalColor = objRenderer.material.color;

@@ -38,11 +38,11 @@ public class BallController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(foot.transform.position, groundCheckRadius, groundLayer);
         //AutoMoveRight();
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
         }
@@ -51,11 +51,11 @@ public class BallController : MonoBehaviour
         //     bossManager.TakeDamage(10);
         // }
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
             Jump();
         }
-        if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             transform.localScale = squareScale;
         }
@@ -73,11 +73,20 @@ public class BallController : MonoBehaviour
 
     private void Jump()
     {
-        rb.velocity = new Vector2(0, jumpForce * 0.6f);
+        rb.velocity = new Vector2(0, jumpForce * 0.7f);
         isGrounded = false;
 
-        rb.gravityScale = 2f;
-        Invoke("ResetGravity", 0.5f);
+        rb.gravityScale = 3f;
+        Invoke("ResetGravity", 0.4f);
+    }
+
+    private void ResetGravity()
+    {
+        rb.gravityScale = 6f; // 或者是你的默认重力系数
+    }
+
+    public void stop() {
+        moveSpeed = 0;
     }
 }
 
