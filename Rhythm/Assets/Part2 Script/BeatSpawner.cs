@@ -27,7 +27,7 @@ public class BeatSpawner : MonoBehaviour
     private bool finish = false;
     private bool pathSelect = false;
     private bool endPart = false;
-    public int path = -1;
+    private int path = -2;
     public GameObject single;
     public GameObject lasting;
     public GameObject choice;
@@ -53,7 +53,7 @@ public class BeatSpawner : MonoBehaviour
         cnt = 0;
         Debug.Log("Enable: " + path);
         finish = false;
-        timer = intervals[path-1][cnt];
+        if (path >= 0) timer = intervals[path][cnt];
         single.SetActive(false);
         lasting.SetActive(false);
         choice.SetActive(false);
@@ -66,16 +66,16 @@ public class BeatSpawner : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0 && !finish)
         {
-            Spawn(beats[path-1][cnt]);
-            if (cnt == beats[path-1].Length) {
+            Spawn(beats[path][cnt]);
+            if (cnt == beats[path].Length) {
                 finish = true;
-                bossControl.autoMoveSpeed = 5f;
+                bossControl.autoMoveSpeed = 10f;
                 turret.SetActive(false);
                 beatBar.SetActive(false);
             }
             // Debug.Log("path: " + path);
             // Debug.Log("Cnt: " + cnt);
-            if (!finish) timer = intervals[path-1][cnt]; // reset
+            if (!finish) timer = intervals[path][cnt]; // reset
         }
 
     }
