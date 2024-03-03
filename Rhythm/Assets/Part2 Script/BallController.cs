@@ -20,8 +20,8 @@ public class BallController : MonoBehaviour
     private Vector3 originalScale;
     public Vector3 squareScale = new Vector3(1, 1, 1);
 
-    public BoxCollider2D childCollider; 
-    public Vector2 expandedSize = new Vector2(0.03301108f, 0.3f); 
+    public BoxCollider2D childCollider;
+    public Vector2 expandedSize = new Vector2(0.03301108f, 0.3f);
     public Vector2 originalSize = new Vector2(0.03301108f, 0.8f);
 
     public BossManager bossManager;
@@ -40,7 +40,7 @@ public class BallController : MonoBehaviour
         if (canMove)
         {
             isGrounded = Physics2D.OverlapCircle(foot.transform.position, groundCheckRadius, groundLayer);
-        //AutoMoveRight();
+            //AutoMoveRight();
 
             if (Input.GetKey(KeyCode.LeftArrow))
             {
@@ -68,8 +68,8 @@ public class BallController : MonoBehaviour
                 transform.localScale = originalScale;
             }
         }
-        
-   
+
+
     }
     public void DisableMovement()
     {
@@ -102,6 +102,3 @@ public class BallController : MonoBehaviour
 
 
 }
-
-
-
