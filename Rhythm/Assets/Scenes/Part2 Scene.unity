@@ -1358,7 +1358,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartButtonLeft: {fileID: 841626963}
-  bossControl: {fileID: 0}
+  bossControl: {fileID: 1960161446}
+  ballControl: {fileID: 1380942476}
   boss: {fileID: 1960161443}
   beatBar: {fileID: 1753304283}
   bSpawn: {fileID: 1726733205}
@@ -2020,6 +2021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restartButtonLeft: {fileID: 841626963}
   bossControl: {fileID: 0}
+  ballControl: {fileID: 0}
   boss: {fileID: 1960161443}
   beatBar: {fileID: 1753304283}
   bSpawn: {fileID: 1726733205}
@@ -5521,6 +5523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossHealth: {fileID: 384861420}
   beatBar: {fileID: 1753304283}
+  ballControl: {fileID: 1380942476}
 --- !u!1 &936719651
 GameObject:
   m_ObjectHideFlags: 0
@@ -8049,7 +8052,7 @@ GameObject:
   - component: {fileID: 1469067043}
   - component: {fileID: 1469067042}
   - component: {fileID: 1469067041}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: EndWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8533,6 +8536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossHealth: {fileID: 384861420}
   beatBar: {fileID: 1753304283}
+  ballControl: {fileID: 1380942476}
 --- !u!1 &1588108765
 GameObject:
   m_ObjectHideFlags: 0
@@ -9120,6 +9124,7 @@ MonoBehaviour:
   lower: {fileID: 302606562}
   boss: {fileID: 1960161443}
   beatBar: {fileID: 1753304283}
+  ballControl: {fileID: 1380942476}
   single: {fileID: 1776742750}
   lasting: {fileID: 1184278809}
   choice: {fileID: 286198728}
@@ -9953,7 +9958,7 @@ MonoBehaviour:
   flag: {fileID: 2020241869}
   health: {fileID: 384861420}
   healthBar: {fileID: 713476270}
-  autoMoveSpeed: 15
+  autoMoveSpeed: 18
   gameController: {fileID: 267042729}
 --- !u!50 &1960161447
 Rigidbody2D:

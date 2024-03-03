@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
     
     public Button restartButtonLeft;
     public BossController bossControl;
+    public BallController ballControl;
     public GameObject boss;
     public GameObject beatBar;
     public GameObject bSpawn;
@@ -149,6 +150,7 @@ public class GameController : MonoBehaviour
     {
         beatBar.SetActive(true);
         bossControl.autoMoveSpeed = 0f;
+        ballControl.DisableMovement();
     }
 
 

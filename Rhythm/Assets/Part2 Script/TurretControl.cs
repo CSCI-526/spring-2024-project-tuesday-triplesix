@@ -7,6 +7,8 @@ public class TurretControl : MonoBehaviour
 {
     public Image bossHealth;
     public GameObject beatBar;
+
+    public BallController ballControl;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,7 @@ public class TurretControl : MonoBehaviour
         if (bossHealth.fillAmount == 0) {
             gameObject.SetActive(false);
             beatBar.SetActive(false);
+            ballControl.EnableMovement();
         }
     }
 }

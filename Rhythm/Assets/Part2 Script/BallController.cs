@@ -26,6 +26,8 @@ public class BallController : MonoBehaviour
 
     public BossManager bossManager;
     private float moveSpeed = 20f;
+
+    private bool canMove = true;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,35 +37,48 @@ public class BallController : MonoBehaviour
 
     private void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(foot.transform.position, groundCheckRadius, groundLayer);
+        if (canMove)
+        {
+            isGrounded = Physics2D.OverlapCircle(foot.transform.position, groundCheckRadius, groundLayer);
         //AutoMoveRight();
 
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
-        }
-        // if (Input.GetKeyDown(KeyCode.J))
-        // {
-        //     bossManager.TakeDamage(10);
-        // }
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+            }
+            // if (Input.GetKeyDown(KeyCode.J))
+            // {
+            //     bossManager.TakeDamage(10);
+            // }
 
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
-        {
-            Jump();
+            if (Input.GetKey(KeyCode.Space) && isGrounded)
+            {
+                Jump();
+            }
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                transform.localScale = squareScale;
+            }
+            else
+            {
+                transform.localScale = originalScale;
+            }
         }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.localScale = squareScale;
-        }
-        else
-        {
-            transform.localScale = originalScale;
-        }
+        
    
+    }
+    public void DisableMovement()
+    {
+        canMove = false;
+        rb.velocity = Vector2.zero;
+    }
+    public void EnableMovement()
+    {
+        canMove = true;
     }
 
     private void AutoMoveRight()
@@ -77,17 +92,15 @@ public class BallController : MonoBehaviour
         isGrounded = false;
 
         rb.gravityScale = 3f;
-        Invoke("ResetGravity", 0.4f);
+        Invoke("ResetGravity", 0.3f);
     }
 
     private void ResetGravity()
     {
-        rb.gravityScale = 6f; // 或者是你的默认重力系数
+        rb.gravityScale = 6f;
     }
 
-    public void stop() {
-        moveSpeed = 0;
-    }
+
 }
 
 

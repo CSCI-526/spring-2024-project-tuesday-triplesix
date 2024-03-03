@@ -11,6 +11,8 @@ public class BeatSpawner : MonoBehaviour
     public GameObject beatBar;
     private GameObject turret;
     private BossController bossControl;
+
+    public BallController ballControl;
     // in beats, 0 represents single beat, -1 represents choice part, positive number represents long beat
     private int[][] beats = new int[][] {
         new int[] {0,0,0,6,0,5,0,0},
@@ -72,6 +74,7 @@ public class BeatSpawner : MonoBehaviour
                 bossControl.autoMoveSpeed = 10f;
                 turret.SetActive(false);
                 beatBar.SetActive(false);
+                ballControl.EnableMovement();
             }
             // Debug.Log("path: " + path);
             // Debug.Log("Cnt: " + cnt);
