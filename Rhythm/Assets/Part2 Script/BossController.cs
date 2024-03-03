@@ -8,6 +8,7 @@ public class BossController : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject boss;
+    public GameObject flag;
     public Image health;
     public GameObject healthBar;
     private Rigidbody2D bossrb;
@@ -26,6 +27,7 @@ public class BossController : MonoBehaviour
         if (health.fillAmount == 0) {
             boss.SetActive(false);
             healthBar.SetActive(false);
+            flag.SetActive(true);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)

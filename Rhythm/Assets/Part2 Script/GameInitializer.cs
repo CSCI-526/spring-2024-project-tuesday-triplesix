@@ -6,6 +6,7 @@ public class GameInitializer : MonoBehaviour
     public GameObject player;
     public GameObject restartButton;
     public Transform cameraTarget;
+    public GameObject victoryFlag;
     public GameObject Hint;
     public float cameraMoveSpeed = 20.0f;
     private Vector3 initialCameraPosition;
@@ -18,6 +19,7 @@ public class GameInitializer : MonoBehaviour
     void Start()
     {
         beatBar.SetActive(false);
+        victoryFlag.SetActive(false);
         if (!GameSetting.IsRestarting)
         {
             initialOrthographicSize = Camera.main.orthographicSize;
