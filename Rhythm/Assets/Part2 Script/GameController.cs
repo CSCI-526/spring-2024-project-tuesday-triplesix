@@ -23,14 +23,15 @@ public class GameController : MonoBehaviour
 
     public float flashDuration = 0.2f;
     public int flashCount = 2;
-
+    public MusicController musicController;
     private string obstacleTag = "Invisible";
     public float distanceThreshold = 30f;
-
-
+    public AudioSource Music2;
+    public AudioSource Music1;
+    public AudioSource MusicStart;
     private Dictionary<GameObject, bool> obstacleStates = new Dictionary<GameObject, bool>();
     private int turretChoice;
-
+    private int currentMusic;
     void Start()
     {
         Debug.Log("Start");
@@ -40,7 +41,7 @@ public class GameController : MonoBehaviour
         restartButton.onClick.AddListener(RestartGame);
         victoryButton.onClick.AddListener(RestartGame);
         bossControl = boss.GetComponent<BossController>();
-
+        currentMusic = 0;
 
         GameObject[] obstacles = GameObject.FindGameObjectsWithTag(obstacleTag);
         foreach (GameObject obstacle in obstacles)
@@ -148,9 +149,15 @@ public class GameController : MonoBehaviour
 
     public void StartBeat()
     {
+        AudioSource[] list = new AudioSource[] { MusicStart, Music1, Music2 };
         beatBar.SetActive(true);
         bossControl.autoMoveSpeed = 0f;
         ballControl.DisableMovement();
+        float duration = 3f;
+
+        StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(list[currentMusic], list[currentMusic+1], duration));
+        currentMusic = currentMusic + 1;
+
     }
 
 
