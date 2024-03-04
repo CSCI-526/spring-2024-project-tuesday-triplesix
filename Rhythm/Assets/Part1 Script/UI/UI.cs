@@ -22,7 +22,7 @@ public class UI : MonoBehaviour
         // Check if the UI object is active
         if (beat)
         {
-            StartCoroutine(CheckInputTiming());
+            //StartCoroutine(CheckInputTiming());
         }
         else
         {

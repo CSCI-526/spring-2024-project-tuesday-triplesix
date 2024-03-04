@@ -19,6 +19,7 @@ TagManager:
   - Long
   - Obstacle
   - Invisible
+  - elevator
   layers:
   - Default
   - TransparentFX

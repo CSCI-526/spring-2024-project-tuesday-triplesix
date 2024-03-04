@@ -31,7 +31,7 @@ public class ScoreController : MonoBehaviour
     {
         GameObject effective = GetLeftmost();
         if (effective != null) {
-            effective.GetComponent<BeatControl>().updateScore = true;
+            effective.GetComponent<BeatControl_1>().updateScore = true;
         }
         // scoreText.text = "Score: " + score.ToString();
     }
