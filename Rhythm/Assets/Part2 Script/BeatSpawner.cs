@@ -71,7 +71,7 @@ public class BeatSpawner : MonoBehaviour
             Spawn(beats[path][cnt]);
             if (cnt == beats[path].Length) {
                 finish = true;
-                bossControl.autoMoveSpeed = 10f;
+                bossControl.autoMoveSpeed = 18f;
                 turret.SetActive(false);
                 beatBar.SetActive(false);
                 ballControl.EnableMovement();
