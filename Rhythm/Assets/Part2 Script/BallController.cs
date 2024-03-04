@@ -42,11 +42,11 @@ public class BallController : MonoBehaviour
             isGrounded = Physics2D.OverlapCircle(foot.transform.position, groundCheckRadius, groundLayer);
             //AutoMoveRight();
 
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
             }
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
                 transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
             }
@@ -59,7 +59,7 @@ public class BallController : MonoBehaviour
             {
                 Jump();
             }
-            if (Input.GetKey(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             {
                 transform.localScale = squareScale;
             }

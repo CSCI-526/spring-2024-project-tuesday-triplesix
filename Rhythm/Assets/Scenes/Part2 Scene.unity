@@ -1735,7 +1735,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jump: Space\nShrink: \u2193\nMove: \u2190 \u2192\nHit the Beat: J"
+  m_text: "Jump: Space\nShrink: \u2193/S\nMove: \u2190 \u2192/AD\nHit the Beat: J"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
