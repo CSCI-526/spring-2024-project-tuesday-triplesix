@@ -13835,7 +13835,7 @@ GameObject:
   - component: {fileID: 1212046386}
   - component: {fileID: 1212046385}
   - component: {fileID: 1212046383}
-  - component: {fileID: 1212046384}
+  - component: {fileID: 1212046387}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -13932,20 +13932,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1212046384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212046382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b54dca534124b4d32ad9c8db384116ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1212046383}
 --- !u!222 &1212046385
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13973,6 +13959,20 @@ RectTransform:
   m_AnchoredPosition: {x: -133.71252, y: -91.48749}
   m_SizeDelta: {x: 13.5671, y: 4.237671}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1212046387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212046382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a17dde582c534a4bba348003f1db8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 0}
 --- !u!1 &1224733780
 GameObject:
   m_ObjectHideFlags: 0

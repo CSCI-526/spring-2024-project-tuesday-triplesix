@@ -14,12 +14,12 @@ public class BeatControl_1 : MonoBehaviour
     private float good = 1.0f;
     private float pass = 1.5f;
     private float health = 5;
-    private ScoreController sc;
+    private ScoreController_1 sc;
     // Start is called before the first frame update
 
     void Start()
     {
-        sc = scoreText.GetComponent<ScoreController>();
+        sc = scoreText.GetComponent<ScoreController_1>();
     }
     float GetAbs(float tar) 
     {
