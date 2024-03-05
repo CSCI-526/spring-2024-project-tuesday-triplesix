@@ -24,6 +24,7 @@ public class BeatSpawner_1 : MonoBehaviour
         new float[] {0.03f,1f,1f}
     };
     private float timer;
+    private float timer_2;
     private int cnt = 0;
     private bool finish = false;
     private bool pathSelect = false;
@@ -55,6 +56,7 @@ public class BeatSpawner_1 : MonoBehaviour
         Debug.Log("Enable: " + path);
         finish = false;
         timer = 0.70f;
+        timer_2 = timer + 0.55f;
         single.SetActive(false);
         lasting.SetActive(false);
         choice.SetActive(false);
@@ -65,12 +67,20 @@ public class BeatSpawner_1 : MonoBehaviour
     void LateUpdate()
     {
         timer -= Time.deltaTime;
+        timer_2 -= Time.deltaTime;
         if (timer <= 0 && !finish)
         {
             Spawn(0);
             // Debug.Log("path: " + path);
             // Debug.Log("Cnt: " + cnt);
             if (!finish) timer = 2.2f; // reset
+        }
+        if (timer_2 <= 0 && !finish)
+        {
+            Spawn(0);
+            // Debug.Log("path: " + path);
+            // Debug.Log("Cnt: " + cnt);
+            if (!finish) timer_2 = 2.2f; // reset
         }
 
     }

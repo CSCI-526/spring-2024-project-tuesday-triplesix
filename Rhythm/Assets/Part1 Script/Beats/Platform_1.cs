@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Platform : MonoBehaviour
+public class Platform_1 : MonoBehaviour
 {
     private UI UIObject;
     private float movementSpeed = 1.4f;
