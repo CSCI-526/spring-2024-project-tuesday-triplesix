@@ -9,7 +9,7 @@ public class BeatSpawner : MonoBehaviour
     public GameObject lower;
     public GameObject boss;
     public GameObject beatBar;
-    private GameObject turret;
+    public GameObject turret;
     private BossController bossControl;
 
     public BallController ballControl;

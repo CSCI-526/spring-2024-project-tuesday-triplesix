@@ -7,12 +7,14 @@ public class TurretControl : MonoBehaviour
 {
     public Image bossHealth;
     public GameObject beatBar;
+    public GameObject aSpawner;
+    private AmmoSpawn ammoSpawn;
 
     public BallController ballControl;
     // Start is called before the first frame update
     void Start()
     {
-        
+        ammoSpawn = aSpawner.GetComponent<AmmoSpawn>();
     }
 
     // Update is called once per frame
@@ -23,5 +25,9 @@ public class TurretControl : MonoBehaviour
             beatBar.SetActive(false);
             ballControl.EnableMovement();
         }
+    }
+
+    public void SpawnBullet(int t) {
+        ammoSpawn.Spawn(t);
     }
 }

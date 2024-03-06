@@ -8,6 +8,8 @@ using System;
 public class BeatControl : MonoBehaviour
 {
     public GameObject circle;
+    public GameObject turret;
+    public GameObject beatSpawner;
     public TextMeshProUGUI scoreText;
     public bool updateScore = false;
     public Image bossHealth;
@@ -16,11 +18,16 @@ public class BeatControl : MonoBehaviour
     private float pass = 1.5f;
     private float health;
     private ScoreController sc;
+    private BeatSpawner bSpawn;
+    private TurretControl tControl;
     // Start is called before the first frame update
 
     void Start()
     {
         sc = scoreText.GetComponent<ScoreController>();
+        bSpawn = beatSpawner.GetComponent<BeatSpawner>();
+        turret = bSpawn.turret;
+        tControl = turret.GetComponent<TurretControl>();
     }
     float GetAbs(float tar) 
     {
@@ -32,15 +39,15 @@ public class BeatControl : MonoBehaviour
     {
         Debug.Log("B");
         if (distance <= perfect) {
-            if (updateScore) health -= 0.15f;
+            if (updateScore) tControl.SpawnBullet(0);
             return 0;
         }
         else if (distance <= good) {
-            if (updateScore) health -= 0.1f;
+            if (updateScore) tControl.SpawnBullet(1);
             return 1;
         }
         else if (distance <= pass) {
-            if (updateScore) health -= 0.05f;
+            if (updateScore) tControl.SpawnBullet(2);
             return 2;
         }
         else {
