@@ -10,7 +10,7 @@ public class TriggerHandler : MonoBehaviour
     {
         if (other.CompareTag("Obstacle") && gameController != null && !Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.RightControl))
         {
-            // Debug.Log(other.gameObject.name + " : " + gameObject.name);
+            Debug.Log(other.gameObject.name + " : " + gameObject.name);
             gameController.GameOver();
         }
         if (other.CompareTag("Finish") && gameController != null)
@@ -20,6 +20,7 @@ public class TriggerHandler : MonoBehaviour
         }
         if (other.CompareTag("Turret") && gameController != null)
         {
+            Debug.Log("ssssssss");
             gameController.StartBeat();
         }
     }
