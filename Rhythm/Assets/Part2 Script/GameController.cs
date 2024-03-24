@@ -154,7 +154,7 @@ public class GameController : MonoBehaviour
         bossControl.autoMoveSpeed = 0f;
         ballControl.DisableMovement();
         float duration = 3f;
-
+        Debug.Log(currentMusic);
         StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(list[currentMusic], list[currentMusic+1], duration));
         currentMusic = currentMusic + 1;
 
