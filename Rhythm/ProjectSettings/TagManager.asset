@@ -20,6 +20,11 @@ TagManager:
   - Obstacle
   - Invisible
   - elevator
+  - Ammo2
+  - Ammo1
+  - Ammo3
+  - Vocal
+  - Beat
   layers:
   - Default
   - TransparentFX

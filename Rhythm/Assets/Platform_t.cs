@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Platform : MonoBehaviour
+public class Platform_t : MonoBehaviour
 {
     private UI UIObject;
     private float movementSpeed = 1.4f;
@@ -12,6 +12,9 @@ public class Platform : MonoBehaviour
     public GameObject beatsBar;
     private bool done = false;
     private bool moving;
+    public AudioSource audioSource1;
+    public AudioSource audioSource2;
+
     private void Start()
     {
         UIObject = FindObjectOfType<UI>();
@@ -49,7 +52,7 @@ public class Platform : MonoBehaviour
 
             }
         }
-        else if(transform.position.y > originalPosition.y && !done)
+        else if (transform.position.y > originalPosition.y && !done)
         {
             transform.Translate(Vector3.down * movementSpeed * Time.deltaTime);
         }
@@ -85,7 +88,7 @@ public class Platform : MonoBehaviour
         }
     }
 
-        void ChangeObjectColor(Color newColor)
+    void ChangeObjectColor(Color newColor)
     {
         // objRenderer.material.color = newColor;
         objRenderer.material = new Material(objRenderer.material);
@@ -129,6 +132,10 @@ public class Platform : MonoBehaviour
             {
                 Debug.LogError("Renderer component not found in the children of beatsBar GameObject.");
             }
+            GameObject[] beats = GameObject.FindGameObjectsWithTag("Beat");
+            GameObject beat = beats[0];
+            BeatSpawner_t b = beat.GetComponent<BeatSpawner_t>();
+            b.beat_start();
         }
         else
         {
@@ -160,6 +167,8 @@ public class Platform : MonoBehaviour
         {
             Debug.LogError("beatsBar GameObject not assigned.");
         }
+        audioSource1.Stop();
+        audioSource2.Stop();
     }
 
     public void allowMove()
