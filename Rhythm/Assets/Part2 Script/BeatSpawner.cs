@@ -33,6 +33,9 @@ public class BeatSpawner : MonoBehaviour
     public GameObject single;
     public GameObject lasting;
     public GameObject choice;
+    public CanvasGroup perfectTextCanvasGroup;
+    public CanvasGroup greatTextCanvasGroup;
+    public CanvasGroup missingTextCanvasGroup;
     void Start()
     {
         path = 0;
@@ -76,6 +79,9 @@ public class BeatSpawner : MonoBehaviour
                 turret.SetActive(false);
                 beatBar.SetActive(false);
                 ballControl.EnableMovement();
+                perfectTextCanvasGroup.alpha = 0;
+                greatTextCanvasGroup.alpha = 0;
+                missingTextCanvasGroup.alpha = 0;
             }
             // Debug.Log("path: " + path);
             // Debug.Log("Cnt: " + cnt);
