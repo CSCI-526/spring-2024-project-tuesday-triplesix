@@ -13,9 +13,9 @@ public class BeatControl : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public bool updateScore = false;
     public Image bossHealth;
-    private float perfect = 0.5f;
-    private float good = 1.0f;
-    private float pass = 1.5f;
+    private float perfect = 0.2f;
+    private float good = 0.5f;
+    private float pass = 1f;
     private float health;
     private ScoreController sc;
     private BeatSpawner bSpawn;
