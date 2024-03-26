@@ -8,18 +8,24 @@ public class PerfectionController : MonoBehaviour
     public CanvasGroup perfectTextCanvasGroup;
     public CanvasGroup greatTextCanvasGroup;
     public CanvasGroup normalTextCanvasGroup;
+    private Coroutine currentFadeCoroutine;
     public void ShowStatusText(int status)
-    {
+    {   
+        if (currentFadeCoroutine != null)
+        {
+            StopCoroutine(currentFadeCoroutine);
+            ResetCanvasGroupsAlpha();
+        }
         switch (status)
         {
             case 0:
-                StartCoroutine(FadeText(perfectTextCanvasGroup, true));
+                currentFadeCoroutine = StartCoroutine(FadeText(perfectTextCanvasGroup, true));
                 break;
             case 1:
-                StartCoroutine(FadeText(greatTextCanvasGroup, true));
+                currentFadeCoroutine = StartCoroutine(FadeText(greatTextCanvasGroup, true));
                 break;
             case 2:
-                StartCoroutine(FadeText(normalTextCanvasGroup, true));
+                currentFadeCoroutine = StartCoroutine(FadeText(normalTextCanvasGroup, true));
                 break;
         }
     }
@@ -41,5 +47,11 @@ public class PerfectionController : MonoBehaviour
             yield return new WaitForSeconds(0f);
             StartCoroutine(FadeText(canvasGroup, false, 0.5f));
         }
+    }
+    private void ResetCanvasGroupsAlpha()
+    {
+        perfectTextCanvasGroup.alpha = 0f;
+        greatTextCanvasGroup.alpha = 0f;
+        normalTextCanvasGroup.alpha = 0f;
     }
 }
