@@ -9,15 +9,21 @@ public class MainMenu : MonoBehaviour
     public Button playButton;
     public GameObject LevelPanel;
     public Button Level1Button;
+    public Button close;
     public void Start()
     {
         playButton.onClick.AddListener(LevelSelection);
         Level1Button.onClick.AddListener(Play);
+        close.onClick.AddListener(Close);
     }
     public void LevelSelection()
     {   
         LevelPanel.SetActive(true);
 
+    }
+    public void Close()
+    {
+        LevelPanel.SetActive(false);
     }
     public void Play()
     {

@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class GameInitializer : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameInitializer : MonoBehaviour
     public GameObject Hint;
     public float cameraMoveSpeed = 20.0f;
     private Vector3 initialCameraPosition;
+    public GameObject MainMenuButton;
     public CameraFollow cameraFollowScript;
     public GameObject beatBar;
     public TextMeshProUGUI scoreText;
@@ -26,6 +28,7 @@ public class GameInitializer : MonoBehaviour
             restartButton.SetActive(false);
             scoreText.enabled = false;
             Hint.SetActive(false);
+            MainMenuButton.SetActive(false);
             HealthBar.SetActive(false);
             initialCameraPosition = Camera.main.transform.position;
             Time.timeScale = 0f;
@@ -82,6 +85,7 @@ public class GameInitializer : MonoBehaviour
         Debug.Log("Game Resumed");
         Time.timeScale = 1f;
         // beatBar.SetActive(true);
+        MainMenuButton.SetActive(true);
         HealthBar.SetActive(true);
         restartButton.SetActive(true);
         Hint.SetActive(true);
