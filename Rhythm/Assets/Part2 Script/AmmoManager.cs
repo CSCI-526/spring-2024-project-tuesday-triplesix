@@ -32,13 +32,13 @@ public class AmmoManager : MonoBehaviour
         Debug.Log("collision:" + collision.gameObject.tag);
         health = bossHealth.fillAmount;
         if (collision.gameObject.CompareTag("Boss") && gameObject.CompareTag("Ammo1")) {
-            health -= 0.1f;
+            health -= 0.12f;
             // Debug.Log("Boss health: -15");
         } else if (collision.gameObject.CompareTag("Boss") && gameObject.CompareTag("Ammo2")) {
-            health -= 0.05f;
+            health -= 0.08f;
             // Debug.Log("Boss health: -10");
         } else if (collision.gameObject.CompareTag("Boss") && gameObject.CompareTag("Ammo3")) {
-            health -= 0.02f;
+            health -= 0.03f;
             // Debug.Log("Boss health: -5");
         }
         bossHealth.fillAmount = Math.Max(health, 0);
