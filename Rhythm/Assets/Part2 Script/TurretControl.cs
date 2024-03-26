@@ -11,6 +11,9 @@ public class TurretControl : MonoBehaviour
     private AmmoSpawn ammoSpawn;
 
     public BallController ballControl;
+    public CanvasGroup perfectTextCanvasGroup;
+    public CanvasGroup greatTextCanvasGroup;
+    public CanvasGroup missingTextCanvasGroup;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,9 @@ public class TurretControl : MonoBehaviour
             gameObject.SetActive(false);
             beatBar.SetActive(false);
             ballControl.EnableMovement();
+            perfectTextCanvasGroup.alpha = 0;
+            greatTextCanvasGroup.alpha = 0;
+            missingTextCanvasGroup.alpha = 0;
         }
     }
 
