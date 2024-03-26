@@ -15,6 +15,10 @@ public class BeatControl_t : MonoBehaviour
     private float pass = 1.5f;
     private float health = 5;
     private ScoreController_1 sc;
+    public CanvasGroup perfectTextCanvasGroup;
+    public CanvasGroup greatTextCanvasGroup;
+    public CanvasGroup normalTextCanvasGroup;
+    public PerfectionController pc;
     // Start is called before the first frame update
 
     void Start()
@@ -37,18 +41,21 @@ public class BeatControl_t : MonoBehaviour
         if (distance <= perfect) {
             if (updateScore) health -= 1f;
             pfu.allowMove();
+            pc.ShowStatusText(0);
             return 0;
         }
         else if (distance <= good) {
             if (updateScore) health -= 1f;
             pfu.allowMove();
             //platform.MoveUpCoroutine();
+            pc.ShowStatusText(1);
             return 1;
         }
         else if (distance <= pass) {
             if (updateScore) health -= 1f;
             pfu.allowMove();
             //platform.MoveUpCoroutine();
+            pc.ShowStatusText(2);
             return 2;
         }
         else {

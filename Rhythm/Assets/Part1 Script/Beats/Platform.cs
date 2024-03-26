@@ -64,17 +64,6 @@ public class Platform : MonoBehaviour
         //}
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            if (timer == 0f)
-            {
-                UIObject.beat = true;
-                ShowBeatsBar();
-            }
-        }
-    }
 
     public void collision_()
     {
