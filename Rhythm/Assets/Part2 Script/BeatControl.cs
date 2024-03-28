@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 using System;
 
+
 public class BeatControl : MonoBehaviour
 {
     public GameObject circle;
@@ -16,6 +17,9 @@ public class BeatControl : MonoBehaviour
     private float perfect = 0.2f;
     private float good = 0.5f;
     private float pass = 1f;
+    private int perfectCnt = 0;
+    private int goodCnt = 0;
+    private int passCnt = 0;
     private float health;
     private ScoreController sc;
     private BeatSpawner bSpawn;
@@ -76,16 +80,19 @@ public class BeatControl : MonoBehaviour
         Debug.Log("B");
         if (distance <= perfect) {
             if (updateScore) tControl.SpawnBullet(0);
+            tControl.addCnt(0);
             pc.ShowStatusText(0);
             return 0;
         }
         else if (distance <= good) {
             if (updateScore) tControl.SpawnBullet(1);
+            tControl.addCnt(1);
             pc.ShowStatusText(1);
             return 1;
         }
         else if (distance <= pass) {
             if (updateScore) tControl.SpawnBullet(2);
+            tControl.addCnt(2);
             pc.ShowStatusText(2);
             return 2;
         }
@@ -120,4 +127,12 @@ public class BeatControl : MonoBehaviour
         // Debug.Log("health: " + health);
         bossHealth.fillAmount = Math.Max(health, 0);
     }
+
+    // void OnDisable()
+    // {
+    //     Debug.Log("disabled");
+    //     string fileName = "analytics.txt";
+    //     string content = string.Format("Perfect: {0}\nGood: {1}\nPass: {2}\n", perfectCnt, goodCnt, passCnt);
+    //     File.WriteAllText(fileName, content);
+    // }
 }

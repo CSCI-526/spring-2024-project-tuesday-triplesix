@@ -68,9 +68,9 @@ public class BeatSpawner : MonoBehaviour
         SetLeftmost();
     }
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
-        timer -= Time.deltaTime;
+        timer -= Time.fixedDeltaTime;
         if (timer <= 0 && !finish)
         {
             if (cnt < beats[path].Length) Spawn(beats[path][cnt]);
