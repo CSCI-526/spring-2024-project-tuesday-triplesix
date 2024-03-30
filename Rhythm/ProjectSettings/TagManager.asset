@@ -25,6 +25,7 @@ TagManager:
   - Ammo3
   - Vocal
   - Beat
+  - Boss
   layers:
   - Default
   - TransparentFX
