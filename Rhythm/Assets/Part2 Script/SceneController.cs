@@ -9,7 +9,9 @@ public class SceneController : MonoBehaviour
     public float fadeDuration = 1f;
 
     private void Awake()
+    
     {
+        fadeGroup.alpha = 1;
         DontDestroyOnLoad(gameObject);
 
         StartCoroutine(Fade(0));
