@@ -12,7 +12,7 @@ public class SceneController : MonoBehaviour
     
     {
         fadeGroup.alpha = 1;
-        DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject);
 
         StartCoroutine(Fade(0));
     }
@@ -28,7 +28,7 @@ public class SceneController : MonoBehaviour
 
         SceneManager.LoadScene(sceneName);
 
-        yield return Fade(0);
+        // yield return Fade(0);
     }
 
     private IEnumerator Fade(float targetAlpha)
