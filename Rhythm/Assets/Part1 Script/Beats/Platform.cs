@@ -24,7 +24,7 @@ public class Platform : MonoBehaviour
     void Update()
     {
         // Check if the player is on the elevator
-        if (moving)
+        if (moving && UIObject.beat)
         {
             // Move the elevator upward
             if (transform.position.y >= originalPosition.y + 10)
