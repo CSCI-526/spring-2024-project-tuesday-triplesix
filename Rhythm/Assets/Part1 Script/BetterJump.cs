@@ -71,11 +71,5 @@ public class BetterJump : MonoBehaviour
             jumpCount--;
             jumpPress = false;
         }
-        else if (jumpPress && jumpCount > 0 && !isOnGround)
-        {
-            rb.velocity = new Vector2(rb.velocity.x,jumpForce);
-            jumpCount--;
-            jumpPress = false;
-        }
     }
 }
