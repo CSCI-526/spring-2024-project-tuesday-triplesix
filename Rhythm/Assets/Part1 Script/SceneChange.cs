@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneChange : MonoBehaviour
 {
     // Start is called before the first frame update
+    public SceneController sceneController;
     void Start()
     {
         
@@ -15,7 +16,8 @@ public class SceneChange : MonoBehaviour
     void Update()
     {
         if (transform.position.y < -40) {
-            SceneManager.LoadScene("Part2 Scene");
+            sceneController.LoadScene("Part2 Scene");
+            // SceneManager.LoadScene("Part2 Scene");
         }
     }
 }

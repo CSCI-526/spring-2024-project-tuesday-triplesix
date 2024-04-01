@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public Button playButton;
     public GameObject LevelPanel;
     public Button Level1Button;
+    public SceneController sceneController;
     public Button close;
     public void Start()
     {
@@ -27,11 +28,13 @@ public class MainMenu : MonoBehaviour
     }
     public void Play()
     {
-        SceneManager.LoadScene("Part1 Scence");
+        // SceneManager.LoadScene("Part1 Scence");
+        sceneController.LoadScene("Part1 Scence");
     }
     public void PlayTutorial()
     {
-        SceneManager.LoadSceneAsync(1);
+        // SceneManager.LoadSceneAsync(1);
+        sceneController.LoadScene("Tutorial");
 
     }
 
