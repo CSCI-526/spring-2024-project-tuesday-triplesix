@@ -2163,6 +2163,7 @@ MonoBehaviour:
   Music2: {fileID: 1166279760}
   Music1: {fileID: 1820553769}
   MusicStart: {fileID: 1163861956}
+  sceneController: {fileID: 712527551}
 --- !u!1 &286198728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2977,6 +2978,7 @@ MonoBehaviour:
   Music2: {fileID: 0}
   Music1: {fileID: 0}
   MusicStart: {fileID: 0}
+  sceneController: {fileID: 712527551}
 --- !u!1 &427688279
 GameObject:
   m_ObjectHideFlags: 0
@@ -5927,6 +5929,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3513716648935537890, guid: 69e37111612c28d4aa88dd2bd76247e9, type: 3}
   m_PrefabInstance: {fileID: 712527549}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &712527551 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 48454177714992788, guid: 69e37111612c28d4aa88dd2bd76247e9, type: 3}
+  m_PrefabInstance: {fileID: 712527549}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b7c168c4b51f843a50bc2c59ce5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &713476270
 GameObject:
   m_ObjectHideFlags: 0

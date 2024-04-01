@@ -32,9 +32,13 @@ public class GameController : MonoBehaviour
     private Dictionary<GameObject, bool> obstacleStates = new Dictionary<GameObject, bool>();
     private int turretChoice;
     private int currentMusic;
+    public SceneController sceneController;
+
     void Start()
     {
         Debug.Log("Start");
+        Time.timeScale = 1f;
+
         gameOverPanel.SetActive(false);
         victoryPanel.SetActive(false);
         restartButtonLeft.onClick.AddListener(RestartGame);
@@ -144,7 +148,9 @@ public class GameController : MonoBehaviour
     {   
         GameSetting.IsRestarting = true;
         Time.timeScale = 1f;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // sceneController.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void StartBeat()
