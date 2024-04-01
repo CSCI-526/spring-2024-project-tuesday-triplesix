@@ -8,6 +8,9 @@ using System;
 public class BeatControl_t : MonoBehaviour
 {
     public GameObject circle;
+    public GameObject player;
+    public GameObject ammoSpawner;
+    public AmmoSpawn aSpawn;
     public TextMeshProUGUI scoreText;
     public bool updateScore = false;
     private float perfect = 0.5f;
@@ -24,6 +27,7 @@ public class BeatControl_t : MonoBehaviour
     void Start()
     {
         sc = scoreText.GetComponent<ScoreController_1>();
+        aSpawn = ammoSpawner.GetComponent<AmmoSpawn>();
     }
     float GetAbs(float tar) 
     {
@@ -39,21 +43,21 @@ public class BeatControl_t : MonoBehaviour
 
         Debug.Log("B");
         if (distance <= perfect) {
-            if (updateScore) health -= 1f;
-            pfu.allowMove();
+            if (player.transform.position.x > 91) aSpawn.Spawn(0);
+            else pfu.allowMove();
             pc.ShowStatusText(0);
             return 0;
         }
         else if (distance <= good) {
-            if (updateScore) health -= 1f;
-            pfu.allowMove();
+            if (player.transform.position.x > 91) aSpawn.Spawn(1);
+            else pfu.allowMove();
             //platform.MoveUpCoroutine();
             pc.ShowStatusText(1);
             return 1;
         }
         else if (distance <= pass) {
-            if (updateScore) health -= 1f;
-            pfu.allowMove();
+            if (player.transform.position.x > 91) aSpawn.Spawn(2);
+            else pfu.allowMove();
             //platform.MoveUpCoroutine();
             pc.ShowStatusText(2);
             return 2;
