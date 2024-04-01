@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private UI UIObject;
     private Rigidbody2D rb;
     private bool hasKey = false;
+    public bool canMove = true;
     
     void Start()
     {
@@ -18,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(!UIObject.beat)
+        if(!UIObject.beat && canMove)
         {
             Move();
         }
@@ -52,5 +53,10 @@ public class PlayerController : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         Vector2 movement = new Vector2(horizontalInput, 0f);
         transform.Translate(movement * moveSpeed * Time.deltaTime);
+    }
+
+    public void ChangeMovement(bool stat)
+    {
+        canMove = stat;
     }
 }
