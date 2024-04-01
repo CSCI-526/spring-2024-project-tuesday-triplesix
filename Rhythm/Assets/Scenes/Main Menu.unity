@@ -293,7 +293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 451, y: 204}
+  m_AnchoredPosition: {x: 476, y: 204}
   m_SizeDelta: {x: 215.8309, y: 59.2448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &84806561
@@ -1046,16 +1046,16 @@ RectTransform:
   m_GameObject: {fileID: 903474209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8097503, y: 0.8097503, z: 0.8097503}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2134756725}
-  m_Father: {fileID: 1499273433}
+  m_Father: {fileID: 1714561114}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -786, y: -87}
-  m_SizeDelta: {x: 600, y: 150}
+  m_AnchoredPosition: {x: -503, y: 204}
+  m_SizeDelta: {x: 215.8309, y: 59.2448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &903474211
 MonoBehaviour:
@@ -1126,7 +1126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.59126914, g: 0.69391227, b: 0.9716981, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1187,7 +1187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -787, y: 62}
+  m_AnchoredPosition: {x: -784, y: -7}
   m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926165554
@@ -1551,7 +1551,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -222, y: 204}
+  m_AnchoredPosition: {x: 152.99994, y: 203.99997}
   m_SizeDelta: {x: 215.8309, y: 59.2448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1145106221
@@ -2257,7 +2257,6 @@ Transform:
   m_Children:
   - {fileID: 926165553}
   - {fileID: 1209674435}
-  - {fileID: 903474210}
   m_Father: {fileID: 489556177}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529543904
@@ -2424,6 +2423,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 903474210}
   - {fileID: 1848857396}
   - {fileID: 1145106220}
   - {fileID: 2106625889}
@@ -2511,7 +2511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -535, y: 204}
+  m_AnchoredPosition: {x: -190, y: 204}
   m_SizeDelta: {x: 215.8309, y: 59.2448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1848857397
@@ -2632,7 +2632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -535, y: 72}
+  m_AnchoredPosition: {x: -190.00012, y: 77.99998}
   m_SizeDelta: {x: 215.8309, y: 59.2448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1858619488
@@ -2753,7 +2753,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 107.92, y: 204}
+  m_AnchoredPosition: {x: -503, y: 78}
   m_SizeDelta: {x: 215.8309, y: 59.2448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2106625890
@@ -2904,8 +2904,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283171054
-  m_fontColor: {r: 0.9339623, g: 0, b: 0.2967291, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2922,13 +2922,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
