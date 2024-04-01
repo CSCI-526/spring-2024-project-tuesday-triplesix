@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using System.IO;
 
 public class Platform : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class Platform : MonoBehaviour
     private Vector3 originalPosition;
     private float timer = 0f;
     private Renderer objRenderer;
+    private float ana_startTime = 0f;
+    private float ana_endTime = 0f;
+    private float ana_timeDifference;
     private Color originalColor;
     public GameObject beatsBar;
     private bool done = false;
@@ -35,6 +39,11 @@ public class Platform : MonoBehaviour
                 moving = false;
                 done = true;
                 HideBeatsBar();
+                ana_endTime = Time.time;
+                ana_timeDifference = ana_endTime - ana_startTime;
+                string fileName = "analytics_puzzle_time_1.txt";
+                string content = string.Format("Time : {0}\n", ana_timeDifference);
+                File.AppendAllText(fileName, content);
             }
             else
             {
@@ -69,6 +78,7 @@ public class Platform : MonoBehaviour
     {
         if (timer == 0f)
         {
+            ana_startTime = Time.time;
             UIObject.beat = true;
             ShowBeatsBar();
         }

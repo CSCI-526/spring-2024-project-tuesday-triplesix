@@ -1,12 +1,16 @@
 using System.Collections;
 using UnityEngine;
 
+using System.IO;
 public class Platform_t : MonoBehaviour
 {
     private UI UIObject;
     private float movementSpeed = 1.4f;
     private Vector3 originalPosition;
     private float timer = 0f;
+    private float ana_startTime = 0f;
+    private float ana_endTime = 0f;
+    private float ana_timeDifference;
     private Renderer objRenderer;
     private Color originalColor;
     public GameObject beatsBar;
@@ -38,6 +42,11 @@ public class Platform_t : MonoBehaviour
                 moving = false;
                 done = true;
                 HideBeatsBar();
+                ana_endTime = Time.time;
+                ana_timeDifference = ana_endTime - ana_startTime;
+                string fileName = "analytics_puzzle_time_t.txt";
+                string content = string.Format("Time : {0}\n", ana_timeDifference);
+                File.AppendAllText(fileName, content);
             }
             else
             {
@@ -67,22 +76,12 @@ public class Platform_t : MonoBehaviour
         //}
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            if (timer == 0f)
-            {
-                UIObject.beat = true;
-                ShowBeatsBar();
-            }
-        }
-    }
 
     public void collision_()
     {
         if (timer == 0f)
         {
+            ana_startTime = Time.time;
             UIObject.beat = true;
             ShowBeatsBar();
         }
