@@ -29,26 +29,26 @@ public class GameInitializer : MonoBehaviour
         
         beatBar.SetActive(false);
         victoryFlag.SetActive(false);
-        if (!GameSetting.IsRestarting)
-        {
-            initialOrthographicSize = Camera.main.orthographicSize;
-            restartButton.SetActive(false);
-            scoreText.enabled = false;
-            Hint.SetActive(false);
-            MainMenuButton.SetActive(false);
-            HealthBar.SetActive(false);
-            initialCameraPosition = Camera.main.transform.position;
-            Time.timeScale = 0f;
-            if (cameraFollowScript != null) 
-            {
-                cameraFollowScript.enabled = false;
-            }
-            StartCoroutine(MoveCameraToTarget(cameraTarget.position, () => {
-                StartCoroutine(MoveCameraBack(initialCameraPosition, () => {
-                    ResumeGame();
-                }));
-            }));
-        }
+        // if (!GameSetting.IsRestarting)
+        // {
+        //     initialOrthographicSize = Camera.main.orthographicSize;
+        //     restartButton.SetActive(false);
+        //     scoreText.enabled = false;
+        //     Hint.SetActive(false);
+        //     MainMenuButton.SetActive(false);
+        //     HealthBar.SetActive(false);
+        //     initialCameraPosition = Camera.main.transform.position;
+        //     Time.timeScale = 0f;
+        //     if (cameraFollowScript != null) 
+        //     {
+        //         cameraFollowScript.enabled = false;
+        //     }
+        //     StartCoroutine(MoveCameraToTarget(cameraTarget.position, () => {
+        //         StartCoroutine(MoveCameraBack(initialCameraPosition, () => {
+        //             ResumeGame();
+        //         }));
+        //     }));
+        // }
     }
 
     System.Collections.IEnumerator MoveCameraToTarget(Vector3 targetPosition, System.Action onCompleted = null)

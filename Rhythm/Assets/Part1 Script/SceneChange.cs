@@ -14,7 +14,7 @@ public class SceneChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x > 152.23) {
+        if (transform.position.y < -40) {
             SceneManager.LoadScene("Part2 Scene");
         }
     }

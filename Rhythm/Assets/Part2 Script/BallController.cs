@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
+
+
 
 public class BallController : MonoBehaviour
 {
@@ -10,6 +13,8 @@ public class BallController : MonoBehaviour
     private bool isGrounded = true;
 
     public float autoMoveSpeed = 20.0f;
+
+    public CinemachineVirtualCamera virtualCamera;
 
     public float jumpForce = 5.0f;
 
@@ -32,6 +37,7 @@ public class BallController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         originalScale = transform.localScale;
+        virtualCamera.Follow = null;
 
     }
 
@@ -41,7 +47,10 @@ public class BallController : MonoBehaviour
         {
             isGrounded = Physics2D.OverlapCircle(foot.transform.position, groundCheckRadius, groundLayer);
             //AutoMoveRight();
-
+            if (isGrounded && virtualCamera.Follow == null)
+            {
+                virtualCamera.Follow = transform;
+            }
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
