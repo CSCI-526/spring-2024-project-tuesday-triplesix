@@ -43,7 +43,7 @@ public class GameController : MonoBehaviour
         victoryPanel.SetActive(false);
         restartButtonLeft.onClick.AddListener(RestartGame);
         restartButton.onClick.AddListener(RestartGame);
-        victoryButton.onClick.AddListener(RestartGame);
+        victoryButton.onClick.AddListener(BackToMenu);
         bossControl = boss.GetComponent<BossController>();
         currentMusic = 0;
 
@@ -152,6 +152,13 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         // sceneController.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void BackToMenu()
+    {
+        Time.timeScale = 1f;
+        sceneController.LoadScene("Main Menu");
+    }
+
 
     public void StartBeat()
     {
