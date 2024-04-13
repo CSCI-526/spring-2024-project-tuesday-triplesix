@@ -25,27 +25,6 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        //if (other.CompareTag("Key"))
-        //{
-        //    Destroy(other.gameObject); // destroy key
-        //    // add attribute to player
-        //    hasKey = true;
-        //}
-        //else if (other.CompareTag("Door"))
-        //{
-       //     if (hasKey == true)
-       //     {
-        //        Debug.Log("Win");
-        //    }
-        //    else
-         //   {
-        //        Debug.Log("You haven't got a key yet!");
-        //    }
-       // }
-    }
-    
     
 
     void Move()

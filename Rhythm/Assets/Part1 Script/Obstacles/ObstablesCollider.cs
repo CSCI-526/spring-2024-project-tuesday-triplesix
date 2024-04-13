@@ -1,66 +1,63 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Unity.Services.Core;
+using Unity.Services.Analytics;
 
 
 public class ObstablesCollider : MonoBehaviour
 {
-    [System.Serializable]
-    public class SerializableDictionary
+    private Scene currentScene;
+    private Rigidbody2D rb;
+    private int value = 0;
+
+    async void Start()
     {
-        public List<SerializableKeyValuePair> keyValuePairs = new List<SerializableKeyValuePair>();
-
-        public SerializableDictionary(Dictionary<string, int> dictionary)
-        {
-            foreach (var kvp in dictionary)
-            {
-                keyValuePairs.Add(new SerializableKeyValuePair(kvp.Key, kvp.Value));
-            }
-        }
-    }
-
-    [System.Serializable]
-    public class SerializableKeyValuePair
-    {
-        public string key;
-        public int value;
-
-        public SerializableKeyValuePair(string key, int value)
-        {
-            this.key = key;
-            this.value = value;
-        }
+        await UnityServices.InitializeAsync();
+        rb = GetComponent<Rigidbody2D>();
+        AnalyticsService.Instance.StartDataCollection();
+        currentScene = SceneManager.GetActiveScene();
     }
 
     // Start is called before the first frame update
-    private static Dictionary<string, int> dictionary = new Dictionary<string, int>();
-    SerializableDictionary dict = new SerializableDictionary(dictionary);
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Obstacle"))
         {
+            Debug.Log("collide");
             Vector2 spawnPoint = GameManager.Instance.respawnPoint;
-            if (dictionary.ContainsKey(spawnPoint.ToString()))
-            {
-                dictionary[spawnPoint.ToString()] += 1;
-            }
-            else
-            {
-                dictionary.Add(spawnPoint.ToString(), 1);
-            }
-            other.transform.position = spawnPoint;
+            value += 1;
+            rb.transform.position = spawnPoint;
         }
     }
     
-    private void OnApplicationQuit()
+    private void OnDestroy()
     {
-        foreach (var kvp in dictionary)
+
+        if (currentScene.name == "Level1")
         {
-            Debug.Log("Key: " + kvp.Key + ", Value: " + kvp.Value);
+            CustomEvent myEvent = new CustomEvent("Level1DeathTimes")
+                { { "times", value } };
+            AnalyticsService.Instance.RecordEvent(myEvent);
         }
-        SerializableDictionary serializableDictionary = new SerializableDictionary(dictionary);
-        File.WriteAllText("death.json", JsonUtility.ToJson(serializableDictionary));
-        Debug.Log("quit!!");
+        else if (currentScene.name == "Level2")
+        {        
+            Debug.Log(currentScene.name);
+            Debug.Log(value);
+            CustomEvent myEvent = new CustomEvent("Level2DeathTimes")
+                { { "times", value } };
+            AnalyticsService.Instance.RecordEvent(myEvent);
+        }
+        else if (currentScene.name == "Level3")
+        {
+            CustomEvent myEvent = new CustomEvent("Level3DeathTimes")
+                { { "times", value } };
+            AnalyticsService.Instance.RecordEvent(myEvent);
+        }
+        
+        // File.AppendAllText(fileName, content);
     }
 
 }

@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 40519148}
   m_Layer: 0
   m_Name: Triangle (22)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40519146}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -902,7 +902,7 @@ GameObject:
   - component: {fileID: 57515585}
   m_Layer: 0
   m_Name: Triangle (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57515580}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -1073,7 +1073,7 @@ GameObject:
   - component: {fileID: 75069809}
   m_Layer: 0
   m_Name: Triangle (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1224,7 +1224,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75069804}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -1328,7 +1328,7 @@ GameObject:
   - component: {fileID: 83770863}
   m_Layer: 0
   m_Name: Triangle (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1479,7 +1479,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83770858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -1499,7 +1499,7 @@ GameObject:
   - component: {fileID: 101657911}
   m_Layer: 0
   m_Name: Triangle (28)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1526,7 +1526,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101657909}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -1859,7 +1859,7 @@ GameObject:
   - component: {fileID: 130903684}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2010,7 +2010,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130903679}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -2030,7 +2030,7 @@ GameObject:
   - component: {fileID: 153660586}
   m_Layer: 0
   m_Name: Triangle (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2181,7 +2181,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153660581}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -2452,7 +2452,7 @@ GameObject:
   - component: {fileID: 179198578}
   m_Layer: 0
   m_Name: Triangle (22)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2479,7 +2479,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179198576}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -2722,6 +2722,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 52228674}
+  - {fileID: 1402289173}
   - {fileID: 1084105167}
   - {fileID: 2057306296}
   m_Father: {fileID: 0}
@@ -2741,7 +2742,7 @@ GameObject:
   - component: {fileID: 253082608}
   m_Layer: 0
   m_Name: Triangle (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2892,7 +2893,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253082603}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -2944,7 +2945,7 @@ GameObject:
   - component: {fileID: 268369765}
   m_Layer: 0
   m_Name: Triangle (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2971,7 +2972,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268369763}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -3115,7 +3116,7 @@ GameObject:
   - component: {fileID: 272537699}
   m_Layer: 0
   m_Name: Triangle (14)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3142,7 +3143,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272537697}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -3286,7 +3287,7 @@ GameObject:
   - component: {fileID: 300500467}
   m_Layer: 0
   m_Name: Triangle (21)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3313,7 +3314,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300500465}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -3951,7 +3952,7 @@ GameObject:
   - component: {fileID: 338522932}
   m_Layer: 0
   m_Name: Triangle (15)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3978,7 +3979,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338522930}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -4122,7 +4123,7 @@ GameObject:
   - component: {fileID: 346868412}
   m_Layer: 0
   m_Name: Triangle (12)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4149,7 +4150,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346868410}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -4293,7 +4294,7 @@ GameObject:
   - component: {fileID: 351674410}
   m_Layer: 0
   m_Name: Triangle (23)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4320,7 +4321,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351674408}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -4464,7 +4465,7 @@ GameObject:
   - component: {fileID: 358760106}
   m_Layer: 0
   m_Name: Triangle (18)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4491,7 +4492,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358760104}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -5223,13 +5224,11 @@ GameObject:
   m_Component:
   - component: {fileID: 396422348}
   - component: {fileID: 396422347}
-  - component: {fileID: 396422346}
   - component: {fileID: 396422345}
   - component: {fileID: 396422344}
-  - component: {fileID: 396422349}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5306,18 +5305,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &396422346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 396422343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &396422347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5385,18 +5372,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 324041458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &396422349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 396422343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &403473647
 GameObject:
   m_ObjectHideFlags: 0
@@ -5565,13 +5540,11 @@ GameObject:
   m_Component:
   - component: {fileID: 410139447}
   - component: {fileID: 410139446}
-  - component: {fileID: 410139445}
   - component: {fileID: 410139444}
   - component: {fileID: 410139443}
-  - component: {fileID: 410139448}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5648,18 +5621,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &410139445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410139442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &410139446
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5727,18 +5688,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 324041458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &410139448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410139442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &412267913
 GameObject:
   m_ObjectHideFlags: 0
@@ -5837,7 +5786,7 @@ GameObject:
   - component: {fileID: 439743058}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5988,7 +5937,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439743053}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -6098,13 +6047,11 @@ GameObject:
   m_Component:
   - component: {fileID: 465625252}
   - component: {fileID: 465625256}
-  - component: {fileID: 465625255}
   - component: {fileID: 465625254}
   - component: {fileID: 465625253}
-  - component: {fileID: 465625257}
   m_Layer: 0
   m_Name: Square (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6196,18 +6143,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &465625255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465625251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &465625256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6260,18 +6195,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &465625257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465625251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &496897882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6821,7 +6744,7 @@ GameObject:
   - component: {fileID: 589514484}
   m_Layer: 0
   m_Name: Triangle (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6972,7 +6895,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589514479}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -7150,7 +7073,7 @@ GameObject:
   - component: {fileID: 592517825}
   m_Layer: 0
   m_Name: Triangle (24)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7177,7 +7100,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592517823}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -7321,7 +7244,7 @@ GameObject:
   - component: {fileID: 593341118}
   m_Layer: 0
   m_Name: Triangle (27)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7348,7 +7271,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593341116}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -7681,7 +7604,7 @@ GameObject:
   - component: {fileID: 666760786}
   m_Layer: 0
   m_Name: Triangle (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7708,7 +7631,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666760784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -7852,7 +7775,7 @@ GameObject:
   - component: {fileID: 667921339}
   m_Layer: 0
   m_Name: Triangle (13)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7879,7 +7802,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667921337}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -8485,7 +8408,7 @@ GameObject:
   - component: {fileID: 725651658}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8636,7 +8559,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725651653}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -8656,7 +8579,7 @@ GameObject:
   - component: {fileID: 730536763}
   m_Layer: 0
   m_Name: Triangle (19)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8683,7 +8606,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730536761}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -8827,7 +8750,7 @@ GameObject:
   - component: {fileID: 731338474}
   m_Layer: 0
   m_Name: Triangle (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8978,7 +8901,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731338469}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -9029,7 +8952,7 @@ GameObject:
   - component: {fileID: 769652752}
   m_Layer: 0
   m_Name: Triangle (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9180,7 +9103,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769652747}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -9372,7 +9295,7 @@ GameObject:
   - component: {fileID: 783169054}
   m_Layer: 0
   m_Name: Triangle (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9523,7 +9446,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783169049}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -9944,13 +9867,11 @@ GameObject:
   m_Component:
   - component: {fileID: 883912972}
   - component: {fileID: 883912971}
-  - component: {fileID: 883912970}
   - component: {fileID: 883912969}
   - component: {fileID: 883912968}
-  - component: {fileID: 883912973}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10027,18 +9948,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &883912970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883912967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &883912971
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10106,18 +10015,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 324041458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &883912973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883912967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &898291520
 GameObject:
   m_ObjectHideFlags: 0
@@ -10440,7 +10337,7 @@ GameObject:
   - component: {fileID: 914335017}
   m_Layer: 0
   m_Name: Triangle (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10591,7 +10488,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914335012}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -10611,7 +10508,7 @@ GameObject:
   - component: {fileID: 927132465}
   m_Layer: 0
   m_Name: Triangle (29)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10638,7 +10535,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927132463}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -10782,7 +10679,7 @@ GameObject:
   - component: {fileID: 955356569}
   m_Layer: 0
   m_Name: Triangle (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10933,7 +10830,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955356564}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -10948,14 +10845,12 @@ GameObject:
   m_Component:
   - component: {fileID: 962592676}
   - component: {fileID: 962592677}
-  - component: {fileID: 962592681}
   - component: {fileID: 962592680}
   - component: {fileID: 962592679}
   - component: {fileID: 962592678}
-  - component: {fileID: 962592682}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11113,30 +11008,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &962592681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962592675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &962592682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962592675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &969092449
 GameObject:
   m_ObjectHideFlags: 0
@@ -11483,7 +11354,7 @@ GameObject:
   - component: {fileID: 977674643}
   m_Layer: 0
   m_Name: Triangle (20)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11510,7 +11381,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977674641}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -11812,7 +11683,7 @@ GameObject:
   - component: {fileID: 1006424749}
   m_Layer: 0
   m_Name: Triangle (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11963,7 +11834,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006424744}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -12330,14 +12201,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1095674431}
   - component: {fileID: 1095674432}
-  - component: {fileID: 1095674436}
   - component: {fileID: 1095674435}
   - component: {fileID: 1095674434}
   - component: {fileID: 1095674433}
-  - component: {fileID: 1095674437}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12495,30 +12364,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1095674436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095674430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1095674437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095674430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1124133580
 GameObject:
   m_ObjectHideFlags: 0
@@ -12529,14 +12374,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1124133581}
   - component: {fileID: 1124133582}
-  - component: {fileID: 1124133586}
   - component: {fileID: 1124133585}
   - component: {fileID: 1124133584}
   - component: {fileID: 1124133583}
-  - component: {fileID: 1124133587}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12694,30 +12537,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1124133586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124133580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1124133587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124133580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1147368009
 GameObject:
   m_ObjectHideFlags: 0
@@ -12733,7 +12552,7 @@ GameObject:
   - component: {fileID: 1147368011}
   m_Layer: 0
   m_Name: Triangle (30)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12760,7 +12579,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147368009}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -13002,7 +12821,7 @@ GameObject:
   - component: {fileID: 1170136545}
   m_Layer: 0
   m_Name: Triangle (16)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13029,7 +12848,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170136543}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -13394,7 +13213,7 @@ GameObject:
   - component: {fileID: 1224733785}
   m_Layer: 0
   m_Name: Triangle (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13545,7 +13364,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224733780}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -13560,13 +13379,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1233286284}
   - component: {fileID: 1233286283}
-  - component: {fileID: 1233286282}
   - component: {fileID: 1233286281}
   - component: {fileID: 1233286280}
-  - component: {fileID: 1233286285}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13643,18 +13460,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1233286282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233286279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1233286283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13722,18 +13527,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 324041458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1233286285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233286279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1259191170
 GameObject:
   m_ObjectHideFlags: 0
@@ -14277,10 +14070,9 @@ GameObject:
   - component: {fileID: 1306301691}
   - component: {fileID: 1306301690}
   - component: {fileID: 1306301689}
-  - component: {fileID: 1306301694}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14364,7 +14156,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306301688}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -14436,18 +14228,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 324041458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1306301694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306301688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1325344568
 GameObject:
   m_ObjectHideFlags: 0
@@ -14463,7 +14243,7 @@ GameObject:
   - component: {fileID: 1325344570}
   m_Layer: 0
   m_Name: Triangle (17)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14490,7 +14270,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325344568}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -14634,7 +14414,7 @@ GameObject:
   - component: {fileID: 1333577370}
   m_Layer: 0
   m_Name: Triangle (25)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14661,7 +14441,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333577368}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -15018,7 +14798,7 @@ GameObject:
   - component: {fileID: 1361064447}
   m_Layer: 0
   m_Name: Triangle (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15169,7 +14949,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361064442}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -15184,14 +14964,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1371075677}
   - component: {fileID: 1371075678}
-  - component: {fileID: 1371075682}
   - component: {fileID: 1371075681}
   - component: {fileID: 1371075680}
   - component: {fileID: 1371075679}
-  - component: {fileID: 1371075683}
   m_Layer: 0
   m_Name: Square (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15349,30 +15127,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1371075682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371075676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1371075683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371075676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1384581783
 GameObject:
   m_ObjectHideFlags: 0
@@ -15578,6 +15332,149 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 180
   delayTime: 1
+--- !u!1 &1402289172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1402289173}
+  - component: {fileID: 1402289176}
+  - component: {fileID: 1402289175}
+  - component: {fileID: 1402289174}
+  m_Layer: 0
+  m_Name: Triangle (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1402289173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402289172}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -60.69, y: 8.42, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 247746025}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1402289174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402289172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2830d28f6bf47244aa587d3ea07cb05e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1402289175
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402289172}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.21133333}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &1402289176
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402289172}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1411143354
 GameObject:
   m_ObjectHideFlags: 0
@@ -15593,7 +15490,7 @@ GameObject:
   - component: {fileID: 1411143359}
   m_Layer: 0
   m_Name: Triangle (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15744,7 +15641,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411143354}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -15765,6 +15662,7 @@ GameObject:
   - component: {fileID: 1418532671}
   - component: {fileID: 1418532672}
   - component: {fileID: 1418532673}
+  - component: {fileID: 1418532674}
   m_Layer: 0
   m_Name: Square
   m_TagString: Player
@@ -15969,6 +15867,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneController: {fileID: 1917593145}
+--- !u!114 &1418532674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418532665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1431631021
 GameObject:
   m_ObjectHideFlags: 0
@@ -15984,7 +15894,7 @@ GameObject:
   - component: {fileID: 1431631026}
   m_Layer: 0
   m_Name: Triangle (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16135,7 +16045,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431631021}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -16313,7 +16223,7 @@ GameObject:
   - component: {fileID: 1437998920}
   m_Layer: 0
   m_Name: Triangle (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16340,7 +16250,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437998918}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -16563,14 +16473,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1450558366}
   - component: {fileID: 1450558367}
-  - component: {fileID: 1450558371}
   - component: {fileID: 1450558370}
   - component: {fileID: 1450558369}
   - component: {fileID: 1450558368}
-  - component: {fileID: 1450558372}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16728,30 +16636,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1450558371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450558365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1450558372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450558365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1453363167
 GameObject:
   m_ObjectHideFlags: 0
@@ -16934,14 +16818,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1463991392}
   - component: {fileID: 1463991393}
-  - component: {fileID: 1463991397}
   - component: {fileID: 1463991396}
   - component: {fileID: 1463991395}
   - component: {fileID: 1463991394}
-  - component: {fileID: 1463991398}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17099,30 +16981,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1463991397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463991391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1463991398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463991391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1471291549
 GameObject:
   m_ObjectHideFlags: 0
@@ -17728,7 +17586,7 @@ GameObject:
   - component: {fileID: 1556673176}
   m_Layer: 0
   m_Name: Triangle (25)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17755,7 +17613,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556673174}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -18252,7 +18110,7 @@ GameObject:
   - component: {fileID: 1591815136}
   m_Layer: 0
   m_Name: Triangle (24)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18279,7 +18137,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591815134}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -18573,7 +18431,7 @@ GameObject:
   - component: {fileID: 1757319471}
   m_Layer: 0
   m_Name: Triangle (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18724,7 +18582,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757319466}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -19060,7 +18918,7 @@ GameObject:
   - component: {fileID: 1801949184}
   m_Layer: 0
   m_Name: Triangle (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19087,7 +18945,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801949182}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -19389,7 +19247,7 @@ GameObject:
   - component: {fileID: 1835500720}
   m_Layer: 0
   m_Name: Triangle (19)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19416,7 +19274,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835500718}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -19560,7 +19418,7 @@ GameObject:
   - component: {fileID: 1838631973}
   m_Layer: 0
   m_Name: Triangle (23)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19587,7 +19445,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838631971}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -20064,7 +19922,7 @@ GameObject:
   - component: {fileID: 1866528683}
   m_Layer: 0
   m_Name: Triangle (17)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20091,7 +19949,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866528681}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -20235,7 +20093,7 @@ GameObject:
   - component: {fileID: 1876005685}
   m_Layer: 0
   m_Name: Triangle (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20386,7 +20244,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876005680}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -20709,7 +20567,7 @@ GameObject:
   - component: {fileID: 1933963852}
   m_Layer: 0
   m_Name: Triangle (18)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20736,7 +20594,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933963850}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -21737,7 +21595,7 @@ GameObject:
   - component: {fileID: 2085337658}
   m_Layer: 0
   m_Name: Triangle (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21888,7 +21746,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085337653}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -21908,7 +21766,7 @@ GameObject:
   - component: {fileID: 2087937446}
   m_Layer: 0
   m_Name: Triangle (26)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21935,7 +21793,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087937444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
@@ -22270,7 +22128,7 @@ GameObject:
   - component: {fileID: 2128663164}
   m_Layer: 0
   m_Name: Triangle (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22421,7 +22279,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128663159}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
   m_Name: 
