@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Services.Core;
+using Unity.Services.Analytics;
+using UnityEngine.Analytics;
 
 public class BeatSpawner : MonoBehaviour
 {
@@ -40,6 +43,8 @@ public class BeatSpawner : MonoBehaviour
     public CanvasGroup missingTextCanvasGroup;
     void Start()
     {
+        // await UnityServices.InitializeAsync();
+        // AnalyticsService.Instance.StartDataCollection();
         path = 0;
         Debug.Log("StartSpawner:" + path);
     }
@@ -56,6 +61,8 @@ public class BeatSpawner : MonoBehaviour
     }
     void OnEnable()
     {
+        // await UnityServices.InitializeAsync();
+        // AnalyticsService.Instance.StartDataCollection();
         path += 1;
         cnt = 0;
         Debug.Log("Enable: " + path);

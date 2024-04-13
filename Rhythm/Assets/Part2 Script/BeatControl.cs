@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using Unity.Services.Core;
+using Unity.Services.Analytics;
+
 
 
 public class BeatControl : MonoBehaviour
@@ -130,9 +134,25 @@ public class BeatControl : MonoBehaviour
 
     // void OnDisable()
     // {
-    //     Debug.Log("disabled");
-    //     string fileName = "analytics.txt";
+    //     // Debug.Log("disabled");
+    //     // string fileName = "analytics.txt";
     //     string content = string.Format("Perfect: {0}\nGood: {1}\nPass: {2}\n", perfectCnt, goodCnt, passCnt);
-    //     File.WriteAllText(fileName, content);
+    //     Debug.Log("content: " + content);
+    //     CustomEvent myEvent = new CustomEvent("PerfectCount")
+    //     {
+    //         { "perfect", perfectCnt},
+    //         { "good", goodCnt },
+    //         { "normal", passCnt }
+    //     };
+    //     // AnalyticsResult analyticsResult = Analytics.CustomEvent(
+    //     //     "Perfect count",
+    //     //     new Dictionary<string, object> {
+    //     //         {"Perfect", perfectCnt},
+    //     //         {"Good", goodCnt},
+    //     //         {"Normal", passCnt}
+    //     //     }
+    //     // );
+    //     AnalyticsService.Instance.RecordEvent(myEvent);
+    //     // File.WriteAllText(fileName, content);
     // }
 }

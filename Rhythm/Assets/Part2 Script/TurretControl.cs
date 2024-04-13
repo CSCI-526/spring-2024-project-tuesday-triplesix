@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.IO;
+using Unity.Services.Core;
+using Unity.Services.Analytics;
 
 public class TurretControl : MonoBehaviour
 {
@@ -20,8 +22,10 @@ public class TurretControl : MonoBehaviour
     public CanvasGroup greatTextCanvasGroup;
     public CanvasGroup missingTextCanvasGroup;
     // Start is called before the first frame update
-    void Start()
+    async void Start()
     {
+        await UnityServices.InitializeAsync();
+        AnalyticsService.Instance.StartDataCollection();
         ammoSpawn = aSpawner.GetComponent<AmmoSpawn>();
     }
 
@@ -54,6 +58,14 @@ public class TurretControl : MonoBehaviour
         if (perfectCnt == 0 && goodCnt == 0 && passCnt == 0) return;
         string fileName = "analytics_perfect.txt";
         string content = string.Format("Perfect: {0}\nGood: {1}\nPass: {2}\n\n", perfectCnt, goodCnt, passCnt);
-        File.AppendAllText(fileName, content);
+        Debug.Log("content: " + content);
+        CustomEvent myEvent = new CustomEvent("PerfectCount")
+        {
+            { "perfect", perfectCnt},
+            { "good", goodCnt },
+            { "normal", passCnt }
+        };
+        AnalyticsService.Instance.RecordEvent(myEvent);
+        // File.AppendAllText(fileName, content);
     }
 }
