@@ -7,14 +7,10 @@ public class BossManager : MonoBehaviour
 {
     public float maxHealth = 100f;
     private float currentHealth;
-    private int DamageNum;
     public Image healthBarFill; // 血条填充的引用
-    async void Start()
+    void Start()
     {
-        await UnityServices.InitializeAsync();
-        AnalyticsService.Instance.StartDataCollection();
         currentHealth = maxHealth;
-        DamageNum = 0;
         UpdateHealthBar();
     }
 
@@ -26,16 +22,6 @@ public class BossManager : MonoBehaviour
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // 防止生命值低于0或高于最大值
         UpdateHealthBar();
-        DamageNum += 1;
-        if (currentHealth == 0)
-        {
-            Debug.Log("content: " + DamageNum);
-            CustomEvent myEvent = new CustomEvent("DamageToBossNum")
-            {
-                { "DamageNumber", DamageNum},
-            };
-            AnalyticsService.Instance.RecordEvent(myEvent);
-        }
         
     }
 

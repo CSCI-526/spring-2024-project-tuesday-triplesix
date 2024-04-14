@@ -40,7 +40,7 @@ public class BeatControl : MonoBehaviour
         turret = bSpawn.turret;
         tControl = turret.GetComponent<TurretControl>();
     }
-    float GetAbs(float tar) 
+    float GetAbs(float tar)
     {
         if (tar <= 0) return -tar;
         else return tar;
@@ -82,26 +82,30 @@ public class BeatControl : MonoBehaviour
     int GetStatus(float distance)
     {
         Debug.Log("B");
-        if (distance <= perfect) {
+        if (distance <= perfect)
+        {
             if (updateScore) tControl.SpawnBullet(0);
             tControl.addCnt(0);
             pc.ShowStatusText(0);
             return 0;
         }
-        else if (distance <= good) {
+        else if (distance <= good)
+        {
             if (updateScore) tControl.SpawnBullet(1);
             tControl.addCnt(1);
             pc.ShowStatusText(1);
             return 1;
         }
-        else if (distance <= pass) {
+        else if (distance <= pass)
+        {
             if (updateScore) tControl.SpawnBullet(2);
             tControl.addCnt(2);
             pc.ShowStatusText(2);
             return 2;
         }
-        else {
-            
+        else
+        {
+
             return 3;
         }
     }
@@ -111,18 +115,23 @@ public class BeatControl : MonoBehaviour
     {
         health = bossHealth.fillAmount;
         float distance = 10;
-        if (gameObject.CompareTag("Single") && Input.GetKeyDown(KeyCode.J)){
+        if (gameObject.CompareTag("Single") && Input.GetKeyDown(KeyCode.J))
+        {
             distance = GetAbs(transform.position.x - circle.transform.position.x);
             // Debug.Log("dist:" + distance);
             int status = GetStatus(distance);
             Debug.Log(health);
             // Debug.Log("Jump: " + status);
             if (status < 3) gameObject.SetActive(false);
-        } else if (gameObject.CompareTag("Long") && Input.GetKeyDown(KeyCode.J)){
+        }
+        else if (gameObject.CompareTag("Long") && Input.GetKeyDown(KeyCode.J))
+        {
             distance = GetAbs(transform.position.x - (transform.localScale.x / 2) - circle.transform.position.x);
             int status = GetStatus(distance);
             // Debug.Log("Begin shrink: " + status);
-        } else if (gameObject.CompareTag("Long") && Input.GetKeyUp(KeyCode.J)) {
+        }
+        else if (gameObject.CompareTag("Long") && Input.GetKeyUp(KeyCode.J))
+        {
             distance = GetAbs(transform.position.x + (transform.localScale.x / 2) - circle.transform.position.x);
             int status = GetStatus(distance);
             // Debug.Log("After shrink: " + status);
