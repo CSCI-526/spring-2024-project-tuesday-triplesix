@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 {
     
     public Button restartButtonLeft;
+
     public BossController bossControl;
     public BallController ballControl;
     public GameObject boss;
@@ -23,6 +24,10 @@ public class GameController : MonoBehaviour
 
     public float flashDuration = 0.2f;
     public int flashCount = 2;
+
+
+
+
     public MusicController musicController;
     private string obstacleTag = "Invisible";
     public float distanceThreshold = 30f;
@@ -162,17 +167,30 @@ public class GameController : MonoBehaviour
 
     public void StartBeat()
     {
-        AudioSource[] list = new AudioSource[] { MusicStart, Music1, Music2 };
+        //AudioSource[] list = new AudioSource[] {MusicStart,Music1, Music2 };
+        //AudioSource[] list = new AudioSource[] { Music1, Music2 };
         beatBar.SetActive(true);
         bossControl.autoMoveSpeed = 0f;
         ballControl.DisableMovement();
-        float duration = 3f;
-        Debug.Log(currentMusic);
-        StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(list[currentMusic], list[currentMusic+1], duration));
-        currentMusic = currentMusic + 1;
+        //float duration = 3f;
+        //Debug.Log(currentMusic);
+
+        //StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(MusicStart, list[currentMusic], duration));
+        //currentMusic = currentMusic + 1;
+        ChangeMusic();
+
 
     }
 
+    public void ChangeMusic() {
+        AudioSource[] list = new AudioSource[] { MusicStart, Music1, MusicStart,  Music2, MusicStart };
+        float duration = 3f;
+        StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(list[currentMusic], list[currentMusic + 1], duration));
+        currentMusic = currentMusic + 1;
+        Debug.Log("current Music index:"+ currentMusic);
+        Debug.Log("current Music index:" + currentMusic);
+        Debug.Log("current Music index:" + currentMusic);
+    }
 
     // void OnDestroy()
     // {

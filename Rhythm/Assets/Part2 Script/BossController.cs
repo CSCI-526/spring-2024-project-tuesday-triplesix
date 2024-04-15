@@ -34,7 +34,7 @@ public class BossController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player hit the Boss. Game Over.");
+            //Debug.Log("Player hit the Boss. Game Over.");
             gameController.GameOver();
         }
     }

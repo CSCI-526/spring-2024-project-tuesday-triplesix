@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class MusicController : MonoBehaviour
@@ -8,7 +8,8 @@ public class MusicController : MonoBehaviour
     {
     }
 
-   
+    
+
 
     public IEnumerator FadeOutCurrentMusicAndFadeInNewMusic(AudioSource currentMusic, AudioSource newMusic, float duration)
     {
@@ -29,5 +30,24 @@ public class MusicController : MonoBehaviour
         }
 
         currentMusic.Stop();
+    }
+
+    public IEnumerator FadeOutNewMusicAndFadeInCurrentMusic(AudioSource currentMusic, AudioSource newMusic, float duration)
+    {
+        float currentTime = 0;
+        float startVolume = newMusic.volume;
+
+        currentMusic.Play();
+        currentMusic.volume = 0;
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            newMusic.volume = Mathf.Lerp(startVolume, 0, currentTime / duration);
+            currentMusic.volume = Mathf.Lerp(0, startVolume, currentTime / duration);
+            yield return null;
+        }
+
+        newMusic.Stop();
     }
 }
