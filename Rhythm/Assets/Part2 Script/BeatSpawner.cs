@@ -13,6 +13,7 @@ public class BeatSpawner : MonoBehaviour
     public GameObject boss;
     public GameObject beatBar;
     public GameObject turret;
+    public GameController gameController;
     private BossController bossControl;
 
     public BallController ballControl;
@@ -91,9 +92,19 @@ public class BeatSpawner : MonoBehaviour
                 perfectTextCanvasGroup.alpha = 0;
                 greatTextCanvasGroup.alpha = 0;
                 missingTextCanvasGroup.alpha = 0;
+               
             }
+
+            //gameController.ChangeMusic();
             // Debug.Log("path: " + path);
             // Debug.Log("Cnt: " + cnt);
+            if (finish) {
+                if (gameController == null)
+                {
+                    Debug.Log("it is NULLLLLLLL");
+                }
+                gameController.ChangeMusic();
+            }
             if (!finish) timer = intervals[path][cnt]; // reset
         }
 
@@ -103,7 +114,7 @@ public class BeatSpawner : MonoBehaviour
     {
         cnt += 1;
         if (cmd < 0) {
-            Debug.Log("Spawn choice");
+            //Debug.Log("Spawn choice");
             GameObject choose = Instantiate(choice, transform.position, Quaternion.identity, transform);
             choose.SetActive(true);
         }

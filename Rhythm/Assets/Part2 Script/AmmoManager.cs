@@ -27,9 +27,7 @@ public class AmmoManager : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Triggered");
-        Debug.Log("gameObject:" + gameObject.tag);
-        Debug.Log("collision:" + collision.gameObject.tag);
+       
         health = bossHealth.fillAmount;
         if (collision.gameObject.CompareTag("Boss") && gameObject.CompareTag("Ammo1")) {
             health -= 0.12f;

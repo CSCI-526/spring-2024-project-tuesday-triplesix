@@ -162,7 +162,7 @@ public class GameController : MonoBehaviour
 
     public void StartBeat()
     {
-        AudioSource[] list = new AudioSource[] { MusicStart, Music1, Music2 };
+        /*AudioSource[] list = new AudioSource[] { MusicStart, Music1,Music2 };
         beatBar.SetActive(true);
         bossControl.autoMoveSpeed = 0f;
         ballControl.DisableMovement();
@@ -170,7 +170,20 @@ public class GameController : MonoBehaviour
         Debug.Log(currentMusic);
         StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(list[currentMusic], list[currentMusic + 1], duration));
         currentMusic = currentMusic + 1;
+        */
 
+        beatBar.SetActive(true);
+        bossControl.autoMoveSpeed = 0f;
+        ballControl.DisableMovement();
+        ChangeMusic();
+
+    }
+
+    public void ChangeMusic() {
+        AudioSource[] list = new AudioSource[] { MusicStart, Music1, MusicStart, Music2, MusicStart };
+        float duration = 3f;
+        StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(list[currentMusic], list[currentMusic + 1], duration));
+        currentMusic = currentMusic + 1;
     }
 
 

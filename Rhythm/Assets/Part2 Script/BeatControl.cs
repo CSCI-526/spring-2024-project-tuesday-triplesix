@@ -81,7 +81,7 @@ public class BeatControl : MonoBehaviour
     // }
     int GetStatus(float distance)
     {
-        Debug.Log("B");
+     
         if (distance <= perfect)
         {
             if (updateScore) tControl.SpawnBullet(0);
@@ -120,7 +120,7 @@ public class BeatControl : MonoBehaviour
             distance = GetAbs(transform.position.x - circle.transform.position.x);
             // Debug.Log("dist:" + distance);
             int status = GetStatus(distance);
-            Debug.Log(health);
+            //Debug.Log(health);
             // Debug.Log("Jump: " + status);
             if (status < 3) gameObject.SetActive(false);
         }
