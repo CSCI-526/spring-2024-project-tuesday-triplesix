@@ -5,10 +5,11 @@ using UnityEngine;
 public class SpikeController : MonoBehaviour
 {
     public float bpm = 120f;
-    public float moveHeight;
     private float beatInterval;
+
     private float timer = 0f;
     private int beatCount = 0;
+    private float moveHeight = 0;
     private float upPos;
     private float downPos;
 

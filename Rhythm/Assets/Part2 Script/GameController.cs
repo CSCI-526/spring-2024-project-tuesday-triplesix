@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    
+
     public Button restartButtonLeft;
     public BossController bossControl;
     public BallController ballControl;
@@ -89,7 +89,7 @@ public class GameController : MonoBehaviour
                 if (obstacleStates.ContainsKey(obstacle) && obstacleStates[obstacle])
                     continue;
                 Debug.Log("玩家和障碍物距离小于阈值！!!!!!!!!!!!!!!!!!!!!!!");
-               
+
                 StartCoroutine(FlashAndDisappear(obstacle));
 
             }
@@ -145,7 +145,7 @@ public class GameController : MonoBehaviour
     }
 
     public void RestartGame()
-    {   
+    {
         GameSetting.IsRestarting = true;
         Time.timeScale = 1f;
 
@@ -168,7 +168,7 @@ public class GameController : MonoBehaviour
         ballControl.DisableMovement();
         float duration = 3f;
         Debug.Log(currentMusic);
-        StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(list[currentMusic], list[currentMusic+1], duration));
+        StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(list[currentMusic], list[currentMusic + 1], duration));
         currentMusic = currentMusic + 1;
 
     }
