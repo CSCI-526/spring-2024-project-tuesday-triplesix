@@ -366,10 +366,9 @@ GameObject:
   - component: {fileID: 40519151}
   - component: {fileID: 40519150}
   - component: {fileID: 40519149}
-  - component: {fileID: 40519148}
   m_Layer: 0
   m_Name: Triangle (22)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -389,18 +388,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &40519148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40519146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &40519149
 Rigidbody2D:
   serializedVersion: 4
@@ -1057,10 +1044,9 @@ GameObject:
   - component: {fileID: 57515582}
   - component: {fileID: 57515584}
   - component: {fileID: 57515583}
-  - component: {fileID: 57515585}
   m_Layer: 0
   m_Name: Triangle (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1204,18 +1190,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &57515585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57515580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &75069804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,10 +1202,9 @@ GameObject:
   - component: {fileID: 75069806}
   - component: {fileID: 75069808}
   - component: {fileID: 75069807}
-  - component: {fileID: 75069809}
   m_Layer: 0
   m_Name: Triangle (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1375,18 +1348,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &75069809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75069804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &79507030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,10 +1444,9 @@ GameObject:
   - component: {fileID: 83770860}
   - component: {fileID: 83770862}
   - component: {fileID: 83770861}
-  - component: {fileID: 83770863}
   m_Layer: 0
   m_Name: Triangle (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1630,18 +1590,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &83770863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83770858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &101657909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,10 +1602,9 @@ GameObject:
   - component: {fileID: 101657914}
   - component: {fileID: 101657913}
   - component: {fileID: 101657912}
-  - component: {fileID: 101657911}
   m_Layer: 0
   m_Name: Triangle (28)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1677,18 +1624,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &101657911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101657909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &101657912
 Rigidbody2D:
   serializedVersion: 4
@@ -1856,10 +1791,9 @@ GameObject:
   - component: {fileID: 130903681}
   - component: {fileID: 130903683}
   - component: {fileID: 130903682}
-  - component: {fileID: 130903684}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2003,18 +1937,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &130903684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 130903679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &153660581
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,10 +1949,9 @@ GameObject:
   - component: {fileID: 153660583}
   - component: {fileID: 153660585}
   - component: {fileID: 153660584}
-  - component: {fileID: 153660586}
   m_Layer: 0
   m_Name: Triangle (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2174,18 +2095,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &153660586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153660581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &165139098
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,10 +2200,9 @@ GameObject:
   - component: {fileID: 179198581}
   - component: {fileID: 179198580}
   - component: {fileID: 179198579}
-  - component: {fileID: 179198578}
   m_Layer: 0
   m_Name: Triangle (22)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2314,18 +2222,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &179198578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179198576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &179198579
 Rigidbody2D:
   serializedVersion: 4
@@ -2580,10 +2476,9 @@ GameObject:
   - component: {fileID: 253082605}
   - component: {fileID: 253082607}
   - component: {fileID: 253082606}
-  - component: {fileID: 253082608}
   m_Layer: 0
   m_Name: Triangle (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2727,18 +2622,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &253082608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253082603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &260665078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,10 +2666,9 @@ GameObject:
   - component: {fileID: 268369768}
   - component: {fileID: 268369767}
   - component: {fileID: 268369766}
-  - component: {fileID: 268369765}
   m_Layer: 0
   m_Name: Triangle (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2806,18 +2688,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &268369765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268369763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &268369766
 Rigidbody2D:
   serializedVersion: 4
@@ -2954,10 +2824,9 @@ GameObject:
   - component: {fileID: 272537702}
   - component: {fileID: 272537701}
   - component: {fileID: 272537700}
-  - component: {fileID: 272537699}
   m_Layer: 0
   m_Name: Triangle (14)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2977,18 +2846,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &272537699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272537697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &272537700
 Rigidbody2D:
   serializedVersion: 4
@@ -3125,10 +2982,9 @@ GameObject:
   - component: {fileID: 300500470}
   - component: {fileID: 300500469}
   - component: {fileID: 300500468}
-  - component: {fileID: 300500467}
   m_Layer: 0
   m_Name: Triangle (21)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3148,18 +3004,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &300500467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300500465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &300500468
 Rigidbody2D:
   serializedVersion: 4
@@ -3632,10 +3476,9 @@ GameObject:
   - component: {fileID: 338522935}
   - component: {fileID: 338522934}
   - component: {fileID: 338522933}
-  - component: {fileID: 338522932}
   m_Layer: 0
   m_Name: Triangle (15)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3655,18 +3498,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &338522932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338522930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &338522933
 Rigidbody2D:
   serializedVersion: 4
@@ -3803,10 +3634,9 @@ GameObject:
   - component: {fileID: 346868415}
   - component: {fileID: 346868414}
   - component: {fileID: 346868413}
-  - component: {fileID: 346868412}
   m_Layer: 0
   m_Name: Triangle (12)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3826,18 +3656,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &346868412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 346868410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &346868413
 Rigidbody2D:
   serializedVersion: 4
@@ -3974,10 +3792,9 @@ GameObject:
   - component: {fileID: 351674413}
   - component: {fileID: 351674412}
   - component: {fileID: 351674411}
-  - component: {fileID: 351674410}
   m_Layer: 0
   m_Name: Triangle (23)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3997,18 +3814,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &351674410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 351674408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &351674411
 Rigidbody2D:
   serializedVersion: 4
@@ -4145,10 +3950,9 @@ GameObject:
   - component: {fileID: 358760109}
   - component: {fileID: 358760108}
   - component: {fileID: 358760107}
-  - component: {fileID: 358760106}
   m_Layer: 0
   m_Name: Triangle (18)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4168,18 +3972,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &358760106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358760104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &358760107
 Rigidbody2D:
   serializedVersion: 4
@@ -5202,10 +4994,9 @@ GameObject:
   - component: {fileID: 439743055}
   - component: {fileID: 439743057}
   - component: {fileID: 439743056}
-  - component: {fileID: 439743058}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5349,18 +5140,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &439743058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439743053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &444979146
 GameObject:
   m_ObjectHideFlags: 0
@@ -6130,10 +5909,9 @@ GameObject:
   - component: {fileID: 589514481}
   - component: {fileID: 589514483}
   - component: {fileID: 589514482}
-  - component: {fileID: 589514484}
   m_Layer: 0
   m_Name: Triangle (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6277,18 +6055,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &589514484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589514479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &590273215
 GameObject:
   m_ObjectHideFlags: 0
@@ -6459,10 +6225,9 @@ GameObject:
   - component: {fileID: 592517828}
   - component: {fileID: 592517827}
   - component: {fileID: 592517826}
-  - component: {fileID: 592517825}
   m_Layer: 0
   m_Name: Triangle (24)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6482,18 +6247,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &592517825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 592517823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &592517826
 Rigidbody2D:
   serializedVersion: 4
@@ -6630,10 +6383,9 @@ GameObject:
   - component: {fileID: 593341121}
   - component: {fileID: 593341120}
   - component: {fileID: 593341119}
-  - component: {fileID: 593341118}
   m_Layer: 0
   m_Name: Triangle (27)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6653,18 +6405,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &593341118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593341116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &593341119
 Rigidbody2D:
   serializedVersion: 4
@@ -6990,10 +6730,9 @@ GameObject:
   - component: {fileID: 666760789}
   - component: {fileID: 666760788}
   - component: {fileID: 666760787}
-  - component: {fileID: 666760786}
   m_Layer: 0
   m_Name: Triangle (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7013,18 +6752,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &666760786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 666760784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &666760787
 Rigidbody2D:
   serializedVersion: 4
@@ -7161,10 +6888,9 @@ GameObject:
   - component: {fileID: 667921342}
   - component: {fileID: 667921341}
   - component: {fileID: 667921340}
-  - component: {fileID: 667921339}
   m_Layer: 0
   m_Name: Triangle (13)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7184,18 +6910,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &667921339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 667921337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &667921340
 Rigidbody2D:
   serializedVersion: 4
@@ -7794,10 +7508,9 @@ GameObject:
   - component: {fileID: 725651655}
   - component: {fileID: 725651657}
   - component: {fileID: 725651656}
-  - component: {fileID: 725651658}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7941,18 +7654,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &725651658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725651653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &730536761
 GameObject:
   m_ObjectHideFlags: 0
@@ -7965,10 +7666,9 @@ GameObject:
   - component: {fileID: 730536766}
   - component: {fileID: 730536765}
   - component: {fileID: 730536764}
-  - component: {fileID: 730536763}
   m_Layer: 0
   m_Name: Triangle (19)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7988,18 +7688,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &730536763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 730536761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &730536764
 Rigidbody2D:
   serializedVersion: 4
@@ -8136,10 +7824,9 @@ GameObject:
   - component: {fileID: 731338471}
   - component: {fileID: 731338473}
   - component: {fileID: 731338472}
-  - component: {fileID: 731338474}
   m_Layer: 0
   m_Name: Triangle (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8283,18 +7970,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &731338474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731338469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &748332848
 GameObject:
   m_ObjectHideFlags: 0
@@ -8511,10 +8186,9 @@ GameObject:
   - component: {fileID: 769652749}
   - component: {fileID: 769652751}
   - component: {fileID: 769652750}
-  - component: {fileID: 769652752}
   m_Layer: 0
   m_Name: Triangle (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8658,18 +8332,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &769652752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769652747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &780825565
 GameObject:
   m_ObjectHideFlags: 0
@@ -8842,6 +8504,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatsBar: {fileID: 1358262842}
+  down: 0
+  distance: 10
 --- !u!1 &783169049
 GameObject:
   m_ObjectHideFlags: 0
@@ -8854,10 +8518,9 @@ GameObject:
   - component: {fileID: 783169051}
   - component: {fileID: 783169053}
   - component: {fileID: 783169052}
-  - component: {fileID: 783169054}
   m_Layer: 0
   m_Name: Triangle (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9001,18 +8664,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &783169054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783169049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &808814202
 GameObject:
   m_ObjectHideFlags: 0
@@ -10038,10 +9689,9 @@ GameObject:
   - component: {fileID: 914335014}
   - component: {fileID: 914335016}
   - component: {fileID: 914335015}
-  - component: {fileID: 914335017}
   m_Layer: 0
   m_Name: Triangle (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10185,18 +9835,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &914335017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 914335012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &927132463
 GameObject:
   m_ObjectHideFlags: 0
@@ -10209,10 +9847,9 @@ GameObject:
   - component: {fileID: 927132468}
   - component: {fileID: 927132467}
   - component: {fileID: 927132466}
-  - component: {fileID: 927132465}
   m_Layer: 0
   m_Name: Triangle (29)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10232,18 +9869,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &927132465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927132463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &927132466
 Rigidbody2D:
   serializedVersion: 4
@@ -10380,10 +10005,9 @@ GameObject:
   - component: {fileID: 955356566}
   - component: {fileID: 955356568}
   - component: {fileID: 955356567}
-  - component: {fileID: 955356569}
   m_Layer: 0
   m_Name: Triangle (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10527,18 +10151,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &955356569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955356564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &962592675
 GameObject:
   m_ObjectHideFlags: 0
@@ -11081,10 +10693,9 @@ GameObject:
   - component: {fileID: 977674646}
   - component: {fileID: 977674645}
   - component: {fileID: 977674644}
-  - component: {fileID: 977674643}
   m_Layer: 0
   m_Name: Triangle (20)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11104,18 +10715,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &977674643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977674641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &977674644
 Rigidbody2D:
   serializedVersion: 4
@@ -11252,10 +10851,9 @@ GameObject:
   - component: {fileID: 1006424746}
   - component: {fileID: 1006424748}
   - component: {fileID: 1006424747}
-  - component: {fileID: 1006424749}
   m_Layer: 0
   m_Name: Triangle (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11399,18 +10997,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1006424749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006424744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1084105166
 GameObject:
   m_ObjectHideFlags: 0
@@ -12173,10 +11759,9 @@ GameObject:
   - component: {fileID: 1147368014}
   - component: {fileID: 1147368013}
   - component: {fileID: 1147368012}
-  - component: {fileID: 1147368011}
   m_Layer: 0
   m_Name: Triangle (30)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12196,18 +11781,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1147368011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147368009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1147368012
 Rigidbody2D:
   serializedVersion: 4
@@ -12442,10 +12015,9 @@ GameObject:
   - component: {fileID: 1170136548}
   - component: {fileID: 1170136547}
   - component: {fileID: 1170136546}
-  - component: {fileID: 1170136545}
   m_Layer: 0
   m_Name: Triangle (16)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12465,18 +12037,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1170136545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1170136543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1170136546
 Rigidbody2D:
   serializedVersion: 4
@@ -12834,10 +12394,9 @@ GameObject:
   - component: {fileID: 1224733782}
   - component: {fileID: 1224733784}
   - component: {fileID: 1224733783}
-  - component: {fileID: 1224733785}
   m_Layer: 0
   m_Name: Triangle (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12981,18 +12540,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1224733785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224733780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1233286279
 GameObject:
   m_ObjectHideFlags: 0
@@ -13903,10 +13450,9 @@ GameObject:
   - component: {fileID: 1325344573}
   - component: {fileID: 1325344572}
   - component: {fileID: 1325344571}
-  - component: {fileID: 1325344570}
   m_Layer: 0
   m_Name: Triangle (17)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13926,18 +13472,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1325344570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325344568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1325344571
 Rigidbody2D:
   serializedVersion: 4
@@ -14074,10 +13608,9 @@ GameObject:
   - component: {fileID: 1333577373}
   - component: {fileID: 1333577372}
   - component: {fileID: 1333577371}
-  - component: {fileID: 1333577370}
   m_Layer: 0
   m_Name: Triangle (25)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14097,18 +13630,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1333577370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333577368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1333577371
 Rigidbody2D:
   serializedVersion: 4
@@ -14300,10 +13821,9 @@ GameObject:
   - component: {fileID: 1361064444}
   - component: {fileID: 1361064446}
   - component: {fileID: 1361064445}
-  - component: {fileID: 1361064447}
   m_Layer: 0
   m_Name: Triangle (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14447,18 +13967,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1361064447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361064442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1371075676
 GameObject:
   m_ObjectHideFlags: 0
@@ -14875,10 +14383,9 @@ GameObject:
   - component: {fileID: 1411143356}
   - component: {fileID: 1411143358}
   - component: {fileID: 1411143357}
-  - component: {fileID: 1411143359}
   m_Layer: 0
   m_Name: Triangle (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15022,18 +14529,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1411143359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411143354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1418532665
 GameObject:
   m_ObjectHideFlags: 0
@@ -15050,6 +14545,7 @@ GameObject:
   - component: {fileID: 1418532671}
   - component: {fileID: 1418532672}
   - component: {fileID: 1418532673}
+  - component: {fileID: 1418532674}
   m_Layer: 0
   m_Name: Square
   m_TagString: Player
@@ -15254,6 +14750,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneController: {fileID: 1917593145}
+--- !u!114 &1418532674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418532665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1431631021
 GameObject:
   m_ObjectHideFlags: 0
@@ -15266,10 +14774,9 @@ GameObject:
   - component: {fileID: 1431631023}
   - component: {fileID: 1431631025}
   - component: {fileID: 1431631024}
-  - component: {fileID: 1431631026}
   m_Layer: 0
   m_Name: Triangle (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15413,18 +14920,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1431631026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1431631021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1431733591
 GameObject:
   m_ObjectHideFlags: 0
@@ -15595,10 +15090,9 @@ GameObject:
   - component: {fileID: 1437998923}
   - component: {fileID: 1437998922}
   - component: {fileID: 1437998921}
-  - component: {fileID: 1437998920}
   m_Layer: 0
   m_Name: Triangle (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15618,18 +15112,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1437998920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1437998918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1437998921
 Rigidbody2D:
   serializedVersion: 4
@@ -16680,10 +16162,9 @@ GameObject:
   - component: {fileID: 1556673179}
   - component: {fileID: 1556673178}
   - component: {fileID: 1556673177}
-  - component: {fileID: 1556673176}
   m_Layer: 0
   m_Name: Triangle (25)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16703,18 +16184,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1556673176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556673174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1556673177
 Rigidbody2D:
   serializedVersion: 4
@@ -17046,10 +16515,9 @@ GameObject:
   - component: {fileID: 1591815139}
   - component: {fileID: 1591815138}
   - component: {fileID: 1591815137}
-  - component: {fileID: 1591815136}
   m_Layer: 0
   m_Name: Triangle (24)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17069,18 +16537,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1591815136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1591815134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1591815137
 Rigidbody2D:
   serializedVersion: 4
@@ -17368,10 +16824,9 @@ GameObject:
   - component: {fileID: 1757319468}
   - component: {fileID: 1757319470}
   - component: {fileID: 1757319469}
-  - component: {fileID: 1757319471}
   m_Layer: 0
   m_Name: Triangle (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17515,18 +16970,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1757319471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757319466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1787881464
 GameObject:
   m_ObjectHideFlags: 0
@@ -17697,10 +17140,9 @@ GameObject:
   - component: {fileID: 1801949187}
   - component: {fileID: 1801949186}
   - component: {fileID: 1801949185}
-  - component: {fileID: 1801949184}
   m_Layer: 0
   m_Name: Triangle (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17720,18 +17162,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1801949184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801949182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1801949185
 Rigidbody2D:
   serializedVersion: 4
@@ -18026,10 +17456,9 @@ GameObject:
   - component: {fileID: 1835500723}
   - component: {fileID: 1835500722}
   - component: {fileID: 1835500721}
-  - component: {fileID: 1835500720}
   m_Layer: 0
   m_Name: Triangle (19)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18049,18 +17478,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1835500720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835500718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1835500721
 Rigidbody2D:
   serializedVersion: 4
@@ -18197,10 +17614,9 @@ GameObject:
   - component: {fileID: 1838631976}
   - component: {fileID: 1838631975}
   - component: {fileID: 1838631974}
-  - component: {fileID: 1838631973}
   m_Layer: 0
   m_Name: Triangle (23)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18220,18 +17636,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1838631973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838631971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1838631974
 Rigidbody2D:
   serializedVersion: 4
@@ -18697,10 +18101,9 @@ GameObject:
   - component: {fileID: 1866528686}
   - component: {fileID: 1866528685}
   - component: {fileID: 1866528684}
-  - component: {fileID: 1866528683}
   m_Layer: 0
   m_Name: Triangle (17)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18720,18 +18123,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1866528683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866528681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1866528684
 Rigidbody2D:
   serializedVersion: 4
@@ -18868,10 +18259,9 @@ GameObject:
   - component: {fileID: 1876005682}
   - component: {fileID: 1876005684}
   - component: {fileID: 1876005683}
-  - component: {fileID: 1876005685}
   m_Layer: 0
   m_Name: Triangle (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19015,18 +18405,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1876005685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1876005680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1877369300
 GameObject:
   m_ObjectHideFlags: 0
@@ -19342,10 +18720,9 @@ GameObject:
   - component: {fileID: 1933963855}
   - component: {fileID: 1933963854}
   - component: {fileID: 1933963853}
-  - component: {fileID: 1933963852}
   m_Layer: 0
   m_Name: Triangle (18)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19365,18 +18742,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1933963852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933963850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1933963853
 Rigidbody2D:
   serializedVersion: 4
@@ -20528,10 +19893,9 @@ GameObject:
   - component: {fileID: 2085337655}
   - component: {fileID: 2085337657}
   - component: {fileID: 2085337656}
-  - component: {fileID: 2085337658}
   m_Layer: 0
   m_Name: Triangle (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20675,18 +20039,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2085337658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085337653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2087937444
 GameObject:
   m_ObjectHideFlags: 0
@@ -20699,10 +20051,9 @@ GameObject:
   - component: {fileID: 2087937449}
   - component: {fileID: 2087937448}
   - component: {fileID: 2087937447}
-  - component: {fileID: 2087937446}
   m_Layer: 0
   m_Name: Triangle (26)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20722,18 +20073,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1471291550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2087937446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087937444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &2087937447
 Rigidbody2D:
   serializedVersion: 4
@@ -20903,10 +20242,9 @@ GameObject:
   - component: {fileID: 2128663161}
   - component: {fileID: 2128663163}
   - component: {fileID: 2128663162}
-  - component: {fileID: 2128663164}
   m_Layer: 0
   m_Name: Triangle (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21050,18 +20388,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2128663164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128663159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26033baf2c2a8446a3660f6a7294ba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2131084352
 GameObject:
   m_ObjectHideFlags: 0
@@ -21145,63 +20471,6 @@ SpriteMask:
   m_BackSortingOrder: 1
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
---- !u!1001 &1963525454594221787
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5353673099058628807, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
-      propertyPath: m_Name
-      value: LaserController
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435792998947104014, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -16.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435792998947104014, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435792998947104014, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435792998947104014, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435792998947104014, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435792998947104014, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435792998947104014, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435792998947104014, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435792998947104014, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435792998947104014, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 79ae02bb8fc6c4267b895886e27d41e0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -21222,4 +20491,3 @@ SceneRoots:
   - {fileID: 1358262844}
   - {fileID: 2062038769}
   - {fileID: 1275318462}
-  - {fileID: 1963525454594221787}

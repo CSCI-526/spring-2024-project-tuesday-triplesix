@@ -15,6 +15,8 @@ public class Platform : MonoBehaviour
     private Color originalColor;
     public GameObject beatsBar;
     private bool done = false;
+    public int down;
+    public int distance;
     private bool moving;
     private void Start()
     {
@@ -31,7 +33,7 @@ public class Platform : MonoBehaviour
         if (moving && UIObject.beat)
         {
             // Move the elevator upward
-            if (transform.position.y >= originalPosition.y + 10)
+            if (transform.position.y >= originalPosition.y + distance)
             {
                 UIObject.beat = false;
                 UIObject.count = 0;
@@ -52,8 +54,17 @@ public class Platform : MonoBehaviour
                     moving = false;
                     timer = 0;
                 }
-                transform.Translate(Vector3.up * movementSpeed * Time.deltaTime);
-                timer += Time.deltaTime;
+                if (down == 1)
+                {
+                    transform.Translate(Vector3.down * movementSpeed * Time.deltaTime);
+                    timer += Time.deltaTime;
+                }
+                else
+                {
+                    transform.Translate(Vector3.up * movementSpeed * Time.deltaTime);
+                    timer += Time.deltaTime;
+                }
+
 
 
             }
