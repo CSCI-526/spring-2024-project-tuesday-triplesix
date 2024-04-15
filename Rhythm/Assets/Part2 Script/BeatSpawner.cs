@@ -41,14 +41,12 @@ public class BeatSpawner : MonoBehaviour
     public CanvasGroup perfectTextCanvasGroup;
     public CanvasGroup greatTextCanvasGroup;
     public CanvasGroup missingTextCanvasGroup;
-    public GameController gameController;
     void Start()
     {
         // await UnityServices.InitializeAsync();
         // AnalyticsService.Instance.StartDataCollection();
         path = 0;
-        //
-        //Debug.Log("StartSpawner:" + path);
+        Debug.Log("StartSpawner:" + path);
     }
 
     void SetLeftmost()
@@ -67,8 +65,7 @@ public class BeatSpawner : MonoBehaviour
         // AnalyticsService.Instance.StartDataCollection();
         path += 1;
         cnt = 0;
-
-
+        Debug.Log("Enable: " + path);
         finish = false;
         if (path >= 0) timer = intervals[path][cnt];
         single.SetActive(false);
@@ -94,11 +91,6 @@ public class BeatSpawner : MonoBehaviour
                 perfectTextCanvasGroup.alpha = 0;
                 greatTextCanvasGroup.alpha = 0;
                 missingTextCanvasGroup.alpha = 0;
-                if (gameController == null) {
-                    Debug.Log("NULLLLLLLLLLLLL ");
-                }
-                //gameController.ChangeMusic();
-                //Debug.Log("changeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee: " );
             }
             // Debug.Log("path: " + path);
             // Debug.Log("Cnt: " + cnt);
@@ -111,7 +103,7 @@ public class BeatSpawner : MonoBehaviour
     {
         cnt += 1;
         if (cmd < 0) {
-          
+            Debug.Log("Spawn choice");
             GameObject choose = Instantiate(choice, transform.position, Quaternion.identity, transform);
             choose.SetActive(true);
         }

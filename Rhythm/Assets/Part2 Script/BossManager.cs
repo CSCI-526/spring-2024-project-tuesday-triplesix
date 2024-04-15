@@ -18,7 +18,7 @@ public class BossManager : MonoBehaviour
     // 调用这个方法来给Boss造成伤害
     public void TakeDamage(float damage)
     {
-        //Debug.Log("Boss受到伤害：" + damage);
+        Debug.Log("Boss受到伤害：" + damage);
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // 防止生命值低于0或高于最大值
         UpdateHealthBar();

@@ -7,11 +7,9 @@ using System.IO;
 using Unity.Services.Core;
 using Unity.Services.Analytics;
 
-
 public class TurretControl : MonoBehaviour
 {
     public Image bossHealth;
-    public GameController gameController;
     public GameObject beatBar;
     public GameObject aSpawner;
     private DamageNum Damagenum;
@@ -20,11 +18,6 @@ public class TurretControl : MonoBehaviour
     private int goodCnt;
     private int passCnt;
     private bool dead = false;
-    public MusicController musicController;
-
-    public AudioSource Music2;
-    public AudioSource Music1;
-    public AudioSource MusicStart;
 
     public BallController ballControl;
     public CanvasGroup perfectTextCanvasGroup;
@@ -58,11 +51,6 @@ public class TurretControl : MonoBehaviour
             perfectTextCanvasGroup.alpha = 0;
             greatTextCanvasGroup.alpha = 0;
             missingTextCanvasGroup.alpha = 0;
-            MusicStart.volume = 0;
-            Debug.Log("here");
-            gameController.ChangeMusic();
-            Debug.Log("here + 1");
-            //StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(MusicStart, MusicStart, 3f));
         }
     }
 

@@ -24,10 +24,10 @@ public class DamageNum : MonoBehaviour
     }
     void LateUpdate()
     {
-        //Debug.Log("bossg: " + bossHealth.fillAmount);
+        Debug.Log("bossg: " + bossHealth.fillAmount);
         if (bossHealth.fillAmount == 0)
         {
-            //Debug.Log("bossggggggggggg: " + number);
+            Debug.Log("bossggggggggggg: " + number);
             gameObject.SetActive(false);
         }
     }
@@ -35,7 +35,7 @@ public class DamageNum : MonoBehaviour
     void OnDisable()
     {
 
-        //Debug.Log("content: " + number);
+        Debug.Log("content: " + number);
         CustomEvent myEvent = new CustomEvent("DamageToBossNum")
             {
                 { "DamageNumber", number},
