@@ -10,11 +10,15 @@ public class SpikeController : MonoBehaviour
     private float timer = 0f;
     private int beatCount = 0;
     private float moveHeight = 0;
+    private float upPos;
+    private float downPos;
 
     void Start()
     {   
         beatInterval = 60f / bpm;
         moveHeight = transform.localScale.y;
+        upPos = transform.position.y + moveHeight;
+        downPos = transform.position.y;
     }
     void Update()
     {
@@ -37,7 +41,7 @@ public class SpikeController : MonoBehaviour
     {
         Debug.Log("move up");
         transform.position = new Vector3(transform.position.x, 
-                                             moveHeight, 
+                                             upPos, 
                                              transform.position.z);
     }
 
@@ -45,7 +49,7 @@ public class SpikeController : MonoBehaviour
     {
         Debug.Log("move down");
         transform.position = new Vector3(transform.position.x, 
-                                             0, 
+                                             downPos, 
                                              transform.position.z);
     }
 }
