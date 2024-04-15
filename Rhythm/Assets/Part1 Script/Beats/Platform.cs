@@ -31,9 +31,22 @@ public class Platform : MonoBehaviour
     {
         // Check if the player is on the elevator
         if (moving && UIObject.beat)
-        {
+        {   
             // Move the elevator upward
-            if (transform.position.y >= originalPosition.y + distance)
+            if (down == 0 && transform.position.y >= originalPosition.y + distance)
+            {
+                UIObject.beat = false;
+                UIObject.count = 0;
+                UIObject.pkey = 1;
+                moving = false;
+                done = true;
+                HideBeatsBar();
+                ana_endTime = Time.time;
+                ana_timeDifference = ana_endTime - ana_startTime;
+                string fileName = "analytics_puzzle_time_1.txt";
+                string content = string.Format("Time : {0}\n", ana_timeDifference);
+                File.AppendAllText(fileName, content);
+            } else if (down == 1 && transform.position.y <= originalPosition.y - distance)
             {
                 UIObject.beat = false;
                 UIObject.count = 0;
