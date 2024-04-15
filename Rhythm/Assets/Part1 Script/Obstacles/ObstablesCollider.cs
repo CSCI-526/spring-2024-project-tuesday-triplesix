@@ -16,6 +16,7 @@ public class ObstablesCollider : MonoBehaviour
     async void Start()
     {
         await UnityServices.InitializeAsync();
+        AnalyticsService.Instance.StartDataCollection();
         rb = GetComponent<Rigidbody2D>();
         AnalyticsService.Instance.StartDataCollection();
         currentScene = SceneManager.GetActiveScene();
@@ -56,7 +57,13 @@ public class ObstablesCollider : MonoBehaviour
                 { { "times", value } };
             AnalyticsService.Instance.RecordEvent(myEvent);
         }
-        
+        else if (currentScene.name == "Part1 Scence")
+        {
+            CustomEvent myEvent = new CustomEvent("Part1_Scence_DeathTimes")
+                { { "times", value } };
+            AnalyticsService.Instance.RecordEvent(myEvent);
+        }
+
         // File.AppendAllText(fileName, content);
     }
 
