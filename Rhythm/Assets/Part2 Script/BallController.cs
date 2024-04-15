@@ -14,7 +14,7 @@ public class BallController : MonoBehaviour
 
     public float autoMoveSpeed = 20.0f;
 
-    public CinemachineVirtualCamera virtualCamera;
+    // public CinemachineVirtualCamera virtualCamera;
 
     public float jumpForce = 5.0f;
 
@@ -30,14 +30,14 @@ public class BallController : MonoBehaviour
     public Vector2 originalSize = new Vector2(0.03301108f, 0.8f);
 
     public BossManager bossManager;
-    private float moveSpeed = 20f;
+    public float moveSpeed = 10f;
 
     private bool canMove = true;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         originalScale = transform.localScale;
-        virtualCamera.Follow = null;
+        // virtualCamera.Follow = null;
 
     }
 
@@ -47,10 +47,10 @@ public class BallController : MonoBehaviour
         {
             isGrounded = Physics2D.OverlapCircle(foot.transform.position, groundCheckRadius, groundLayer);
             //AutoMoveRight();
-            if (isGrounded && virtualCamera.Follow == null)
-            {
-                virtualCamera.Follow = transform;
-            }
+            // if (isGrounded && virtualCamera.Follow == null)
+            // {
+            //     virtualCamera.Follow = transform;
+            // }
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
