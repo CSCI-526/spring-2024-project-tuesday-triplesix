@@ -18,6 +18,7 @@ public class Platform_t : MonoBehaviour
     private bool moving;
     public AudioSource audioSource1;
     public AudioSource audioSource2;
+    public GameObject player;
 
     private void Start()
     {
@@ -34,13 +35,14 @@ public class Platform_t : MonoBehaviour
         if (moving)
         {
             // Move the elevator upward
-            if (transform.position.y >= originalPosition.y + 10)
+            if (transform.position.y >= originalPosition.y + 10 && player.transform.position.x < 91)
             {
                 UIObject.beat = false;
                 UIObject.count = 0;
                 UIObject.pkey = 1;
                 moving = false;
                 done = true;
+                Debug.Log("hide bar");
                 HideBeatsBar();
                 ana_endTime = Time.time;
                 ana_timeDifference = ana_endTime - ana_startTime;

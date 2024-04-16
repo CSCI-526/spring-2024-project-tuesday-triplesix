@@ -41,22 +41,31 @@ public class BeatControl_t : MonoBehaviour
         GameObject platform = platforms[0];
         Platform_t pfu = platform.GetComponent<Platform_t>();
 
-        Debug.Log("B");
+        Debug.Log("player:" + player.transform.position.x);
         if (distance <= perfect) {
-            if (player.transform.position.x > 91) aSpawn.Spawn(0);
+            if (player.transform.position.x > 91) {
+                Debug.Log("Spawn");
+                aSpawn.Spawn(0);
+            }
             else pfu.allowMove();
             pc.ShowStatusText(0);
             return 0;
         }
         else if (distance <= good) {
-            if (player.transform.position.x > 91) aSpawn.Spawn(1);
+            if (player.transform.position.x > 91) {
+                Debug.Log("Spawn");
+                aSpawn.Spawn(1);
+            }
             else pfu.allowMove();
             //platform.MoveUpCoroutine();
             pc.ShowStatusText(1);
             return 1;
         }
         else if (distance <= pass) {
-            if (player.transform.position.x > 91) aSpawn.Spawn(2);
+            if (player.transform.position.x > 91) {
+                Debug.Log("Spawn");
+                aSpawn.Spawn(2);
+            }
             else pfu.allowMove();
             //platform.MoveUpCoroutine();
             pc.ShowStatusText(2);
