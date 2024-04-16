@@ -9,13 +9,19 @@ public class MainMenu : MonoBehaviour
     public Button playButton;
     public GameObject LevelPanel;
     public Button Level1Button;
+    public Button Level2Button;
+    public Button Level3Button;
+    public Button BossLevelButton;
     public SceneController sceneController;
     public Button close;
     public void Start()
     {
         Time.timeScale = 1f;
         playButton.onClick.AddListener(LevelSelection);
-        Level1Button.onClick.AddListener(Play);
+        Level1Button.onClick.AddListener(level1);
+        Level2Button.onClick.AddListener(level2);
+        Level3Button.onClick.AddListener(level3);
+        BossLevelButton.onClick.AddListener(level4);
         close.onClick.AddListener(Close);
     }
     public void LevelSelection()
@@ -27,14 +33,24 @@ public class MainMenu : MonoBehaviour
     {
         LevelPanel.SetActive(false);
     }
-    public void Play()
+    public void level1()
     {
-        // SceneManager.LoadScene("Part1 Scence");
-        sceneController.LoadScene("Part1 Scence");
+        sceneController.LoadScene("Level1");
+    }
+    public void level2()
+    {
+        sceneController.LoadScene("Level2");
+    }
+    public void level3()
+    {
+        sceneController.LoadScene("Level3");
+    }
+    public void level4()
+    {
+        sceneController.LoadScene("BossFight");
     }
     public void PlayTutorial()
     {
-        // SceneManager.LoadSceneAsync(1);
         sceneController.LoadScene("Tutorial");
 
     }
