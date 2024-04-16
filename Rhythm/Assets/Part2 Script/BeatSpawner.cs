@@ -103,7 +103,9 @@ public class BeatSpawner : MonoBehaviour
                 {
                     Debug.Log("it is NULLLLLLLL");
                 }
-                gameController.ChangeMusic();
+                gameController.ChangeBack();
+                Debug.Log("it is Changing music!!!!!!!!!!!!!!");
+
             }
             if (!finish) timer = intervals[path][cnt]; // reset
         }
@@ -127,4 +129,5 @@ public class BeatSpawner : MonoBehaviour
             longBeat.SetActive(true);
         }
     }
+
 }

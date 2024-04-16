@@ -30,4 +30,35 @@ public class MusicController : MonoBehaviour
 
         currentMusic.Stop();
     }
+
+    public IEnumerator PlayNewMusic(AudioSource currentMusic, AudioSource newMusic, float fadeDuration)
+    {
+        yield return StartCoroutine(FadeOutCurrentMusic(currentMusic,fadeDuration));
+        yield return StartCoroutine(PlayNewMusicCoroutine(newMusic, fadeDuration));
+    }
+
+    // ???????????0
+    private IEnumerator FadeOutCurrentMusic(AudioSource currentMusic, float fadeDuration)
+    {
+        float startVolume = currentMusic.volume;
+
+        while (currentMusic.volume > 0)
+        {
+            currentMusic.volume -= startVolume * Time.deltaTime / fadeDuration;
+            yield return null;
+        }
+
+        currentMusic.volume = 0; // ??????0???????
+    }
+
+    // ?????
+    private IEnumerator PlayNewMusicCoroutine(AudioSource newMusic, float fadeDuration)
+    {
+        yield return new WaitForSeconds(fadeDuration); // ???????????
+
+        //musicSource.clip = newMusic;
+        newMusic.Play();
+
+        // ???????????????????????????
+    }
 }

@@ -10048,7 +10048,7 @@ MonoBehaviour:
   boss: {fileID: 710617313}
   beatBar: {fileID: 1753304283}
   turret: {fileID: 0}
-  gameController: {fileID: 0}
+  gameController: {fileID: 267042729}
   ballControl: {fileID: 1380942476}
   single: {fileID: 1776742750}
   lasting: {fileID: 1184278809}
