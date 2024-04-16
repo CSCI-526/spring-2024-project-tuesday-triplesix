@@ -6,11 +6,12 @@ public class LaserController : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject laser;
-    public float bpm = 120f;
+    public float bpm;
+    public int beat;
     private float beatInterval;
 
     private float timer = 0f;
-    private int beatCount = 0;
+    private int beatCount = 1;
 
     void Start()
     {   
@@ -27,17 +28,18 @@ public class LaserController : MonoBehaviour
             timer -= beatInterval;
             beatCount++;
             
-            if (beatCount == 4)
+            if (beatCount == beat)
             {
                 TriggerEvent();
-                
+            }
+            if (beatCount >= 4)
+            {
                 beatCount = 0;
             }
         }
     }
     public void TriggerEvent()
     {
-        Debug.Log("sdfsdf");
         StartCoroutine(ActivateLaser());
     }
 

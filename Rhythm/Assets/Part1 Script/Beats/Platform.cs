@@ -5,7 +5,7 @@ using System.IO;
 public class Platform : MonoBehaviour
 {
     private UI UIObject;
-    private float movementSpeed = 1.4f;
+    public float movementSpeed = 1.4f;
     private Vector3 originalPosition;
     private float timer = 0f;
     private Renderer objRenderer;
