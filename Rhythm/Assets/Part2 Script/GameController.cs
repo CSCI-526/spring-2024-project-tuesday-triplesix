@@ -180,7 +180,8 @@ public class GameController : MonoBehaviour
     }
 
     public void ChangeMusic() {
-        AudioSource[] list = new AudioSource[] { MusicStart, Music1, MusicStart, Music2, MusicStart };
+        //AudioSource[] list = new AudioSource[] { MusicStart, Music1, MusicStart, Music2, MusicStart };
+        AudioSource[] list = new AudioSource[] { MusicStart, Music1, Music2 };
         float duration = 3f;
         StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(list[currentMusic], list[currentMusic + 1], duration));
         currentMusic = currentMusic + 1;
