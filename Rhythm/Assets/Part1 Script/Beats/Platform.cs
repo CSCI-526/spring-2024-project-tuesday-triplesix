@@ -18,6 +18,7 @@ public class Platform : MonoBehaviour
     public int down;
     public int distance;
     private bool moving;
+    public BallController ballController;
     private void Start()
     {
         UIObject = FindObjectOfType<UI>();
@@ -161,7 +162,8 @@ public class Platform : MonoBehaviour
 
     // Method to make the GameObject invisible
     public void HideBeatsBar()
-    {
+    {   
+        ballController.EnableMovement();
         if (beatsBar != null)
         {
             // Try to find the renderer in the children

@@ -834,6 +834,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3743536787307956123, guid: 0d683ef83bca1a9488885ac7253290ca, type: 3}
+      propertyPath: sceneController
+      value: 
+      objectReference: {fileID: 1860383195}
     - target: {fileID: 8621712792533504978, guid: 0d683ef83bca1a9488885ac7253290ca, type: 3}
       propertyPath: m_Name
       value: VictoryPanel 1
@@ -3130,11 +3134,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5280613880581589264, guid: 3b15d7aecba8600408f46a97343da515, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.93
+      value: -74.5
       objectReference: {fileID: 0}
     - target: {fileID: 5280613880581589264, guid: 3b15d7aecba8600408f46a97343da515, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.31
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 5280613880581589264, guid: 3b15d7aecba8600408f46a97343da515, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4649,7 +4653,7 @@ Transform:
   m_GameObject: {fileID: 738458993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.09, y: 5.98, z: -1.49}
+  m_LocalPosition: {x: -59.66, y: 7.87, z: -1.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11771,6 +11775,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3513716648935537890, guid: 69e37111612c28d4aa88dd2bd76247e9, type: 3}
   m_PrefabInstance: {fileID: 1860383193}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1860383195 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 48454177714992788, guid: 69e37111612c28d4aa88dd2bd76247e9, type: 3}
+  m_PrefabInstance: {fileID: 1860383193}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b7c168c4b51f843a50bc2c59ce5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1861732082
 GameObject:
   m_ObjectHideFlags: 0
@@ -13633,7 +13648,7 @@ Transform:
   m_GameObject: {fileID: 2028296229}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.09, y: 5.98, z: -1.49}
+  m_LocalPosition: {x: -59.66, y: 7.87, z: -1.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

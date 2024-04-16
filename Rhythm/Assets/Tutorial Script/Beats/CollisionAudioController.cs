@@ -5,6 +5,7 @@ public class CollisionAudioController : MonoBehaviour
     public AudioSource audioSource1;
     public AudioSource audioSource2;
 
+    public BallController ballController;
 
     private bool playerOnBoxAndPressedE = false;
 
@@ -32,7 +33,8 @@ public class CollisionAudioController : MonoBehaviour
     {
         // Check if the player is on the box and pressed "E"
         if (playerOnBoxAndPressedE && Input.GetKeyDown(KeyCode.E))
-        {
+        {   
+            ballController.DisableMovement();
             GameObject[] platforms = GameObject.FindGameObjectsWithTag("elevator");
             if (platforms.Length > 0)
             {

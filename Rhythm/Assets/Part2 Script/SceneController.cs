@@ -23,7 +23,8 @@ public class SceneController : MonoBehaviour
     }
 
     private IEnumerator Transition(string sceneName)
-    {
+    {   
+        Debug.Log("Transitioning to " + sceneName);
         yield return Fade(1);
 
         SceneManager.LoadScene(sceneName);
@@ -32,10 +33,11 @@ public class SceneController : MonoBehaviour
     }
 
     private IEnumerator Fade(float targetAlpha)
-    {
+    {   
         float speed = Mathf.Abs(fadeGroup.alpha - targetAlpha) / fadeDuration;
         while (!Mathf.Approximately(fadeGroup.alpha, targetAlpha))
-        {
+        {   
+            Debug.Log(fadeGroup.alpha + " " + targetAlpha + " " + speed);
             fadeGroup.alpha = Mathf.MoveTowards(fadeGroup.alpha, targetAlpha, speed * Time.deltaTime);
             yield return null;
         }

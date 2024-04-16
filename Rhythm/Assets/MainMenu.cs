@@ -47,7 +47,7 @@ public class MainMenu : MonoBehaviour
     }
     public void level4()
     {
-        sceneController.LoadScene("BossFight");
+        sceneController.LoadScene("Boss Fight");
     }
     public void PlayTutorial()
     {

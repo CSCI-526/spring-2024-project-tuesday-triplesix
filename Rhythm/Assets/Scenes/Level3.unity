@@ -7987,7 +7987,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -65.4, y: 19.67, z: -1.49}
+  m_LocalPosition: {x: -76, y: 16.970001, z: -1.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11317,6 +11317,7 @@ MonoBehaviour:
   beatsBar: {fileID: 1358262842}
   down: 1
   distance: 46
+  ballController: {fileID: 1466581522}
 --- !u!1001 &786197685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13039,6 +13040,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3743536787307956123, guid: 0d683ef83bca1a9488885ac7253290ca, type: 3}
+      propertyPath: sceneController
+      value: 
+      objectReference: {fileID: 1917593145}
     - target: {fileID: 7973648565507937071, guid: 0d683ef83bca1a9488885ac7253290ca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -15811,7 +15816,7 @@ Transform:
   m_GameObject: {fileID: 1182466516}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -65.4, y: 19.67, z: -1.49}
+  m_LocalPosition: {x: -76, y: 16.970001, z: -1.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19264,11 +19269,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5280613880581589264, guid: 3b15d7aecba8600408f46a97343da515, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -65.4
+      value: -76
       objectReference: {fileID: 0}
     - target: {fileID: 5280613880581589264, guid: 3b15d7aecba8600408f46a97343da515, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14
+      value: 11.3
       objectReference: {fileID: 0}
     - target: {fileID: 5280613880581589264, guid: 3b15d7aecba8600408f46a97343da515, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19312,6 +19317,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 609275252568826432, guid: 3b15d7aecba8600408f46a97343da515, type: 3}
   m_PrefabInstance: {fileID: 1466581520}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1466581522 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 206275629915926269, guid: 3b15d7aecba8600408f46a97343da515, type: 3}
+  m_PrefabInstance: {fileID: 1466581520}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466581521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3092c16afebf24fb068d025998625b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1467816783
 GameObject:
   m_ObjectHideFlags: 0
@@ -22324,6 +22340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8dec6e95ce85844f9b16b5f589d0565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballController: {fileID: 1466581522}
 --- !u!1 &1726599172
 GameObject:
   m_ObjectHideFlags: 0
@@ -24322,8 +24339,8 @@ RectTransform:
   - {fileID: 1212046386}
   - {fileID: 1259191172}
   - {fileID: 48614179}
-  - {fileID: 1573202235}
   - {fileID: 884763823}
+  - {fileID: 1573202235}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

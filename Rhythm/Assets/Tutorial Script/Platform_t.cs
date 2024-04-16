@@ -19,6 +19,7 @@ public class Platform_t : MonoBehaviour
     public AudioSource audioSource1;
     public AudioSource audioSource2;
     public GameObject player;
+    public BallController ballController;
 
     private void Start()
     {
@@ -148,7 +149,8 @@ public class Platform_t : MonoBehaviour
     public void HideBeatsBar()
     {
         if (beatsBar != null)
-        {
+        {   
+            ballController.EnableMovement();
             // Try to find the renderer in the children
             Renderer[] renderers = beatsBar.GetComponentsInChildren<Renderer>(true);
 

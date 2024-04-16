@@ -3,7 +3,7 @@ using UnityEngine;
 public class CollisionAudioController_1 : MonoBehaviour
 {
 
-
+    public BallController ballController;
 
     private bool playerOnBoxAndPressedE = false;
 
@@ -31,7 +31,8 @@ public class CollisionAudioController_1 : MonoBehaviour
     {
         // Check if the player is on the box and pressed "E"
         if (playerOnBoxAndPressedE && Input.GetKeyDown(KeyCode.E))
-        {
+        {   
+            ballController.DisableMovement();
             GameObject[] platforms = GameObject.FindGameObjectsWithTag("elevator");
             if (platforms.Length > 0)
             {
