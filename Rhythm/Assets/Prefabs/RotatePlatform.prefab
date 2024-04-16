@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 314689226435172959}
   - component: {fileID: 8354757542974676603}
   - component: {fileID: 4120354528198105220}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 3
+  m_Constraints: 7
 --- !u!61 &8354757542974676603
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 30
+  delayTime: 1
 --- !u!1 &2588381228805983465
 GameObject:
   m_ObjectHideFlags: 0
