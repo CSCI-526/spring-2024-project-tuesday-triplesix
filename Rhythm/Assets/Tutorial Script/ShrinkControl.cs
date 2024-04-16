@@ -11,25 +11,17 @@ public class ShrinkControl : MonoBehaviour
     public GameObject beatsBar;
     public Image healthBar;
     public GameObject player;
-    public PlayerController pController;
+    public BallController pController;
     void Start()
     {
         healthBar.enabled = false;
         originalScale = transform.localScale;
-        pController = player.GetComponent<PlayerController>();
+        pController = player.GetComponent<BallController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-        {
-            transform.localScale = squareScale;
-        }
-        else
-        {
-            transform.localScale = originalScale;
-        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -39,7 +31,7 @@ public class ShrinkControl : MonoBehaviour
             Debug.Log("touch turret");
             ShowBeatsBar();
             healthBar.enabled = true;
-            pController.ChangeMovement(false);
+            pController.DisableMovement();
         }
     }
 

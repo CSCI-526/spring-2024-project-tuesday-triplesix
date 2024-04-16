@@ -10,7 +10,7 @@ public class TurretControl_t : MonoBehaviour
     public Image bossHealth;
     public GameObject enemy;
     public GameObject player;
-    public PlayerController pController;
+    public BallController pController;
     public GameObject beatBar;
     public GameObject aSpawner;
     private AmmoSpawn ammoSpawn;
@@ -26,7 +26,7 @@ public class TurretControl_t : MonoBehaviour
     void Start()
     {
         ammoSpawn = aSpawner.GetComponent<AmmoSpawn>();
-        pController = player.GetComponent<PlayerController>();
+        pController = player.GetComponent<BallController>();
     }
 
     public void addCnt(int type) 
@@ -39,11 +39,12 @@ public class TurretControl_t : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+        Debug.Log("Boss:" + bossHealth.fillAmount);
         if (bossHealth.fillAmount == 0) {
             gameObject.SetActive(false);
             beatBar.SetActive(false);
             enemy.SetActive(false);
-            pController.ChangeMovement(true);
+            pController.EnableMovement();
             // ballControl.EnableMovement();
             perfectTextCanvasGroup.alpha = 0;
             greatTextCanvasGroup.alpha = 0;

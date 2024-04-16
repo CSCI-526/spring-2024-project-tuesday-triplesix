@@ -68,14 +68,14 @@ public class BallController : MonoBehaviour
             {
                 Jump();
             }
-            if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-            {
-                transform.localScale = squareScale;
-            }
-            else
-            {
-                transform.localScale = originalScale;
-            }
+            // if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+            // {
+            //     transform.localScale = squareScale;
+            // }
+            // else
+            // {
+            //     transform.localScale = originalScale;
+            // }
         }
 
 
