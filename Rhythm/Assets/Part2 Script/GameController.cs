@@ -175,15 +175,32 @@ public class GameController : MonoBehaviour
         beatBar.SetActive(true);
         bossControl.autoMoveSpeed = 0f;
         ballControl.DisableMovement();
-        ChangeMusic();
+        PlayTurretMusic();
 
     }
 
     public void ChangeMusic() {
         AudioSource[] list = new AudioSource[] { MusicStart, Music1, MusicStart, Music2, MusicStart };
+        //AudioSource[] list = new AudioSource[] { MusicStart, Music1, Music2 };
         float duration = 3f;
         StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(list[currentMusic], list[currentMusic + 1], duration));
         currentMusic = currentMusic + 1;
+    }
+
+    public void PlayTurretMusic() {
+        AudioSource[] list = new AudioSource[] {Music1, Music2 };
+        float duration = 0.1f;
+        // StartCoroutine(musicController.PlayNewMusic(MusicStart, list[currentMusic + 1], duration));
+        StartCoroutine(musicController.PlayNewMusic(MusicStart, list[currentMusic], duration));
+        currentMusic++;
+
+    }
+
+    public void ChangeBack() {
+        AudioSource[] list = new AudioSource[] { Music1, Music2 };
+        list[currentMusic - 1].Stop();
+        MusicStart.volume = 30f;
+        
     }
 
 
