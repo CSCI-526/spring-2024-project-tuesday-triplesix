@@ -37,7 +37,7 @@ public class BeatControl_1 : MonoBehaviour
         GameObject platform = platforms[0];
         Platform pfu = platform.GetComponent<Platform>();
 
-        Debug.Log("B");
+        Debug.Log(distance);
         if (distance <= perfect) {
             if (updateScore) health -= 1f;
             pfu.allowMove();
@@ -59,8 +59,8 @@ public class BeatControl_1 : MonoBehaviour
             return 2;
         }
         else {
-            pfu.stopMove();
-            return 3;
+/*            pfu.stopMove();
+*/            return 3;
         }
     }
 
@@ -72,18 +72,18 @@ public class BeatControl_1 : MonoBehaviour
             distance = GetAbs(transform.position.x - circle.transform.position.x);
             // Debug.Log("dist:" + distance);
             int status = GetStatus(distance);
-            Debug.Log(health);
+            Debug.Log("");
             // Debug.Log("Jump: " + status);
             if (status < 3) gameObject.SetActive(false);
         } else if (gameObject.CompareTag("Long") && Input.GetKeyDown(KeyCode.J)){
             distance = GetAbs(transform.position.x - (transform.localScale.x / 2) - circle.transform.position.x);
-            int status = GetStatus(distance);
-            // Debug.Log("Begin shrink: " + status);
+/*            int status = GetStatus(distance);
+*/            // Debug.Log("Begin shrink: " + status);
         } else if (gameObject.CompareTag("Long") && Input.GetKeyUp(KeyCode.J)) {
             distance = GetAbs(transform.position.x + (transform.localScale.x / 2) - circle.transform.position.x);
-            int status = GetStatus(distance);
+/*            int status = GetStatus(distance);
             // Debug.Log("After shrink: " + status);
-            if (status < 3) gameObject.SetActive(false);
+            if (status < 3) gameObject.SetActive(false);*/
         }
         // Debug.Log("health: " + health);
     }

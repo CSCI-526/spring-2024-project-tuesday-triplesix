@@ -8,6 +8,7 @@ public class Platform : MonoBehaviour
     public float movementSpeed = 1.4f;
     private Vector3 originalPosition;
     private float timer = 0f;
+    private float move_timer = 0f;
     private Renderer objRenderer;
     private float ana_startTime = 0f;
     private float ana_endTime = 0f;
@@ -31,6 +32,8 @@ public class Platform : MonoBehaviour
     void Update()
     {
         // Check if the player is on the elevator
+        move_timer += Time.deltaTime;
+
         if (moving && UIObject.beat)
         {   
             // Move the elevator upward
@@ -63,7 +66,7 @@ public class Platform : MonoBehaviour
             }
             else
             {
-                if (timer > 2.0f)
+                if (timer > 0.6f)
                 {
                     moving = false;
                     timer = 0;
@@ -86,7 +89,11 @@ public class Platform : MonoBehaviour
         }
         else if(transform.position.y > originalPosition.y && !done)
         {
-            transform.Translate(Vector3.down * movementSpeed * Time.deltaTime);
+                transform.Translate(Vector3.down * movementSpeed * Time.deltaTime);
+        }
+        else if (transform.position.y < originalPosition.y && !done)
+        {
+            transform.Translate(Vector3.up * movementSpeed * Time.deltaTime);
         }
 
         //if (UIObject.color)
@@ -191,10 +198,17 @@ public class Platform : MonoBehaviour
     public void allowMove()
     {
         moving = true;
+        timer -= 0.6f;
+
     }
-    public void stopMove()
+/*    public void stopMove()
     {
-        moving = false;
-    }
+        if (move_timer > 0.05f)
+        {
+
+            moving = false;
+        }
+        
+    }*/
 
 }
