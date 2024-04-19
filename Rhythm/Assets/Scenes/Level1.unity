@@ -430,9 +430,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb312bbb65e9a04faf71d6013ed3a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transparency: 0.5
-  beat1: 2.3
-  beat2: 0.1
+  bpm: 100
+  fmt: 0001
+  transparency: 0.1
+  beatCount: 0
 --- !u!50 &29207643
 Rigidbody2D:
   serializedVersion: 4
@@ -7755,9 +7756,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb312bbb65e9a04faf71d6013ed3a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transparency: 0.5
-  beat1: 2.3
-  beat2: 0.1
+  bpm: 100
+  fmt: 0001
+  transparency: 0.1
+  beatCount: 0
 --- !u!50 &1202550485
 Rigidbody2D:
   serializedVersion: 4
@@ -9800,9 +9802,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb312bbb65e9a04faf71d6013ed3a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transparency: 0.5
-  beat1: 2.3
-  beat2: 0.1
+  bpm: 100
+  fmt: 0001
+  transparency: 0.1
+  beatCount: 0
 --- !u!61 &1659563035
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11282,9 +11285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb312bbb65e9a04faf71d6013ed3a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transparency: 0.5
-  beat1: 2.3
-  beat2: 0.1
+  bpm: 100
+  fmt: 0001
+  transparency: 0.1
+  beatCount: 0
 --- !u!61 &1815235407
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14548,9 +14552,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb312bbb65e9a04faf71d6013ed3a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transparency: 0.5
-  beat1: 2.3
-  beat2: 0.1
+  bpm: 100
+  fmt: 0001
+  transparency: 0.1
+  beatCount: 0
 --- !u!61 &2134233012
 BoxCollider2D:
   m_ObjectHideFlags: 0

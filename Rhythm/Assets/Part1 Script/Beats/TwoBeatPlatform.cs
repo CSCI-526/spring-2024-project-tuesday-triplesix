@@ -5,35 +5,41 @@ public class TwoBeatPlatform : MonoBehaviour
 {
     // Start is called before the first frame update
     private BoxCollider2D _boxCollider2D;
-    public float transparency = 0.5f;
-    public float beat1 = 1f; // the beat
-    public float beat2 = 0.1f;
+    private Material rendererMaterial;
+    public float bpm = 120f;
+    public string fmt = "0001";
+    public float transparency = 0.2f;
+    private float beatInterval;
+    private float timer = 0f;
+    public int beatCount = 0;
     void Start()
     {
         Renderer renderer = GetComponent<Renderer>();
-        Material rendererMaterial = renderer.material;
+        beatInterval = 60f / bpm;
+        rendererMaterial = renderer.material;
         _boxCollider2D = GetComponent<BoxCollider2D>();
         if (_boxCollider2D.gameObject.CompareTag("Platform1"))
         {
             Change(_boxCollider2D, rendererMaterial);
         }
-        StartCoroutine(PlatformRoutine(_boxCollider2D, rendererMaterial));
     }
-
-    private IEnumerator PlatformRoutine(BoxCollider2D boxCollider2D, Material material)
+    
+    void Update()
     {
-        
-        var gameObj = boxCollider2D.gameObject; 
-        while (true)
+        timer += Time.deltaTime;
+        int nBeats = fmt.Length;
+        if (timer >= beatInterval)
         {
-            yield return new WaitForSeconds(beat1); // wait
-            // disable the collider, change the transparency of the material
-            Change(boxCollider2D, material);  //dark
-            yield return new WaitForSeconds(beat2);// wait
-            // disable the collider, change the transparency of the material
-            Change(boxCollider2D, material);  //light
-            yield return new WaitForSeconds(0.01f);// wait
-            Change(boxCollider2D, material);  //dark
+            timer -= beatInterval;
+            beatCount++;
+            Move(_boxCollider2D, rendererMaterial, fmt[beatCount % nBeats]);
+        }
+    }
+    
+    public void Move(BoxCollider2D boxCollider2D, Material material, char position)
+    {
+        if (position == '1') {
+            Change(boxCollider2D, material);
         }
     }
 
