@@ -59,6 +59,7 @@ public class BeatControl_1 : MonoBehaviour
             return 2;
         }
         else {
+            pfu.stopMove();
             return 3;
         }
     }

@@ -70,6 +70,7 @@ public class Platform : MonoBehaviour
                 }
                 if (down == 1)
                 {
+                    ballController.transform.Translate(Vector3.down * movementSpeed * Time.deltaTime);
                     transform.Translate(Vector3.down * movementSpeed * Time.deltaTime);
                     timer += Time.deltaTime;
                 }
@@ -191,6 +192,9 @@ public class Platform : MonoBehaviour
     {
         moving = true;
     }
-
+    public void stopMove()
+    {
+        moving = false;
+    }
 
 }
