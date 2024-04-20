@@ -4483,6 +4483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Endline
       objectReference: {fileID: 0}
+    - target: {fileID: 6511872496907583501, guid: a301ec54a03af6c4c97168b7d0012319, type: 3}
+      propertyPath: m_TagString
+      value: ENDLINE
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
