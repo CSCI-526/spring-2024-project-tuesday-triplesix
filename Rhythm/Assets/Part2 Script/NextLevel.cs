@@ -23,9 +23,17 @@ public class NextLevel : MonoBehaviour
         Time.timeScale = 1f;
         string sceneName = SceneManager.GetActiveScene().name;
 
-        if (sceneName == "Tutorial")
+        if (sceneName == "Tutorial1")
         {   
 
+            sceneController.LoadScene("Tutorial2");
+        }
+        else if (sceneName == "Tutorial2")
+        {
+            sceneController.LoadScene("Tutorial3");
+        }
+        else if (sceneName == "Tutorial3")
+        {
             sceneController.LoadScene("Level1");
         }
         else if (sceneName == "Level1")

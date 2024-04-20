@@ -8,6 +8,10 @@ public class MainMenu : MonoBehaviour
 {
     public Button playButton;
     public GameObject LevelPanel;
+
+    public Button Tutorial1Button;
+    public Button Tutorial2Button;
+    public Button Tutorial3Button;
     public Button Level1Button;
     public Button Level2Button;
     public Button Level3Button;
@@ -22,6 +26,9 @@ public class MainMenu : MonoBehaviour
         Level2Button.onClick.AddListener(level2);
         Level3Button.onClick.AddListener(level3);
         BossLevelButton.onClick.AddListener(level4);
+        Tutorial1Button.onClick.AddListener(PlayTutorial1);
+        Tutorial2Button.onClick.AddListener(PlayTutorial2);
+        Tutorial3Button.onClick.AddListener(PlayTutorial3);
         close.onClick.AddListener(Close);
     }
     public void LevelSelection()
@@ -49,10 +56,18 @@ public class MainMenu : MonoBehaviour
     {
         sceneController.LoadScene("Boss Fight");
     }
-    public void PlayTutorial()
+    public void PlayTutorial1()
     {
-        sceneController.LoadScene("Tutorial");
+        sceneController.LoadScene("Tutorial1");
 
+    }
+    public void PlayTutorial2()
+    {
+        sceneController.LoadScene("Tutorial2");
+    }
+    public void PlayTutorial3()
+    {
+        sceneController.LoadScene("Tutorial3");
     }
 
     public void QuitGame()
