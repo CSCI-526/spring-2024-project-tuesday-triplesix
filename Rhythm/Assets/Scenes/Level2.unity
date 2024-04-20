@@ -5815,6 +5815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Endline
       objectReference: {fileID: 0}
+    - target: {fileID: 6511872496907583501, guid: a301ec54a03af6c4c97168b7d0012319, type: 3}
+      propertyPath: m_TagString
+      value: ENDLINE
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15797,6 +15801,7 @@ MonoBehaviour:
   boss: {fileID: 1510559882}
   beatBar: {fileID: 1358262842}
   single: {fileID: 1877369300}
+  lasting: {fileID: 0}
   choice: {fileID: 1159644275}
 --- !u!1 &1556673174
 GameObject:

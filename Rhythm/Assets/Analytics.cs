@@ -23,7 +23,7 @@ public class LevelCompletionTracker : MonoBehaviour
     private void LevelCompleted()
     {
         levelCompletionTime = Time.time - startTime;
-
+        
         CustomEvent myEvent = new CustomEvent("LevelCompletionTime")
         {
             { "levelName", currentScene.name },
