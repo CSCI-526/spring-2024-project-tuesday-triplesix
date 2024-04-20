@@ -9,7 +9,6 @@ public class LevelCompletionTracker : MonoBehaviour
     private Scene currentScene;
     private float startTime;
     private float levelCompletionTime;
-    private bool levelCompleted = false;
 
     async void Start()
     {
@@ -21,32 +20,16 @@ public class LevelCompletionTracker : MonoBehaviour
         startTime = Time.time;
     }
 
-    void Update()
-    {
-        // Update is called once per frame, check for level completion here
-        if (CheckLevelCompleted()) // You need to implement this method
-        {
-            LevelCompleted();
-        }
-    }
-
     private void LevelCompleted()
     {
-    
-        if (!levelCompleted)  // Check if the level has not been already completed
+        levelCompletionTime = Time.time - startTime;
+
+        CustomEvent myEvent = new CustomEvent("LevelCompletionTime")
         {
-            levelCompletionTime = Time.time - startTime;
-
-            CustomEvent myEvent = new CustomEvent("LevelCompletionTime")
-            {
-                { "levelName", currentScene.name },
-                { "completionTime", levelCompletionTime }
-            };
-            AnalyticsService.Instance.RecordEvent(myEvent);
-
-            levelCompleted = true;  // Set to true to prevent multiple recordings
-            // Optionally, you can load a new level or show a completion screen here
-        }
+            { "levelName", currentScene.name },
+            { "completionTime", levelCompletionTime }
+        };
+        AnalyticsService.Instance.RecordEvent(myEvent);
     }
     
         private void OnTriggerEnter2D(Collider2D other)
