@@ -28,7 +28,6 @@ public class ObstablesCollider : MonoBehaviour
     {
         if (other.CompareTag("Obstacle"))
         {
-            Debug.Log("collide");
             Vector2 spawnPoint = GameManager.Instance.respawnPoint;
             value += 1;
             rb.transform.position = spawnPoint;

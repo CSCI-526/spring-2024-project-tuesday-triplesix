@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2007770051338556255}
   m_Layer: 0
   m_Name: Endline
-  m_TagString: Untagged
+  m_TagString: ENDLINE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 6987774233725097556}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Untagged
+  m_TagString: ENDLINE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 4931857244141358551}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: ENDLINE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
