@@ -21,9 +21,9 @@ public class TwoBeatPlatform : MonoBehaviour
         rendererMaterial = renderer.material;
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _tilemapCollider2D = GetComponent<TilemapCollider2D>();
-        if (_boxCollider2D.gameObject.CompareTag("Platform1"))
+        if (_tilemapCollider2D.gameObject.CompareTag("Platform1"))
         {
-            Change(_boxCollider2D, rendererMaterial);
+            Change(_tilemapCollider2D, rendererMaterial);
         }
     }
     
@@ -35,18 +35,18 @@ public class TwoBeatPlatform : MonoBehaviour
         {
             timer -= beatInterval;
             beatCount++;
-            Move(_boxCollider2D, rendererMaterial, fmt[beatCount % nBeats]);
+            Move(_tilemapCollider2D, rendererMaterial, fmt[beatCount % nBeats]);
         }
     }
     
-    public void Move(BoxCollider2D tileCollider2D, Material material, char position)
+    public void Move(TilemapCollider2D tileCollider2D, Material material, char position)
     {
         if (position == '1') {
             Change(tileCollider2D, material);
         }
     }
 
-    private void Change(BoxCollider2D tileCollider2D, Material material)
+    private void Change(TilemapCollider2D tileCollider2D, Material material)
     {
         
         tileCollider2D.enabled = !tileCollider2D.enabled;
