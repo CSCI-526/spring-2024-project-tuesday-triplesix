@@ -10,8 +10,8 @@ public class BallController : MonoBehaviour
     private Rigidbody2D rb;
     public GameObject ball;
     public GameObject foot;
-    private bool isGrounded = true;
-
+    public bool isGrounded = true;
+    public bool isJumping = false;
     public float autoMoveSpeed = 20.0f;
 
     // public CinemachineVirtualCamera virtualCamera;
@@ -38,6 +38,7 @@ public class BallController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         originalScale = transform.localScale;
         // virtualCamera.Follow = null;
+        isJumping = false;
 
     }
 
@@ -53,20 +54,27 @@ public class BallController : MonoBehaviour
             // }
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
+                transform.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
                 transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
             }
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-            {
+            {   
+                transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
                 transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
             }
             // if (Input.GetKeyDown(KeyCode.J))
             // {
             //     bossManager.TakeDamage(10);
             // }
+            if (isGrounded) {
+                isJumping = false;
+            }
 
             if (Input.GetKey(KeyCode.Space) && isGrounded)
             {
+                isJumping = true;
                 Jump();
+
             }
             // if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             // {
