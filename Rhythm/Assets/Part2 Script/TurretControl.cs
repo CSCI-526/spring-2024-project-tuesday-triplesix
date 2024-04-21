@@ -23,6 +23,8 @@ public class TurretControl : MonoBehaviour
     public CanvasGroup perfectTextCanvasGroup;
     public CanvasGroup greatTextCanvasGroup;
     public CanvasGroup missingTextCanvasGroup;
+
+    public GameController gameController;
     // Start is called before the first frame update
     async void Start()
     {
@@ -51,6 +53,7 @@ public class TurretControl : MonoBehaviour
             perfectTextCanvasGroup.alpha = 0;
             greatTextCanvasGroup.alpha = 0;
             missingTextCanvasGroup.alpha = 0;
+            gameController.ChangeBack();
         }
     }
 
