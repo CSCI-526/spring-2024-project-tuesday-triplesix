@@ -39,6 +39,14 @@ public class BallController : MonoBehaviour
         originalScale = transform.localScale;
         // virtualCamera.Follow = null;
         isJumping = false;
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+        if (objs.Length > 1) {
+            foreach (GameObject obj in objs)
+            {
+                Debug.Log("Scene name: " + obj.scene.name);
+                if (obj.scene.name == "DontDestroyOnLoad") Destroy(obj);
+            }
+        }
 
     }
 
