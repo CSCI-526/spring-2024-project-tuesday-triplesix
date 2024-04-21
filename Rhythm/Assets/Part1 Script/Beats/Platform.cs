@@ -24,8 +24,8 @@ public class Platform : MonoBehaviour
     {
         UIObject = FindObjectOfType<UI>();
         originalPosition = transform.position;
-        objRenderer = GetComponent<Renderer>();
-        originalColor = objRenderer.material.color;
+/*        objRenderer = GetComponent<Renderer>();
+        originalColor = objRenderer.material.color;*/
         HideBeatsBar();
     }
 

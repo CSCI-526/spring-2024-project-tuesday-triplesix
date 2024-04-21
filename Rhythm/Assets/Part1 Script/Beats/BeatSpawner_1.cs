@@ -31,8 +31,8 @@ public class BeatSpawner_1 : MonoBehaviour
     private bool endPart = false;
     private int path = -2;
     public GameObject single;
-    public GameObject lasting;
-    public GameObject choice;
+/*    public GameObject lasting;
+*/    public GameObject choice;
     void Start()
     {
         path = 0;
@@ -58,8 +58,8 @@ public class BeatSpawner_1 : MonoBehaviour
         timer = 0.70f;
         timer_2 = timer + 0.55f;
         single.SetActive(false);
-        lasting.SetActive(false);
-        choice.SetActive(false);
+/*        lasting.SetActive(false);
+*/        choice.SetActive(false);
         //bossControl = boss.GetComponent<BossController>();
         //SetLeftmost();
     }
@@ -96,10 +96,11 @@ public class BeatSpawner_1 : MonoBehaviour
         if (cmd == 0) {
             GameObject circle = Instantiate(single, transform.position, Quaternion.identity, transform);
             circle.SetActive(true);
-        } else {
+        } 
+/*        else {
             GameObject longBeat = Instantiate(lasting, transform.position, transform.rotation, transform);
             longBeat.transform.localScale = new Vector3(cmd, 1, 1);
             longBeat.SetActive(true);
-        }
+        }*/
     }
 }
