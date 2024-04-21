@@ -20,6 +20,7 @@ public class WarningController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Warning start");
         rectTransform = GetComponent<RectTransform>();  // 获取RectTransform组件
         StartCoroutine(BlinkEffect());
         bossController = boss.GetComponent<BossController>();

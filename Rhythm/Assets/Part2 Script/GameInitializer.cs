@@ -20,6 +20,7 @@ public class GameInitializer : MonoBehaviour
     public float targetOrthographicSize = 25f;
     private float initialOrthographicSize;
     public GameObject HealthBar;
+    private Vector3 oriPosition = new Vector3(-21.4f, 3.5f, 0f);
     void Start()
     {
         // string fileName = "analytics_perfect.txt";
@@ -29,6 +30,15 @@ public class GameInitializer : MonoBehaviour
         
         beatBar.SetActive(false);
         victoryFlag.SetActive(false);
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+        if (objs.Length > 1) {
+            foreach (GameObject obj in objs)
+            {
+                Debug.Log("Scene name: " + obj.scene.name);
+                if (obj.scene.name == "DontDestroyOnLoad") Destroy(obj);
+            }
+        }
+        
         // if (!GameSetting.IsRestarting)
         // {
         //     initialOrthographicSize = Camera.main.orthographicSize;
