@@ -14,7 +14,6 @@ public class LevelCompletionTracker : MonoBehaviour
     {
         await UnityServices.InitializeAsync();
         AnalyticsService.Instance.StartDataCollection();
-        
         currentScene = SceneManager.GetActiveScene();
         // Start the timer
         startTime = Time.time;
