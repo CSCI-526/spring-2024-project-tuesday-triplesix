@@ -21,13 +21,13 @@ public class BeatSpawner : MonoBehaviour
     private int[][] beats = new int[][] {
         //new int[] {21,0,0,0,0,21,0,0,0,0},
         new int[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-        new int[] {21,0,0,0,0,21,0,0,0,0},
+        new int[] {0,0,0,0,0,0,0,0,0,0},
         new int[] {3,3,3}
     };
     private float[][] intervals = new float[][]{
         //new float[] {0.65f,1.1f,0.5f,0.5f,0.5f,1.3f,1.15f,0.5f,0.5f,0.5f, 2.1f},
         new float[] {0f,0.5f,0.5f,0.5f,0.5f,0.5f,0.5f,0.5f,0.35f,0.25f, 0.25f, 0.25f,0.25f, 0.25f,0.25f, 3.0f},
-        new float[] {0.65f,1.1f,0.5f,0.5f,0.5f,1.3f,1.15f,0.5f,0.5f,0.5f, 2.1f},
+        new float[] {0.20f,1.7f,0.5f,0.5f,0.5f,0.7f,1.75f,0.5f,0.5f,0.5f, 2.7f},
         new float[] {0.03f,1f,1f}
     };
     private float timer;
@@ -85,7 +85,7 @@ public class BeatSpawner : MonoBehaviour
             else cnt += 1;
             if (cnt == intervals[path].Length) {
                 finish = true;
-                bossControl.autoMoveSpeed = 18f;
+                bossControl.autoMoveSpeed = 12.0f;
                 turret.SetActive(false);
                 beatBar.SetActive(false);
                 ballControl.EnableMovement();

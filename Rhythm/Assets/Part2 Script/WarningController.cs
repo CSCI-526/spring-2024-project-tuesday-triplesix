@@ -50,7 +50,7 @@ public class WarningController : MonoBehaviour
             stopped = true;
             gameObject.SetActive(false);
             staticMsg.SetActive(false);
-            bossController.autoMoveSpeed = 20f;
+            bossController.autoMoveSpeed = 12.0f;
             ballController.EnableMovement();
         }
     }

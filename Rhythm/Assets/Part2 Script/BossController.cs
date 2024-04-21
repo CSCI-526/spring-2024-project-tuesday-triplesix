@@ -12,7 +12,8 @@ public class BossController : MonoBehaviour
     public Image health;
     public GameObject healthBar;
     private Rigidbody2D bossrb;
-    public float autoMoveSpeed = 20.0f;
+    // Affected files: WarningController, BeatSpawner
+    public float autoMoveSpeed = 12.0f;
     public GameController gameController;
     void Start()
     {
