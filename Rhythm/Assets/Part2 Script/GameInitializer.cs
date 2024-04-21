@@ -22,10 +22,10 @@ public class GameInitializer : MonoBehaviour
     public GameObject HealthBar;
     void Start()
     {
-        string fileName = "analytics_perfect.txt";
-        DateTime now = DateTime.Now;
-        string content = now.ToString("MM/dd/yyyy HH:mm:ss") + "\n";
-        File.AppendAllText(fileName, content);
+        // string fileName = "analytics_perfect.txt";
+        // DateTime now = DateTime.Now;
+        // string content = now.ToString("MM/dd/yyyy HH:mm:ss") + "\n";
+        // File.AppendAllText(fileName, content);
         
         beatBar.SetActive(false);
         victoryFlag.SetActive(false);
