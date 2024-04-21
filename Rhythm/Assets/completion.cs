@@ -26,7 +26,7 @@ public class LevelCompletionTracker : MonoBehaviour
         
         CustomEvent myEvent = new CustomEvent("LevelCompletionTime")
         {
-            { "levelName", currentScene.name },
+            { "levelid", currentScene.name },
             { "completionTime", levelCompletionTime }
         };
         AnalyticsService.Instance.RecordEvent(myEvent);
