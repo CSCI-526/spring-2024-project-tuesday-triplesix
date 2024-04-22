@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class MusicController : MonoBehaviour
@@ -28,8 +28,25 @@ public class MusicController : MonoBehaviour
             yield return null;
         }
 
-        currentMusic.Stop();
+        currentMusic.volume = 0;
     }
+    public IEnumerator IncrementV(AudioSource currentMusic,  float duration)
+    {
+        //float startValue = 0f; // 初始值
+        float currentTime = 0;
+        //float startVolume = currentMusic.volume;
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            currentMusic.volume = Mathf.Lerp(0, 30f, currentTime / duration);
+            //newMusic.volume = Mathf.Lerp(0, startVolume, currentTime / duration);
+            /*            Debug.Log("New:" + newMusic.volume);
+                        Debug.Log("Cur:" + currentMusic.volume);*/
+            yield return null;
+        }
+    }
+
 
     public IEnumerator PlayNewMusic(AudioSource currentMusic, AudioSource newMusic, float fadeDuration)
     {
@@ -51,6 +68,10 @@ public class MusicController : MonoBehaviour
         currentMusic.volume = 0; // ??????0???????
     }
 
+
+ 
+
+    
     // ?????
     private IEnumerator PlayNewMusicCoroutine(AudioSource newMusic, float fadeDuration)
     {

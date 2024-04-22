@@ -21,6 +21,9 @@ public class GameController : MonoBehaviour
     public float rayLength = 1f;
     public LayerMask detectLayer;
 
+    public float fadeDuration = 2f;
+    private float timer;
+
     public float flashDuration = 0.2f;
     public int flashCount = 2;
     public MusicController musicController;
@@ -189,18 +192,49 @@ public class GameController : MonoBehaviour
 
     public void PlayTurretMusic() {
         AudioSource[] list = new AudioSource[] {Music1, Music2 };
-        float duration = 0.1f;
+        float duration = 3f;
         // StartCoroutine(musicController.PlayNewMusic(MusicStart, list[currentMusic + 1], duration));
-        StartCoroutine(musicController.PlayNewMusic(MusicStart, list[currentMusic], duration));
+        StartCoroutine(musicController.FadeOutCurrentMusicAndFadeInNewMusic(MusicStart, list[currentMusic], duration));
+        //StartCoroutine(musicController.PlayNewMusic(MusicStart, list[currentMusic], duration));
         currentMusic++;
 
     }
 
     public void ChangeBack() {
         AudioSource[] list = new AudioSource[] { Music1, Music2 };
+        float startVolume = list[currentMusic - 1].volume;
+        if (list[currentMusic - 1].volume > 0)
+        {
+            timer += Time.deltaTime;
+            list[currentMusic - 1].volume = Mathf.Lerp(startVolume, 0f, timer / fadeDuration);
+
+            if (list[currentMusic - 1].volume <= 0)
+            {
+                list[currentMusic - 1].Stop();
+            }
+        }
         list[currentMusic - 1].Stop();
-        MusicStart.volume = 30f;
-        
+
+        //list[currentMusic - 1].Stop();
+
+        StartCoroutine(musicController.IncrementV(MusicStart, 3f));
+
+        /*float duration = 3f;
+        float currentTime = 0;
+        float startVolume = list[currentMusic].volume;
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            list[currentMusic - 1].volume = Mathf.Lerp(startVolume, 0, currentTime / duration);
+            list[currentMusic].volume = Mathf.Lerp(0, startVolume, currentTime / duration);
+                       Debug.Log("New:" + newMusic.volume);
+                        Debug.Log("Cur:" + currentMusic.volume);
+
+        }
+        MusicStart.volume = 30f;*/
+
+
     }
 
 
