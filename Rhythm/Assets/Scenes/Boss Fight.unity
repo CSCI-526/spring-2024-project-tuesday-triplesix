@@ -5244,7 +5244,7 @@ MonoBehaviour:
   perfectTextCanvasGroup: {fileID: 115566642}
   greatTextCanvasGroup: {fileID: 380735553}
   missingTextCanvasGroup: {fileID: 153211366}
-  gameController: {fileID: 0}
+  gameController: {fileID: 267042729}
 --- !u!82 &920542744
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8259,7 +8259,7 @@ MonoBehaviour:
   perfectTextCanvasGroup: {fileID: 115566642}
   greatTextCanvasGroup: {fileID: 380735553}
   missingTextCanvasGroup: {fileID: 153211366}
-  gameController: {fileID: 0}
+  gameController: {fileID: 267042729}
 --- !u!61 &1631467172
 BoxCollider2D:
   m_ObjectHideFlags: 0

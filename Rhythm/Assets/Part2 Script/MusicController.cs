@@ -30,6 +30,8 @@ public class MusicController : MonoBehaviour
 
         currentMusic.volume = 0;
     }
+
+   
     public IEnumerator IncrementV(AudioSource currentMusic,  float duration)
     {
         //float startValue = 0f; // 初始值
