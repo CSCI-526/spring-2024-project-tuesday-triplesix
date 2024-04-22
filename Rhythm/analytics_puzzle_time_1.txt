@@ -87,3 +87,5 @@ Time : 9.367316
 Time : 10.648
 >>>>>>> Stashed changes
 Time : 21.0835
+Time : 17.79304
+Time : 11.58631
