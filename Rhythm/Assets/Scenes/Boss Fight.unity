@@ -1379,7 +1379,7 @@ MonoBehaviour:
   bSpawn: {fileID: 1726733205}
   gameOverPanel: {fileID: 2071684196}
   victoryPanel: {fileID: 400390638}
-  restartButton: {fileID: 0}
+  restartButton: {fileID: 841626963}
   victoryButton: {fileID: 1636942496}
   characterTransform: {fileID: 1380942475}
   rayLength: 1

@@ -61,7 +61,7 @@ public class BeatSpawner_1 : MonoBehaviour
         Debug.Log("Enable: " + path);
         finish = false;
         int nBeats = fmt.Length;
-        timer = 0.28f;
+        timer = 2.0f;
         timer_2 = timer + beatInterval * 2;
         single.SetActive(false);
 /*        lasting.SetActive(false);

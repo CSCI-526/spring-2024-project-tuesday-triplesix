@@ -118913,7 +118913,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 146.14, y: 6.48, z: -1.49}
+  m_LocalPosition: {x: 50.77, y: -12.309999, z: -1.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -120164,6 +120164,7 @@ MonoBehaviour:
   greatTextCanvasGroup: {fileID: 5521942}
   normalTextCanvasGroup: {fileID: 1264345324}
   pc: {fileID: 1259191171}
+  TurretControl_t: {fileID: 0}
 --- !u!114 &670554390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123190,11 +123191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5280613880581589264, guid: 3b15d7aecba8600408f46a97343da515, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 131.3
+      value: 35.93
       objectReference: {fileID: 0}
     - target: {fileID: 5280613880581589264, guid: 3b15d7aecba8600408f46a97343da515, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.81
+      value: -17.98
       objectReference: {fileID: 0}
     - target: {fileID: 5280613880581589264, guid: 3b15d7aecba8600408f46a97343da515, type: 3}
       propertyPath: m_LocalPosition.z
@@ -124274,7 +124275,7 @@ Transform:
   m_GameObject: {fileID: 1182466516}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 146.14, y: 6.48, z: -1.49}
+  m_LocalPosition: {x: 50.77, y: -12.309999, z: -1.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -130707,6 +130708,7 @@ MonoBehaviour:
   greatTextCanvasGroup: {fileID: 5521942}
   normalTextCanvasGroup: {fileID: 1264345324}
   pc: {fileID: 1259191171}
+  TurretControl_t: {fileID: 0}
 --- !u!114 &1877369306
 MonoBehaviour:
   m_ObjectHideFlags: 0
