@@ -36,6 +36,7 @@ public class BeatSpawner : MonoBehaviour
     private bool pathSelect = false;
     private bool endPart = false;
     private int path = -2;
+    private bool changeMusic = false;
     public GameObject single;
     public GameObject lasting;
     public GameObject choice;
@@ -98,14 +99,15 @@ public class BeatSpawner : MonoBehaviour
             //gameController.ChangeMusic();
             // Debug.Log("path: " + path);
             // Debug.Log("Cnt: " + cnt);
-            if (finish) {
+            if (finish && !changeMusic) {
                 if (gameController == null)
                 {
                     Debug.Log("it is NULLLLLLLL");
                 }
                 gameController.ChangeBack();
+                // StartCoroutine(gameController.ChangeBack());
                 Debug.Log("it is Changing music!!!!!!!!!!!!!!");
-
+                changeMusic = true;
             }
             if (!finish) timer = intervals[path][cnt]; // reset
         }

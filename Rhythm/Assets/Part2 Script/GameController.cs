@@ -199,25 +199,42 @@ public class GameController : MonoBehaviour
         currentMusic++;
 
     }
-
     public void ChangeBack() {
+        StartCoroutine(ChangeBackCoroutine());
+    }
+    public IEnumerator ChangeBackCoroutine() {
         AudioSource[] list = new AudioSource[] { Music1, Music2 };
-        float startVolume = list[currentMusic - 1].volume;
-        if (list[currentMusic - 1].volume > 0)
+        AudioSource source = list[currentMusic - 1];
+        float startFadeInVolume = MusicStart.volume;  // 通常这应该是0
+
+        float startVolume = source.volume;
+        float timer = 0f;
+
+        while (source.volume > 0)
         {
             timer += Time.deltaTime;
-            list[currentMusic - 1].volume = Mathf.Lerp(startVolume, 0f, timer / fadeDuration);
-
-            if (list[currentMusic - 1].volume <= 0)
+            source.volume = Mathf.Lerp(startVolume, 0f, timer / 2f);
+            MusicStart.volume = Mathf.Lerp(startFadeInVolume, 0.3f, timer / 2f);
+            Debug.Log("Volume: " + source.volume);
+            if (source.volume <= 0.01f)  // 用一个小的阈值来确定何时停止
             {
-                list[currentMusic - 1].Stop();
+                source.Stop();
+                source.volume = 0;  // 确保音量设置为0
+                break;
             }
+            if (MusicStart.volume >= 0.29f)
+            {
+                MusicStart.volume = 0.3f;
+                break;
+            }
+            yield return null;  // 等待下一帧
         }
-        list[currentMusic - 1].Stop();
+        // list[currentMusic - 1].Stop();
 
         //list[currentMusic - 1].Stop();
 
-        StartCoroutine(musicController.IncrementV(MusicStart, 3f));
+        // StartCoroutine(musicController.IncrementV(MusicStart, 3f));
+        
 
         /*float duration = 3f;
         float currentTime = 0;
