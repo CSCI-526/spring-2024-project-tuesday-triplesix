@@ -11,6 +11,9 @@ public class BeatSpawner_1 : MonoBehaviour
     public GameObject beatBar;
     private GameObject turret;
     private BossController bossControl;
+    public float bpm = 120f;
+    public string fmt = "0001";
+    private float beatInterval;
 
     // in beats, 0 represents single beat, -1 represents choice part, positive number represents long beat
     private int[][] beats = new int[][] {
@@ -36,6 +39,8 @@ public class BeatSpawner_1 : MonoBehaviour
     void Start()
     {
         path = 0;
+        beatInterval = 60f / bpm;
+
         Debug.Log("StartSpawner:" + path);
     }
 
@@ -55,8 +60,9 @@ public class BeatSpawner_1 : MonoBehaviour
         cnt = 0;
         Debug.Log("Enable: " + path);
         finish = false;
-        timer = 0.70f;
-        timer_2 = timer + 0.55f;
+        int nBeats = fmt.Length;
+        timer = 0.28f;
+        timer_2 = timer + beatInterval * 2;
         single.SetActive(false);
 /*        lasting.SetActive(false);
 */        choice.SetActive(false);
@@ -73,14 +79,14 @@ public class BeatSpawner_1 : MonoBehaviour
             Spawn(0);
             // Debug.Log("path: " + path);
             // Debug.Log("Cnt: " + cnt);
-            if (!finish) timer = 2.2f; // reset
+            if (!finish) timer = beatInterval * 4; // reset
         }
         if (timer_2 <= 0 && !finish)
         {
             Spawn(0);
             // Debug.Log("path: " + path);
             // Debug.Log("Cnt: " + cnt);
-            if (!finish) timer_2 = 2.2f; // reset
+            if (!finish) timer_2 = beatInterval * 4; // reset
         }
 
     }
@@ -88,11 +94,11 @@ public class BeatSpawner_1 : MonoBehaviour
     void Spawn(int cmd)
     {
         cnt += 1;
-        if (cmd < 0) {
+/*        if (cmd < 0) {
             Debug.Log("Spawn choice");
             GameObject choose = Instantiate(choice, transform.position, Quaternion.identity, transform);
             choose.SetActive(true);
-        }
+        }*/
         if (cmd == 0) {
             GameObject circle = Instantiate(single, transform.position, Quaternion.identity, transform);
             circle.SetActive(true);
