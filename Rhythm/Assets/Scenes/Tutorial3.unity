@@ -2332,7 +2332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -364.15, y: -223.18}
+  m_AnchoredPosition: {x: -353.33, y: -236.7}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &548143269
@@ -70462,6 +70462,8 @@ MonoBehaviour:
   lower: {fileID: 0}
   boss: {fileID: 956781330}
   beatBar: {fileID: 873085669}
+  bpm: 120
+  fmt: 0001
   single: {fileID: 2013934639}
   choice: {fileID: 41834741}
 --- !u!1001 &803599668
