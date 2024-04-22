@@ -30,7 +30,7 @@ public class ObstablesCollider : MonoBehaviour
         {
             Vector2 spawnPoint = GameManager.Instance.respawnPoint;
             value += 1;
-            rb.transform.position = spawnPoint;
+            //rb.transform.position = spawnPoint;
         }
     }
     
