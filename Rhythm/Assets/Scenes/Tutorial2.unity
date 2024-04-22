@@ -41848,7 +41848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Now, Listen to Music and Observe!!!
+  m_text: Now, <color=#ff0000>Listen to Music</color> and Observe!!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef7f22813ac994f468b516d1f63cdbe9, type: 2}
   m_sharedMaterial: {fileID: -238720981675097456, guid: ef7f22813ac994f468b516d1f63cdbe9, type: 2}
