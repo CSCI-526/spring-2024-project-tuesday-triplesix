@@ -75554,7 +75554,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -415.86, y: -220.37}
+  m_AnchoredPosition: {x: -415.86, y: -217.75}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2118475880
@@ -75579,7 +75579,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Watch out!
 
-    Follow the beat!'
+    Follow the beat to evade traps'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef7f22813ac994f468b516d1f63cdbe9, type: 2}
   m_sharedMaterial: {fileID: -238720981675097456, guid: ef7f22813ac994f468b516d1f63cdbe9, type: 2}
