@@ -1,3 +1,5 @@
+<<<<<<< Updated upstream
+=======
 Time : 9.413576
 Time : 9.613035
 Time : 9.820937
@@ -79,10 +81,9 @@ Time : 18.27169
 Time : 26.90827
 Time : 21.38987
 Time : 15.06119
-Time : 22.53705
-Time : 18.99527
-Time : 17.56757
-Time : 16.68326
-Time : 25.87624
-Time : 16.55176
-Time : 16.75782
+Time : 24.34652
+Time : 9.990479
+Time : 9.367316
+Time : 10.648
+>>>>>>> Stashed changes
+Time : 21.0835
