@@ -9,7 +9,7 @@ public class BarFollow_1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        offset = new Vector3(4.44f, 2.98f, 1.5f);
+        offset = new Vector3(4.44f, 2.98f, 5f);
         // Debug.Log("offset:" + offset);
     }
 
