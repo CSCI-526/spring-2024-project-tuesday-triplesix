@@ -14,6 +14,7 @@ public class TurretControl_t : MonoBehaviour
     public GameObject beatBar;
     public GameObject aSpawner;
     private AmmoSpawn ammoSpawn;
+    private bool start = false;
     private int perfectCnt;
     private int goodCnt;
     private int passCnt;
@@ -54,7 +55,15 @@ public class TurretControl_t : MonoBehaviour
     }
 
     public void SpawnBullet(int t) {
-        ammoSpawn.Spawn(t);
+        if (start)
+        {
+            ammoSpawn.Spawn(t);
+        }
+    }
+
+    public void startFight()
+    {
+        start = true;
     }
 
     void OnDisable()
