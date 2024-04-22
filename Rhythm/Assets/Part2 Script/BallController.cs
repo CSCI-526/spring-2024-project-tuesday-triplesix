@@ -99,8 +99,8 @@ public class BallController : MonoBehaviour
     public void DisableMovement()
     {
         canMove = false;
-        rb.velocity = Vector2.zero;
-    }
+/*        rb.velocity = Vector2.zero;
+*/    }
     public void EnableMovement()
     {
         canMove = true;
