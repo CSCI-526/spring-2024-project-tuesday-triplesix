@@ -55,6 +55,15 @@ public class ObstablesCollider : MonoBehaviour
                 { { "times", value } };
             AnalyticsService.Instance.RecordEvent(myEvent);
         }
+        else
+        {
+            CustomEvent myEvent = new CustomEvent("DeathTimes")
+            {
+                { "levelName", currentScene.name },
+                { "times", value }
+            };
+            AnalyticsService.Instance.RecordEvent(myEvent);
+        }
         // File.AppendAllText(fileName, content);
     }
 
