@@ -214,7 +214,7 @@ public class GameController : MonoBehaviour
         {
             timer += Time.deltaTime;
             source.volume = Mathf.Lerp(startVolume, 0f, timer / 2f);
-            MusicStart.volume = Mathf.Lerp(startFadeInVolume, 0.3f, timer / 2f);
+            MusicStart.volume = Mathf.Lerp(startFadeInVolume, 0.5f, timer / 2f);
             Debug.Log("Volume: " + source.volume);
             if (source.volume <= 0.01f)  // 用一个小的阈值来确定何时停止
             {
@@ -222,9 +222,9 @@ public class GameController : MonoBehaviour
                 source.volume = 0;  // 确保音量设置为0
                 break;
             }
-            if (MusicStart.volume >= 0.29f)
+            if (MusicStart.volume >= 0.49f)
             {
-                MusicStart.volume = 0.3f;
+                MusicStart.volume = 0.5f;
                 break;
             }
             yield return null;  // 等待下一帧

@@ -531,11 +531,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3513716648935537890, guid: 69e37111612c28d4aa88dd2bd76247e9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920.5
+      value: 1360.3
       objectReference: {fileID: 0}
     - target: {fileID: 3513716648935537890, guid: 69e37111612c28d4aa88dd2bd76247e9, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1079.7
+      value: 764.74
       objectReference: {fileID: 0}
     - target: {fileID: 3513716648935537890, guid: 69e37111612c28d4aa88dd2bd76247e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -567,11 +567,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3513716648935537890, guid: 69e37111612c28d4aa88dd2bd76247e9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.00000047684
+      value: 280.12
       objectReference: {fileID: 0}
     - target: {fileID: 3513716648935537890, guid: 69e37111612c28d4aa88dd2bd76247e9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0
+      value: 157.48
       objectReference: {fileID: 0}
     - target: {fileID: 3513716648935537890, guid: 69e37111612c28d4aa88dd2bd76247e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -70088,7 +70088,6 @@ RectTransform:
   m_Children:
   - {fileID: 1844926468}
   - {fileID: 2118475879}
-  - {fileID: 1850940743}
   - {fileID: 598069651}
   - {fileID: 942022069}
   - {fileID: 91379600}
@@ -74462,14 +74461,14 @@ RectTransform:
   m_GameObject: {fileID: 1850940742}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3949483, y: 0.3949483, z: 0.3949483}
+  m_LocalScale: {x: 0.6743742, y: 0.6743742, z: 0.6743742}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 711956361}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -353.22, y: -237.76}
+  m_AnchoredPosition: {x: 60.9, y: 1.5}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850940744
@@ -84469,6 +84468,7 @@ SceneRoots:
   - {fileID: 711956361}
   - {fileID: 789216467}
   - {fileID: 528157610}
+  - {fileID: 1850940743}
   - {fileID: 718468910}
   - {fileID: 1020923413}
   - {fileID: 266170178}
