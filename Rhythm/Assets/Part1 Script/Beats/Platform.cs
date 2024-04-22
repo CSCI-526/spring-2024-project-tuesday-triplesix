@@ -109,6 +109,7 @@ public class Platform : MonoBehaviour
 
     public void collision_()
     {
+        Debug.Log("siusiusisu");
         if (timer == 0f)
         {
             ana_startTime = Time.time;
