@@ -54,10 +54,14 @@ public class ShrinkControl : MonoBehaviour
                 Debug.LogError("Renderer component not found in the children of beatsBar GameObject.");
             }
             GameObject[] beats = GameObject.FindGameObjectsWithTag("Beat");
-            GameObject beat = beats[0];
-            BeatSpawner_t b = beat.GetComponent<BeatSpawner_t>();
-            b.beat_start();
+            if (beats.Length > 0)
+            {
+                GameObject beat = beats[0];
+                BeatSpawner_t b = beat.GetComponent<BeatSpawner_t>();
+                b.beat_start();
+            }
         }
+            
         else
         {
             Debug.LogError("beatsBar GameObject not assigned.");

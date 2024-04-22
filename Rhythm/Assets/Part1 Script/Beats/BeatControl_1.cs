@@ -38,7 +38,6 @@ public class BeatControl_1 : MonoBehaviour
         GameObject platform = platforms[0];
         Platform pfu = platform.GetComponent<Platform>();
 
-        Debug.Log(distance);
         if (distance <= perfect) {
             if (updateScore) health -= 1f;
             pfu.allowMove();
