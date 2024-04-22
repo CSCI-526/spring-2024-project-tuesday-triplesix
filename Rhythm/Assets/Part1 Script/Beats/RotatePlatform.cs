@@ -23,7 +23,7 @@ public class RotatePlatform : MonoBehaviour
     {
         if (isRotating)
         {
-            rotationTime += Time.deltaTime * rotationSpeed / 25f; // 根据旋转速度计算插值参数
+            rotationTime += Time.deltaTime * rotationSpeed / 30f; // 根据旋转速度计算插值参数
             transform.rotation = Quaternion.Slerp(startRotation, targetRotation, rotationTime);
             if (rotationTime >= 1f)
             {
