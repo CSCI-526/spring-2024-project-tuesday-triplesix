@@ -19,6 +19,7 @@ public class BeatControl_1 : MonoBehaviour
     public CanvasGroup greatTextCanvasGroup;
     public CanvasGroup normalTextCanvasGroup;
     public PerfectionController pc;
+    public TurretControl_t TurretControl_t;
     // Start is called before the first frame update
 
     void Start()
@@ -41,12 +42,14 @@ public class BeatControl_1 : MonoBehaviour
         if (distance <= perfect) {
             if (updateScore) health -= 1f;
             pfu.allowMove();
+            TurretControl_t.SpawnBullet(0);
             pc.ShowStatusText(0);
             return 0;
         }
         else if (distance <= good) {
             if (updateScore) health -= 1f;
             pfu.allowMove();
+            TurretControl_t.SpawnBullet(1);
             pc.ShowStatusText(1);
             //platform.MoveUpCoroutine();
             return 1;
@@ -54,6 +57,7 @@ public class BeatControl_1 : MonoBehaviour
         else if (distance <= pass) {
             if (updateScore) health -= 1f;
             pfu.allowMove();
+            TurretControl_t.SpawnBullet(2);
             pc.ShowStatusText(2);
             //platform.MoveUpCoroutine();
             return 2;
