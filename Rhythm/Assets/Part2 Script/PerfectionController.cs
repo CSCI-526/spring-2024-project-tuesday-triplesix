@@ -29,11 +29,11 @@ public class PerfectionController : MonoBehaviour
                 break;
         }
     }
-    private IEnumerator FadeText(CanvasGroup canvasGroup, bool fadeIn, float duration = 0.5f)
+    private IEnumerator FadeText(CanvasGroup canvasGroup, bool fadeIn, float duration = 0.3f)
     {
         float counter = 0f;
         float startAlpha = fadeIn ? 0f : canvasGroup.alpha;
-        float endAlpha = fadeIn ? 0.5f : 0f;
+        float endAlpha = fadeIn ? 1f : 0f;
 
         while (counter < duration)
         {
@@ -45,7 +45,7 @@ public class PerfectionController : MonoBehaviour
         if (fadeIn)
         {
             yield return new WaitForSeconds(0f);
-            StartCoroutine(FadeText(canvasGroup, false, 0.5f));
+            StartCoroutine(FadeText(canvasGroup, false, 0.3f));
         }
     }
     private void ResetCanvasGroupsAlpha()

@@ -8,7 +8,7 @@ public class AmmoManager_t3 : MonoBehaviour
 {
     // h:v = 3:1
     private float hSpeed = 15f;
-    private float vSpeed = 5f;
+    private float vSpeed = 0f;
     public Image bossHealth;
     private float health;
     // Start is called before the first frame update

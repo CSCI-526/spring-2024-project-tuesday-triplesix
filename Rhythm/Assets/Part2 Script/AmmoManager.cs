@@ -7,8 +7,8 @@ using System;
 public class AmmoManager : MonoBehaviour
 {
     // h:v = 3:1
-    private float hSpeed = 15f;
-    private float vSpeed = 5f;
+    private float hSpeed = 25f;
+    private float vSpeed = 0f;
     public Image bossHealth;
     private float health;
     // Start is called before the first frame update
@@ -31,15 +31,15 @@ public class AmmoManager : MonoBehaviour
         health = bossHealth.fillAmount;
         if (collision.gameObject.CompareTag("Boss") && gameObject.CompareTag("Ammo1")) {
             //health -= 1f;
-            health -= 0.12f;
+            health -= 0.1f;
             // Debug.Log("Boss health: -15");
         } else if (collision.gameObject.CompareTag("Boss") && gameObject.CompareTag("Ammo2")) {
             //health -= 1f;
-            health -= 0.08f;
+            health -= 0.05f;
             // Debug.Log("Boss health: -10");
         } else if (collision.gameObject.CompareTag("Boss") && gameObject.CompareTag("Ammo3")) {
             //health -= 1f;
-            health -= 0.06f;
+            health -= 0.03f;
             // Debug.Log("Boss health: -5");
         }
         bossHealth.fillAmount = Math.Max(health, 0);
