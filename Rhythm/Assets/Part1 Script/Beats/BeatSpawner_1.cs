@@ -80,6 +80,11 @@ public class BeatSpawner_1 : MonoBehaviour
             timer_2 = timer + beatInterval;
             timer_3 = timer + 2*beatInterval;
         }
+        else if (fmt == "0101")
+        {
+            timer_2 = timer + 2*beatInterval;
+            timer_3 = timer;
+        }
         /*        timer_2 = timer + beatInterval * 2;
         */
         single.SetActive(false);
