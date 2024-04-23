@@ -12,6 +12,7 @@ public class ShrinkControl : MonoBehaviour
     public Image healthBar;
     public GameObject player;
     public BallController pController;
+    public GC_t gameController;
     void Start()
     {
         healthBar.enabled = false;
@@ -29,6 +30,7 @@ public class ShrinkControl : MonoBehaviour
         if (collision.gameObject.CompareTag("Turret"))
         {
             Debug.Log("touch turret");
+            gameController.StartBeat();
             ShowBeatsBar();
             healthBar.enabled = true;
             pController.DisableMovement();

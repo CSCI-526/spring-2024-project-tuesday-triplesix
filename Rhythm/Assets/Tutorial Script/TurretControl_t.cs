@@ -8,6 +8,7 @@ using System.IO;
 public class TurretControl_t : MonoBehaviour
 {
     public Image bossHealth;
+    public GameObject bossHealthBar;
     public GameObject enemy;
     public GameObject player;
     public BallController pController;
@@ -63,6 +64,7 @@ public class TurretControl_t : MonoBehaviour
 
     public void startFight()
     {
+        // bossHealthBar.SetActive(true);
         start = true;
     }
 

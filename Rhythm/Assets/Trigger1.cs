@@ -8,10 +8,10 @@ public class Trigger1 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Turret") && gameController != null)
-        {
-            Debug.Log("ssssssss");
-            gameController.StartBeat();
-        }
+        // if (other.CompareTag("Turret") && gameController != null)
+        // {
+        //     Debug.Log("ssssssss");
+        //     gameController.StartBeat();
+        // }
     }
 }
