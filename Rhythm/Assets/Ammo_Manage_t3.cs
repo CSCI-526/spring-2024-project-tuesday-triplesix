@@ -25,7 +25,7 @@ public class AmmoManager_t3 : MonoBehaviour
 
         health = bossHealth.fillAmount;
         Debug.Log("pos" + transform.position.x);
-        if (transform.position.x>44 && gameObject.CompareTag("Ammo1"))
+        if (transform.position.x>46 && gameObject.CompareTag("Ammo1"))
         {
             //health -= 1f;
             health -= 0.12f;
@@ -33,7 +33,7 @@ public class AmmoManager_t3 : MonoBehaviour
             bossHealth.fillAmount = Math.Max(health, 0);
             gameObject.SetActive(false);
         }
-        else if (transform.position.x > 44 && gameObject.CompareTag("Ammo2"))
+        else if (transform.position.x > 46 && gameObject.CompareTag("Ammo2"))
         {
             //health -= 1f;
             health -= 0.08f;
@@ -41,7 +41,7 @@ public class AmmoManager_t3 : MonoBehaviour
             gameObject.SetActive(false);
             // Debug.Log("Boss health: -10");
         }
-        else if (transform.position.x > 44 && gameObject.CompareTag("Ammo3"))
+        else if (transform.position.x > 46 && gameObject.CompareTag("Ammo3"))
         {
             //health -= 1f;
             health -= 0.06f;

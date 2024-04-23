@@ -7,6 +7,7 @@ public class ShrinkControl : MonoBehaviour
 {
     // Start is called before the first frame update
     public Vector3 squareScale = new Vector3(1, 1, 1);
+    public GameObject arrow;
     private Vector3 originalScale;
     public GameObject beatsBar;
     public Image healthBar;
@@ -18,6 +19,7 @@ public class ShrinkControl : MonoBehaviour
         healthBar.enabled = false;
         originalScale = transform.localScale;
         pController = player.GetComponent<BallController>();
+        arrow.SetActive(false);
     }
 
     // Update is called once per frame

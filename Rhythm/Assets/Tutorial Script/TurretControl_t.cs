@@ -9,6 +9,7 @@ public class TurretControl_t : MonoBehaviour
 {
     public Image bossHealth;
     public GameObject bossHealthBar;
+    public GameObject arrow;
     public GameObject enemy;
     public GameObject player;
     public BallController pController;
@@ -46,6 +47,7 @@ public class TurretControl_t : MonoBehaviour
             gameObject.SetActive(false);
             beatBar.SetActive(false);
             enemy.SetActive(false);
+            arrow.SetActive(true);
             pController.EnableMovement();
             // ballControl.EnableMovement();
             perfectTextCanvasGroup.alpha = 0;
