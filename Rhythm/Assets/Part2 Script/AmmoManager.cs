@@ -31,11 +31,11 @@ public class AmmoManager : MonoBehaviour
         health = bossHealth.fillAmount;
         if (collision.gameObject.CompareTag("Boss") && gameObject.CompareTag("Ammo1")) {
             //health -= 1f;
-            health -= 0.1f;
+            health -= 0.11f;
             // Debug.Log("Boss health: -15");
         } else if (collision.gameObject.CompareTag("Boss") && gameObject.CompareTag("Ammo2")) {
             //health -= 1f;
-            health -= 0.05f;
+            health -= 0.06f;
             // Debug.Log("Boss health: -10");
         } else if (collision.gameObject.CompareTag("Boss") && gameObject.CompareTag("Ammo3")) {
             //health -= 1f;
