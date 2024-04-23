@@ -40,7 +40,7 @@ public class BeatControl_1 : MonoBehaviour
 
         if (distance <= perfect) {
             if (updateScore) health -= 1f;
-            pfu.allowMove();
+            pfu.allowMove(0.6f);
             if (TurretControl_t){
                 TurretControl_t.SpawnBullet(0);
 
@@ -50,7 +50,7 @@ public class BeatControl_1 : MonoBehaviour
         }
         else if (distance <= good) {
             if (updateScore) health -= 1f;
-            pfu.allowMove();
+            pfu.allowMove(0.45f);
             if (TurretControl_t){
                 TurretControl_t.SpawnBullet(1);
 
@@ -61,7 +61,7 @@ public class BeatControl_1 : MonoBehaviour
         }
         else if (distance <= pass) {
             if (updateScore) health -= 1f;
-            pfu.allowMove();
+            pfu.allowMove(0.4f);
             if (TurretControl_t){
                 TurretControl_t.SpawnBullet(2);
 

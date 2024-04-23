@@ -196,10 +196,10 @@ public class Platform : MonoBehaviour
         }
     }
 
-    public void allowMove()
+    public void allowMove(float t)
     {
         moving = true;
-        timer -= 0.6f;
+        timer -= t;
 
     }
 /*    public void stopMove()
