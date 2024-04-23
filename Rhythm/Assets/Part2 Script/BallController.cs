@@ -54,7 +54,7 @@ public class BallController : MonoBehaviour
     {
         if (canMove)
         {   
-            Vector2 boxSize = new Vector2(1f, 0.2f);
+            Vector2 boxSize = new Vector2(0.4f, 0.2f);
             isGrounded = Physics2D.OverlapBox(foot.transform.position, boxSize, 0, groundLayer);
             //AutoMoveRight();
             // if (isGrounded && virtualCamera.Follow == null)
