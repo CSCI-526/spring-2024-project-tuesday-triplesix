@@ -27,7 +27,7 @@ public class BeatSpawner : MonoBehaviour
     private float[][] intervals = new float[][]{
         //new float[] {0.65f,1.1f,0.5f,0.5f,0.5f,1.3f,1.15f,0.5f,0.5f,0.5f, 2.1f},
         //new float[] {0f,0.5f,0.5f,0.5f,0.5f,0.5f,0.5f,0.5f,0.35f,0.25f, 0.25f, 0.25f,0.25f, 0.25f,0.25f, 3.0f},
-        new float[] {0.25f,0.5f,0.5f,0.5f,0.5f,0.5f,0.7f,0.22f, 0.22f, 0.22f,0.22f, 0.22f,0.22f, 0.22f, 3.0f},
+        new float[] {0.25f,0.5f,0.5f,0.5f,0.5f,0.5f,0.6f,0.22f, 0.22f, 0.22f,0.22f, 0.22f,0.22f, 0.22f, 3.0f},
         new float[] {0.05f,1.7f,0.5f,0.5f,0.5f,0.7f,1.57f,0.5f,0.5f,0.5f, 2.7f},
         new float[] {0.03f,1f,1f}
     };
