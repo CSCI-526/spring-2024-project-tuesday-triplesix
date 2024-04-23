@@ -23,6 +23,7 @@ public class BackButton : MonoBehaviour
     public void BackToMenu()
     {   
         Debug.Log("Back to Menu");
+        GameController.alreadyRestarted = false;
         SceneManager.LoadScene("Main Menu");
     }
 }

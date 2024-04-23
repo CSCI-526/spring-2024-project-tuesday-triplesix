@@ -36,7 +36,9 @@ public class GameController : MonoBehaviour
     private int turretChoice;
     private int currentMusic;
     public SceneController sceneController;
-
+    public BeatSpawner beatSpawner;
+    public GameSetting gameSetting;
+    public static bool alreadyRestarted = false;
     void Start()
     {
         Debug.Log("Start");
@@ -148,11 +150,13 @@ public class GameController : MonoBehaviour
     }
 
     public void RestartGame()
-    {
-        GameSetting.IsRestarting = true;
+    {   
+        // alreadyRestarted = true;
         Time.timeScale = 1f;
 
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
         // sceneController.LoadScene(SceneManager.GetActiveScene().name);
     }
 

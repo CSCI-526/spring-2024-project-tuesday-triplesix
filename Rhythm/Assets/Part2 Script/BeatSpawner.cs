@@ -24,11 +24,11 @@ public class BeatSpawner : MonoBehaviour
         new int[] {0,0,0,0,0,0,0,0,0,0},
         new int[] {3,3,3}
     };
-    private float[][] intervals = new float[][]{
+    public float[][] intervals = new float[][]{
         //new float[] {0.65f,1.1f,0.5f,0.5f,0.5f,1.3f,1.15f,0.5f,0.5f,0.5f, 2.1f},
         //new float[] {0f,0.5f,0.5f,0.5f,0.5f,0.5f,0.5f,0.5f,0.35f,0.25f, 0.25f, 0.25f,0.25f, 0.25f,0.25f, 3.0f},
-        new float[] {0.05f,0.53f,0.53f,0.53f,0.53f,0.53f,0.51f,0.265f, 0.265f, 0.265f,0.265f, 0.265f,0.265f, 0.265f, 3.0f},
-        new float[] {0.05f,1.7f,0.5f,0.5f,0.5f,0.7f,1.57f,0.5f,0.5f,0.5f, 2.7f},
+        new float[] {0.25f,0.53f,0.53f,0.53f,0.53f,0.53f,0.51f,0.265f, 0.265f, 0.265f,0.265f, 0.265f,0.265f, 0.265f, 3.0f},
+        new float[] {0.05f,1.9f,0.5f,0.5f,0.5f,0.5f,2.0f,0.5f,0.5f,0.5f, 2.7f},
         new float[] {0.03f,1f,1f}
     };
     private float timer;
@@ -44,12 +44,14 @@ public class BeatSpawner : MonoBehaviour
     public CanvasGroup perfectTextCanvasGroup;
     public CanvasGroup greatTextCanvasGroup;
     public CanvasGroup missingTextCanvasGroup;
+    public GameSetting gameSetting;
+    
     void Start()
     {
         // await UnityServices.InitializeAsync();
         // AnalyticsService.Instance.StartDataCollection();
         path = 0;
-        Debug.Log("StartSpawner:" + path);
+
     }
 
     void SetLeftmost()
@@ -66,6 +68,17 @@ public class BeatSpawner : MonoBehaviour
     {
         // await UnityServices.InitializeAsync();
         // AnalyticsService.Instance.StartDataCollection();
+        Debug.Log("OnEnable");
+        if (GameController.alreadyRestarted) {
+            Debug.Log("Already Restarted");
+            intervals = new float[][]{
+                //new float[] {0.65f,1.1f,0.5f,0.5f,0.5f,1.3f,1.15f,0.5f,0.5f,0.5f, 2.1f},
+                //new float[] {0f,0.5f,0.5f,0.5f,0.5f,0.5f,0.5f,0.5f,0.35f,0.25f, 0.25f, 0.25f,0.25f, 0.25f,0.25f, 3.0f},
+                new float[] {0.00f,0.53f,0.53f,0.53f,0.53f,0.53f,0.51f,0.265f, 0.265f, 0.265f,0.265f, 0.265f,0.265f, 0.265f, 3.0f},
+                new float[] {0.00f,1.9f,0.5f,0.5f,0.5f,0.5f,2.0f,0.5f,0.5f,0.5f, 2.7f},
+                new float[] {0.03f,1f,1f}
+            };
+        }
         path += 1;
         cnt = 0;
         Debug.Log("Enable: " + path);
@@ -79,7 +92,8 @@ public class BeatSpawner : MonoBehaviour
     }
     // Update is called once per frame
     void FixedUpdate()
-    {
+    {   
+      
         timer -= Time.fixedDeltaTime;
         if (timer <= 0 && !finish)
         {
@@ -87,6 +101,7 @@ public class BeatSpawner : MonoBehaviour
             else cnt += 1;
             if (cnt == intervals[path].Length) {
                 finish = true;
+                GameController.alreadyRestarted = true;
                 bossControl.autoMoveSpeed = 12.0f;
                 turret.SetActive(false);
                 beatBar.SetActive(false);

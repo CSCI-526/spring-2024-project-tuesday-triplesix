@@ -47,6 +47,7 @@ public class TurretControl : MonoBehaviour
     void LateUpdate()
     {
         if (bossHealth.fillAmount == 0) {
+            GameController.alreadyRestarted = true;
             gameObject.SetActive(false);
             beatBar.SetActive(false);
             ballControl.EnableMovement();

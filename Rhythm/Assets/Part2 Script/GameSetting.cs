@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class GameSetting
+public class GameSetting : MonoBehaviour
 {
-    public static bool IsRestarting = false;
+    public bool IsRestarting = false;
 }
