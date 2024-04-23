@@ -28,6 +28,7 @@ public class BeatSpawner_1 : MonoBehaviour
     };
     private float timer;
     private float timer_2;
+    private float timer_3;
     private int cnt = 0;
     private bool finish = false;
     private bool pathSelect = false;
@@ -42,6 +43,7 @@ public class BeatSpawner_1 : MonoBehaviour
         beatInterval = 60f / bpm;
 
         Debug.Log("StartSpawner:" + path);
+        Debug.Log("beatInterval:" + beatInterval);
     }
 
     void SetLeftmost()
@@ -61,8 +63,25 @@ public class BeatSpawner_1 : MonoBehaviour
         Debug.Log("Enable: " + path);
         finish = false;
         int nBeats = fmt.Length;
+        beatInterval = 60f / bpm;
         timer = 2.0f;
-        timer_2 = timer + beatInterval * 2;
+        if (fmt == "0001")
+        {
+            timer_2 = timer;
+            timer_3 = timer;
+        }
+        else if (fmt == "1001")
+        {
+            timer_2 = timer + beatInterval;
+            timer_3 = timer;
+        }
+        else if (fmt == "1101")
+        {
+            timer_2 = timer + beatInterval;
+            timer_3 = timer + 2*beatInterval;
+        }
+        /*        timer_2 = timer + beatInterval * 2;
+        */
         single.SetActive(false);
 /*        lasting.SetActive(false);
 */        choice.SetActive(false);
@@ -74,6 +93,7 @@ public class BeatSpawner_1 : MonoBehaviour
     {
         timer -= Time.deltaTime;
         timer_2 -= Time.deltaTime;
+        timer_3 -= Time.deltaTime;
         if (timer <= 0 && !finish)
         {
             Spawn(0);
@@ -87,6 +107,13 @@ public class BeatSpawner_1 : MonoBehaviour
             // Debug.Log("path: " + path);
             // Debug.Log("Cnt: " + cnt);
             if (!finish) timer_2 = beatInterval * 4; // reset
+        }
+        if (timer_3 <= 0 && !finish)
+        {
+            Spawn(0);
+            // Debug.Log("path: " + path);
+            // Debug.Log("Cnt: " + cnt);
+            if (!finish) timer_3 = beatInterval * 4; // reset
         }
 
     }
